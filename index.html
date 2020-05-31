@@ -93,7 +93,7 @@
 <li>协程：在单线程里实现多任务的调度，并在单线程里维持多个任务间的切换。</li>
 </ul>
 <h2 id="volatile-和sychronized"><a href="#volatile-和sychronized" class="headerlink" title="volatile 和sychronized"></a>volatile 和sychronized</h2><ul>
-<li><p>如果volatile变量修饰符使用恰当的话，它比synchronized的使用和执行成本更低，因为它不会引起线程上下文的切换和调度。<br><img src="CPU%E6%9C%AF%E8%AF%AD%E5%AE%9A%E4%B9%89.png" alt="cpu术语"></p>
+<li><p>如果volatile变量修饰符使用恰当的话，它比synchronized的使用和执行成本更低，因为它不会引起线程上下文的切换和调度。<br><img src="F:%5Cblog%5Csource_posts%5C%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E8%89%BA%E6%9C%AF%E6%80%BB%E7%BB%93%5CCPU%E6%9C%AF%E8%AF%AD%E5%AE%9A%E4%B9%89.png" alt="cpu术语"></p>
 </li>
 <li><p>如果对声明了volatile的变量进行写操作，JVM就会向处理器发送一条Lock前缀的指令，将这个变量所在缓存行的数据写回到系统内存</p>
 </li>
@@ -1566,8 +1566,8 @@ Kafka 并不支持主写从读，因为主写从读有 2 个很明 显的缺点:
 整个topic不保证有序。如果为了保证topic整个有序，那么将partition调整为1.或者producer将消息发送到指定partition分区</code></pre><p><a href="https://www.cnblogs.com/imfx/p/11166869.html" target="_blank" rel="noopener">topic有序</a></p>
 <h1 id="18、消费者提交消费位移时提交的是当前消费到的最新消息的offset还是offset-1"><a href="#18、消费者提交消费位移时提交的是当前消费到的最新消息的offset还是offset-1" class="headerlink" title="18、消费者提交消费位移时提交的是当前消费到的最新消息的offset还是offset+1?"></a>18、消费者提交消费位移时提交的是当前消费到的最新消息的offset还是offset+1?</h1><pre><code>offset+1</code></pre><h1 id="19、kafka如何实现延迟队列？"><a href="#19、kafka如何实现延迟队列？" class="headerlink" title="19、kafka如何实现延迟队列？"></a>19、kafka如何实现延迟队列？</h1><pre><code>Kafka并没有使用JDK自带的Timer或者DelayQueue来实现延迟的功能，而是基于时间轮自定义了一个用于实现延迟功能的定时器（SystemTimer）。JDK的Timer和DelayQueue插入和删除操作的平均时间复杂度为O(nlog(n))，并不能满足Kafka的高性能要求，而基于时间轮可以将插入和删除操作的时间复杂度都降为O(1)。时间轮的应用并非Kafka独有，其应用场景还有很多，在Netty、Akka、Quartz、Zookeeper等组件中都存在时间轮的踪影。
 
-底层使用数组实现，数组中的每个元素可以存放一个TimerTaskList对象。TimerTaskList是一个环形双向链表，在其中的链表项TimerTaskEntry中封装了真正的定时任务TimerTask.</code></pre><p><img src="1.png" alt="时间轮"></p>
-<pre><code>Kafka中到底是怎么推进时间的呢？Kafka中的定时器借助了JDK中的DelayQueue来协助推进时间轮。具体做法是对于每个使用到的TimerTaskList都会加入到DelayQueue中。Kafka中的TimingWheel专门用来执行插入和删除TimerTaskEntry的操作，而DelayQueue专门负责时间推进的任务。再试想一下，DelayQueue中的第一个超时任务列表的expiration为200ms，第二个超时任务为840ms，这里获取DelayQueue的队头只需要O(1)的时间复杂度。如果采用每秒定时推进，那么获取到第一个超时的任务列表时执行的200次推进中有199次属于“空推进”，而获取到第二个超时任务时有需要执行639次“空推进”，这样会无故空耗机器的性能资源，这里采用DelayQueue来辅助以少量空间换时间，从而做到了“精准推进”。Kafka中的定时器真可谓是“知人善用”，用TimingWheel做最擅长的任务添加和删除操作，而用DelayQueue做最擅长的时间推进工作，相辅相成。</code></pre><p><a href="https://blog.csdn.net/u013256816/article/details/80697456" target="_blank" rel="noopener">参考</a></p>
+底层使用数组实现，数组中的每个元素可以存放一个TimerTaskList对象。TimerTaskList是一个环形双向链表，在其中的链表项TimerTaskEntry中封装了真正的定时任务TimerTask
+Kafka中到底是怎么推进时间的呢？Kafka中的定时器借助了JDK中的DelayQueue来协助推进时间轮。具体做法是对于每个使用到的TimerTaskList都会加入到DelayQueue中。Kafka中的TimingWheel专门用来执行插入和删除TimerTaskEntry的操作，而DelayQueue专门负责时间推进的任务。再试想一下，DelayQueue中的第一个超时任务列表的expiration为200ms，第二个超时任务为840ms，这里获取DelayQueue的队头只需要O(1)的时间复杂度。如果采用每秒定时推进，那么获取到第一个超时的任务列表时执行的200次推进中有199次属于“空推进”，而获取到第二个超时任务时有需要执行639次“空推进”，这样会无故空耗机器的性能资源，这里采用DelayQueue来辅助以少量空间换时间，从而做到了“精准推进”。Kafka中的定时器真可谓是“知人善用”，用TimingWheel做最擅长的任务添加和删除操作，而用DelayQueue做最擅长的时间推进工作，相辅相成。</code></pre><p><a href="https://blog.csdn.net/u013256816/article/details/80697456" target="_blank" rel="noopener">参考</a></p>
 <p>20.Kafka中的事务是怎么实现的？<br><a href="https://blog.csdn.net/u013256816/article/details/89135417" target="_blank" rel="noopener">参考</a></p>
 <p>21.Kafka中有那些地方需要选举？这些地方的选举策略又有哪些？<br><a href="https://blog.csdn.net/yanshu2012/article/details/54894629" target="_blank" rel="noopener">点击查看详情</a></p>
 

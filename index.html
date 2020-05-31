@@ -93,7 +93,7 @@
 <li>协程：在单线程里实现多任务的调度，并在单线程里维持多个任务间的切换。</li>
 </ul>
 <h2 id="volatile-和sychronized"><a href="#volatile-和sychronized" class="headerlink" title="volatile 和sychronized"></a>volatile 和sychronized</h2><ul>
-<li><p>如果volatile变量修饰符使用恰当的话，它比synchronized的使用和执行成本更低，因为它不会引起线程上下文的切换和调度。<br><img src="%5CCPU%E6%9C%AF%E8%AF%AD%E5%AE%9A%E4%B9%89.png" alt="cpu术语"></p>
+<li><p>如果volatile变量修饰符使用恰当的话，它比synchronized的使用和执行成本更低，因为它不会引起线程上下文的切换和调度。<br><img src="CPU%E6%9C%AF%E8%AF%AD%E5%AE%9A%E4%B9%89.png" alt="cpu术语"></p>
 </li>
 <li><p>如果对声明了volatile的变量进行写操作，JVM就会向处理器发送一条Lock前缀的指令，将这个变量所在缓存行的数据写回到系统内存</p>
 </li>

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>API | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="API Application Program Interface 应用程序接口   java原生提供的接口以及接口下面的实现类   1.Object String Pattern 数学类 包装类 日期类  2.异常 集合 映射  3.File IO 线程 网络编程  4.反射 底层了解 核心    Object 整个java中最基本的类，在java 中所有的类默认都继承了Object，Objec">
+<meta property="og:type" content="article">
+<meta property="og:title" content="API">
+<meta property="og:url" content="http://yoursite.com/2020/05/09/API/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="API Application Program Interface 应用程序接口   java原生提供的接口以及接口下面的实现类   1.Object String Pattern 数学类 包装类 日期类  2.异常 集合 映射  3.File IO 线程 网络编程  4.反射 底层了解 核心    Object 整个java中最基本的类，在java 中所有的类默认都继承了Object，Objec">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-05-09T05:35:01.355Z">
+<meta property="article:modified_time" content="2019-10-08T15:32:12.000Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-API" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/05/09/API/" class="article-date">
+  <time datetime="2020-05-09T05:35:01.355Z" itemprop="datePublished">2020-05-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      API
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="API"><a href="#API" class="headerlink" title="API"></a>API</h1><ul>
+<li><p>Application Program Interface 应用程序接口 </p>
+<ul>
+<li>java原生提供的接口以及接口下面的实现类</li>
+</ul>
+</li>
+<li><p>1.Object String Pattern 数学类 包装类 日期类</p>
+</li>
+<li><p>2.异常 集合 映射</p>
+</li>
+<li><p>3.File IO 线程 网络编程</p>
+</li>
+<li><p>4.反射 底层了解 核心   </p>
+<h2 id="Object"><a href="#Object" class="headerlink" title="Object"></a>Object</h2></li>
+<li><p>整个java中最基本的类，在java 中所有的类默认都继承了Object，Object是java中顶级<br>父类，也是唯一没有父类的类</p>
+</li>
+</ul>
+<h3 id="重要方法"><a href="#重要方法" class="headerlink" title="重要方法"></a>重要方法</h3><ul>
+<li><p>1.clone 克隆出一个新的对象，在使用这个方法的时候，需要抛出一个异常；<br>需要对应的类实现Cloneable接口；使用protected修饰，需要注意使用范围</p>
+<ul>
+<li>对象的属性值一致，但是对象的地址值不一致</li>
+</ul>
+</li>
+<li><p>2.finalize 通知GC进行垃圾对象的回收，但GC不一定执行，通知完成之后进行内存扫描</p>
+</li>
+<li><p>3.hashCode 计算对象的哈希码，哈希码是根据哈希散列算法计算出来的，一般人为认为每一个<br>对象的哈希码是唯一的。</p>
+</li>
+<li><p>4.toString  将对象那个转化为字符串来进行展示，如果直接打印一个对象那么默认会调用对象<br>的toString方法。二进制 Binary 八进制Octal 十进制 Decimal 十六进制 Hexadecimal</p>
+</li>
+<li><p>5.getClass 获取对象的实际类型，而不是声明类型</p>
+</li>
+<li><p>6.判断两个对象是否相等。如果不重写默认判断两个对象的地址是否一致。<br>实际开发中往往需要重写，重写步骤固定</p>
+<ul>
+<li>判断地址是否一致</li>
+<li>判断参数是否为空</li>
+<li>判断类型是否相同</li>
+<li>判断属性是否一致<ul>
+<li>如果是基本类型直接比较</li>
+<li>如果是引用类型则需要多个判断</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="String"><a href="#String" class="headerlink" title="String"></a>String</h2><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><ul>
+<li><p>1.代表字符串的类，本身是一个最终类</p>
+</li>
+<li><p>2.字符串在底层是以字符数组形式存储的</p>
+</li>
+<li><p>3.字面量 数字，字符，字符串，布尔值</p>
+</li>
+<li><p>4.如果需要拼接大量的字符串，使用+还是StringBuilder?</p>
+<ul>
+<li>String[] arr = new String[100];</li>
+<li>// 数组中已经存放了100个元素</li>
+<li>// 方式一：使用+ — 301</li>
+<li>String result = “”; // 1</li>
+<li>for(String str : arr){</li>
+<li>// result = new StringBuilder(result).append(str).toString();</li>
+<li>result += str; // 每拼接1次，要产生3个对象；一共要拼接100次，要产生300个元素</li>
+<li>}</li>
+<li>// 方式二：使用StringBuilder — 102</li>
+<li>StringBuilder sb = new StringBuilder(); // 1</li>
+<li>for(String str : arr){</li>
+<li>sb.append(str); // 每拼接1次，要产生1个对象 ；一共拼接100次，要产生100个对象</li>
+<li>}</li>
+<li>String result = sb.toString(); // 1</li>
+<li>如果需要拼接多个字符串，建议使用StringBuilder</li>
+</ul>
+</li>
+<li><p>5.String类中提供了一系列的操作字符串但是不改变原字符串的方法<br>都是产生一个新的字符串</p>
+</li>
+</ul>
+<h3 id="正则表达式-REGEX"><a href="#正则表达式-REGEX" class="headerlink" title="正则表达式 REGEX"></a>正则表达式 REGEX</h3><ul>
+<li><p>提供范围性校验</p>
+</li>
+<li><p>预定义字符</p>
+<ul>
+<li>. 表示任意字符</li>
+<li>\w 单词字符 [a-zA-Z0-9_] word</li>
+<li>\W 非单词字符 </li>
+<li>\d 表示数字 [0-9] digital</li>
+<li>\D 非数字 </li>
+<li>\s 空白字符[\t\r\n\f] space</li>
+<li>\S 非空白字符</li>
+<li>[^a-z] ^[a-z] ^放在[]中，表示非，放在外面表示强制以当前字符开头</li>
+</ul>
+</li>
+<li><p>数量词</p>
+<ul>
+<li><ul>
+<li>至少出现一次 x &gt;= 1</li>
+</ul>
+</li>
+<li><ul>
+<li>表示可以出现 x &gt;= 0</li>
+</ul>
+</li>
+<li>? 至多一次     x &lt;= 1</li>
+<li>{n} 恰好n次    x = n</li>
+<li>{n,} 至少n次   x &gt;= n</li>
+<li>{n,m} n到m次   n &lt;= x &lt;= m</li>
+</ul>
+</li>
+<li><p>捕获组</p>
+<ul>
+<li>用()括起来的单元称之为捕获组</li>
+<li>在正则表达式中，会对捕获组进行自动的编号，编号从1开始</li>
+<li>\n引用编号为n的捕获组</li>
+<li>捕获组的编号是从 ( 的出现位置开始依次计数</li>
+<li>$使用<ul>
+<li>String str = “Cat Pig Parrot Dog”;</li>
+<li>将cat和dog的位置进行颠倒</li>
+<li>在替换过程中，\n的形式不起作用的</li>
+<li>在替换过程中，如果想要引用上一个捕获组，那么需要使用$n的形式</li>
+<li>System.out.println(str.replaceAll(“(Cat)(.*)(Dog)”, “$3$2$1”));</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>&lt;常用20个正则&gt;&lt;正则生成器&gt;[<a href="https://blog.csdn.net/u012206617/article/details/90716662]" target="_blank" rel="noopener">https://blog.csdn.net/u012206617/article/details/90716662]</a></p>
+</li>
+</ul>
+<h2 id="包装类"><a href="#包装类" class="headerlink" title="包装类"></a>包装类</h2><ul>
+<li>因为基本类型的变量身上没有任何的方法和属性，所以针对基本类型提供了对应的类形式 — </li>
+<li>包装类利用这个类产生对象，调用对象身上的方法来操作这个数据<ul>
+<li>1.除了int和char以外，其他类型的包装类都是将首字母大写</li>
+<li>2.自动封箱：将基本类型的变量直接赋值给对应的引用类型的对象。<br>自动封箱在底层调用的是对应类的valueOf方法</li>
+<li>3.对于整数而言，在进行自动封箱的时候会有范围判断：-128~127，<br>当在这个范围内的时候，会从同一个数组的同一个位置去取值，那么此时判断的结果应该是相等</li>
+<li>4.自动拆箱：将引用/包装类型的对象直接赋值给对应的基本类型的<br>变量。自动拆箱在底层调用的是对应对象身上的***Value方法</li>
+<li>5.自动封箱/拆箱是JDK1.5的特性之一</li>
+<li>6.包装类产生的对象，只要实际值一样，那么哈希码一定一样</li>
+<li>7.NaN和任何东西都不相等，包括自己本身</li>
+</ul>
+</li>
+</ul>
+<h2 id="数学类"><a href="#数学类" class="headerlink" title="数学类"></a>数学类</h2><ul>
+<li>1.用于提供基本/初等数学运算的类，包含指数、对数、幂函数、三角函数等</li>
+<li>2.针对基本类型来进行运算</li>
+<li>3.BigDecimal：用于进行精确计算小数的类。在计算的时候要求小数以字符串形式传入，在底层会进行逐位计算</li>
+</ul>
+<h2 id="日期类"><a href="#日期类" class="headerlink" title="日期类"></a>日期类</h2><ul>
+<li>1.Date：<ul>
+<li>a. 在导包的时候用的是java.util包下的</li>
+<li>b. SimpleDateFormat：用于进行字符串和日期之间的转化。<br>字符串转化为日期对象:parse；日期对象转化为字符串对象：format</li>
+</ul>
+</li>
+<li>2.Calendar：<ul>
+<li>JDK1.2出来用于取代Date的类</li>
+</ul>
+</li>
+</ul>
+<h2 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h2><ul>
+<li>1.为了反馈和处理/解决问题设计的一套机制</li>
+<li>2.异常的顶级父类是Throwable，有2个子类：Error、Exception</li>
+</ul>
+<h3 id="Error"><a href="#Error" class="headerlink" title="Error"></a>Error</h3><ul>
+<li>1.表示严重的错误</li>
+<li>2.出现之后不能处理</li>
+<li>3.出现之后只能尽量优化代码，减少错误出现的几率</li>
+</ul>
+<h3 id="Exception"><a href="#Exception" class="headerlink" title="Exception"></a>Exception</h3><ul>
+<li>1.表示在合理的应用程序中出现的可以处理的问题</li>
+<li>2.分类：<ul>
+<li>a. 编译时异常：在编译的时候就出现要求处理的异常<br>  CloneNotSupportedException ParseException</li>
+<li>b. 运行时异常：在编译的时候不出现到了运行的时候才会报错。<br>在使用的时候可以处理，如果不处理在运行时会报错 — RuntimeException<br>  NullPointerException ArrayIndexOutOfBoundsException<br>  ArithmeticException ClassCastException StringIndexOutOfBoundsException PatternSyntexException<br>  NumberFormatException</li>
+</ul>
+</li>
+<li>3.异常的处理方式：<ul>
+<li>a. 继续向上抛出：throws</li>
+<li>b. 可以捕获：try-catch</li>
+</ul>
+</li>
+<li>4.如果在实际开发中，遇到了问题但是在java中没有提供对应的异常，那么自定义<br>异常 — 写一个类继承Exception，定义的是一个编译时异常。如果需要定义一个运行时异常，需要继承RuntimeException</li>
+<li>5.异常的捕获方式：<ul>
+<li>a. 每一个异常分别对应一个catch，适合于每一个异常的处理方式各不一样</li>
+<li>b. 如果所有异常的处理方式都一样，那么可以统一捕获一个父类异常对象</li>
+<li>c. 如果异常之间的处理方式进行了分组，那么同一组异常之间可以用 | 隔开 — JDK1.7开始</li>
+</ul>
+</li>
+<li>6.异常对方法的重载没有影响</li>
+<li>7.在方法重写的时候，子类中重写的方法抛出的编译时异常不能超过父类方法抛出的编译时<br>异常的范围 -&gt; 子类不能抛出比父类更多的异常</li>
+<li>8.finally：无论前边的代码执行成功与否，finally中的代码都会执行一次</li>
+<li>9.当项目处在开发期间，如果项目中出现了异常，打印这个异常的栈轨迹，然后根据这个轨<br>迹进行调错；如果项目已经上线，出现了异常，记录错误日志  </li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/05/09/API/" data-id="ckautpoi7000094rh3qh81ou5" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/05/09/netcompile/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          netcompile
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/04/25/WEB/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">WEB</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/05/15/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E8%89%BA%E6%9C%AF%E6%80%BB%E7%BB%93/">并发编程艺术总结</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/14/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">git常用命令</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/09/thread/">thread</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/09/netcompile/">netcompile</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/09/API/">API</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

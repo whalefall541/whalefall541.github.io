@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>maintenance | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="kafka概念以及如何保证kafka消息不丢 Kafka是分布式发布-订阅消息系统，它最初是由LinkedIn公司开发的，之后成为Apache项目的一部分，Kafka是一个分布式，可划分的，冗余备份的持久性的日志服务，它主要用于处理流式数据。  生产者可靠性：  通过配置参数 request.required.acks&#x3D;-1，所有ISR列表中的所有副本同步数据完成后才leader向生产者发送成功消">
+<meta property="og:type" content="article">
+<meta property="og:title" content="maintenance">
+<meta property="og:url" content="http://yoursite.com/2020/04/22/maintenance/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="kafka概念以及如何保证kafka消息不丢 Kafka是分布式发布-订阅消息系统，它最初是由LinkedIn公司开发的，之后成为Apache项目的一部分，Kafka是一个分布式，可划分的，冗余备份的持久性的日志服务，它主要用于处理流式数据。  生产者可靠性：  通过配置参数 request.required.acks&#x3D;-1，所有ISR列表中的所有副本同步数据完成后才leader向生产者发送成功消">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/2020/04/22/maintenance/123.png">
+<meta property="article:published_time" content="2020-04-22T10:58:20.287Z">
+<meta property="article:modified_time" content="2020-04-23T11:15:33.623Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/04/22/maintenance/123.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-maintenance" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/22/maintenance/" class="article-date">
+  <time datetime="2020-04-22T10:58:20.287Z" itemprop="datePublished">2020-04-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      maintenance
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="kafka概念以及如何保证kafka消息不丢"><a href="#kafka概念以及如何保证kafka消息不丢" class="headerlink" title="kafka概念以及如何保证kafka消息不丢"></a>kafka概念以及如何保证kafka消息不丢</h1><ul>
+<li><p>Kafka是分布式发布-订阅消息系统，它最初是由LinkedIn公司开发的，之后成为Apache项目的一部分，Kafka是一个分布式，可划分的，冗余备份的持久性的日志服务，它主要用于处理流式数据。</p>
+</li>
+<li><p>生产者可靠性：</p>
+<ul>
+<li>通过配置参数 request.required.acks=-1，所有ISR列表中的所有副本同步数据完成后才leader向生产者发送成功消息；</li>
+<li>开启副本数 min.insync.replicas&gt;=2</li>
+<li>开启幂等性 enable.idempotence=true</li>
+<li>开启不允许非isr副本选举为 leader,unclean.leader.election.enable=false</li>
+</ul>
+</li>
+<li><p>消费者可靠性：</p>
+<ul>
+<li>enable.auto.commit=false 关闭自动提交offset</li>
+</ul>
+</li>
+</ul>
+<h1 id="HDFS读写流程"><a href="#HDFS读写流程" class="headerlink" title="HDFS读写流程"></a>HDFS读写流程</h1><ul>
+<li><p>HDFS 读取过程：</p>
+<ul>
+<li>客户端调用FileSystem实例的open方法，获取这个文件对应的输入流InputStream</li>
+<li>通过RPC远程调用NameNode，获得NameNode中此文件第一块数据的位置</li>
+<li>从最近的DataNode中读取一块数据，再去获取第二块数据位置读取，直至整个文件读取完毕</li>
+<li>客户端调用close方法，关闭输入流</li>
+</ul>
+</li>
+<li><p>HDFS 写过程：</p>
+<ul>
+<li>客户端向NameNode发起写数据请求</li>
+<li>NameNode会检查文件是否存在，是否具有权限，成功创建一个记录</li>
+<li>客户端将文件进行切片，然后上传数据块，按照一个一个的形式发送，每个数据块都要写到三个DataNode上</li>
+<li>成功后返回ack给客户端，继续上传下一个数据块，直至所有的数据块写入成功</li>
+<li>写入完成以后，客户端向NameNode发送一个反馈消息，关闭数据流</li>
+</ul>
+</li>
+</ul>
+<h1 id="impala和flume里面的一些组件和流程，如何去操作执行"><a href="#impala和flume里面的一些组件和流程，如何去操作执行" class="headerlink" title="impala和flume里面的一些组件和流程，如何去操作执行"></a>impala和flume里面的一些组件和流程，如何去操作执行</h1><h1 id="对Yarn的了解"><a href="#对Yarn的了解" class="headerlink" title="对Yarn的了解"></a>对Yarn的了解</h1><ul>
+<li><p>资源管理，任务调度框架；</p>
+</li>
+<li><p>ResourceManager NodeManager ApplicationMaster(每一个应用都会在NodeManager上启动一个)</p>
+<ul>
+<li>RM： 负责资源的监控、分配和管理</li>
+<li>AM： 负责每一个具体应用程序的调度和协调</li>
+<li>NM： 负责每一个节点的维护</li>
+</ul>
+</li>
+<li><p>调度器</p>
+<ul>
+<li>FIFO(队列)调度：把应用按提交的顺序拍成一个队列，按照先进先出进行资源分配</li>
+<li>容量调度： 允许多个组织共享整个集群，再为每个组织分配专门的队列，在位每个组织分配相应得计算资源</li>
+<li>公平调度：在公平调度中，我们不需要提前占用集群得资源，fair调度器会在运行过程中根据job执行动态的调整系统资源分配</li>
+</ul>
+</li>
+<li><p>yarn执行流程<br><img src="./123.png" alt=""></p>
+<ul>
+<li>NodeManager 向ResourceManager的ApplicationManager注册资源</li>
+<li>客户端提交job到ResourceManager节点上的ApplicationManager</li>
+<li>当NodeManager心跳来到ResourceManager的时候，ApplicationsManager将job交给NodeManager的ApplicationMaster,ApplicationMaster将Job进行划分为Map,Reduce</li>
+<li>ApplicationsMaster会向ResourceScheduler申请资源，拿到资源后ApplicationMaster会对资源再划分为Map 和 Reducer的，然后将任务分配到不同的NodeManger节点上执行，监控job的执行情况</li>
+<li>ApplicationsManager进程监视每个ApplicationMaster</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/04/22/maintenance/" data-id="ckautpoj4000694rhgv3s9t3a" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/04/22/scala/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          scala
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/04/21/CrazyJavaSummary/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">CrazyJavaSummary</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/05/15/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E8%89%BA%E6%9C%AF%E6%80%BB%E7%BB%93/">并发编程艺术总结</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/14/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">git常用命令</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/09/thread/">thread</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/09/netcompile/">netcompile</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/09/API/">API</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

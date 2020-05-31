@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-OrientedObject" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/21/OrientedObject/" class="article-date">
+  <time datetime="2020-04-21T12:43:02.273Z" itemprop="datePublished">2020-04-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/21/OrientedObject/">OrientedObject</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1-面向对象与面向过程的比较"><a href="#1-面向对象与面向过程的比较" class="headerlink" title="1.面向对象与面向过程的比较"></a>1.面向对象与面向过程的比较</h2><ul>
+<li>面向过程注重过程中的细节 - 自己动手干</li>
+<li>面向对象注重对象，而不了解这个对象的执行过程，找别人干</li>
+<li>相对复杂的事物，使用面向对象，相对简单过程的事面对过程，</li>
+<li>面向对象基于面象过程</li>
+</ul>
+<h2 id="2-类与对象的关系"><a href="#2-类与对象的关系" class="headerlink" title="2.类与对象的关系"></a>2.类与对象的关系</h2><ul>
+<li>将特征概括为属性，将行为概括为方法</li>
+</ul>
+<h2 id="3-成员变量和局部变量的比较"><a href="#3-成员变量和局部变量的比较" class="headerlink" title="3.成员变量和局部变量的比较"></a>3.成员变量和局部变量的比较</h2><ul>
+<li>定义位置，作用范围，内存位置，生命周期</li>
+</ul>
+<h2 id="4-构造方法"><a href="#4-构造方法" class="headerlink" title="4.构造方法"></a>4.构造方法</h2><ul>
+<li>作用：创建对象</li>
+<li>特点：与类同名，没有返回值类型</li>
+<li>构造方法可以重载，适用不同情况</li>
+<li>构造方法里可以写return，结束方法，用避免不合法的数据</li>
+</ul>
+<h2 id="5-this关键字"><a href="#5-this关键字" class="headerlink" title="5.this关键字"></a>5.this关键字</h2><ul>
+<li>当前在活动的对象的引用，可以认为是一个虚拟对象</li>
+<li>可以利用这个虚拟对象在类内调用方法或者属性</li>
+<li>this语句，用于调用本类中其它形式的构造方法，用于提高代码的复用性；必须放在构造方法的第一行</li>
+</ul>
+<h2 id="6-面向对象特性"><a href="#6-面向对象特性" class="headerlink" title="6.面向对象特性"></a>6.面向对象特性</h2><ul>
+<li>封装 继承 多态</li>
+</ul>
+<h2 id="7-封装"><a href="#7-封装" class="headerlink" title="7.封装"></a>7.封装</h2><ul>
+<li>体现形式：方法、类 – 属性私有化、内部类</li>
+<li>作用：提高代码复用性，保证数据的合法性</li>
+</ul>
+<h2 id="8-继承"><a href="#8-继承" class="headerlink" title="8.继承"></a>8.继承</h2><ul>
+<li>利用extends关键字，并且类和类之间是单继承，一个子类只能有<br>一个父类，但是一个父类可以有多个子类</li>
+<li>继承本质上是一种更高级形式的封装 — 父类的本质上是子类的概括<br>（父类是子类的概括，类是对象的概括）</li>
+<li>作用：提高代码的复用性 有效避免方法调用的混乱</li>
+</ul>
+<h2 id="9-super关键字"><a href="#9-super关键字" class="headerlink" title="9.super关键字"></a>9.super关键字</h2><ul>
+<li>代表父类对象的引用，可以认为是一个虚拟对象</li>
+<li>通过super调用父类中的属性或者方法</li>
+<li>super语句：调用父类中对应形式的构造方法，必须放在构造方法的第一行</li>
+</ul>
+<h2 id="10-权限修饰符"><a href="#10-权限修饰符" class="headerlink" title="10.权限修饰符"></a>10.权限修饰符</h2><ul>
+<li>public &gt; protected &gt; default &gt; private</li>
+</ul>
+<h2 id="11-多态"><a href="#11-多态" class="headerlink" title="11.多态"></a>11.多态</h2><ul>
+<li>根据多态的绑定时期来划分<ul>
+<li>编译时多态：方法的重载</li>
+<li>运行时多态：向上造型和方法的重写<ul>
+<li>向上造型 运行时多态 在编译的时候并不确定后续的具体子类。</li>
+<li>在编译的时候，先检查语法的正确，确定声明类和创建类之间是否有<br>继承关系，但是并不关心到底是哪个子类</li>
+<li>到了运行的时候才会去检查具体子类，然后根据子类来确定空间<br>的带下以及属性的分配</li>
+</ul>
+</li>
+<li>作用：本身是为了解耦实现–耦合</li>
+</ul>
+</li>
+</ul>
+<h2 id="12-方法重写-Override"><a href="#12-方法重写-Override" class="headerlink" title="12.方法重写(Override)"></a>12.方法重写(Override)</h2><ul>
+<li>在父子类中，存在方法签名一致的非静态方法</li>
+<li>两等两小一大 <ul>
+<li>方法名，参数列表相同</li>
+<li>子类方法返回类型 小于 父类返回类型 (子类不能返回或者抛出父类都不能有的东西)</li>
+<li>子类方法抛出异常 小于 父类抛出异常</li>
+<li>子类方法访问权限修饰权限只能越来越大(父类的范围子类要能用)</li>
+</ul>
+</li>
+</ul>
+<h2 id="13-static"><a href="#13-static" class="headerlink" title="13.static"></a>13.static</h2><ul>
+<li><p>静态变量</p>
+<ul>
+<li>在类加载的时候加载到方法区</li>
+<li>在方法区进行了初始化</li>
+<li>静态变量先于对象存在</li>
+<li>对象存储的静态变量的地址</li>
+<li>共性的特征需要用static修饰</li>
+</ul>
+</li>
+<li><p>静态方法</p>
+<ul>
+<li>随着类的加载而加载到方法区</li>
+<li>只是存储在方法区当时并不执行，在调用时候到栈内存中执行</li>
+<li>静态方法先于对象存在，静态方法中不能直接使用当前类中的非静态</li>
+<li>静态方法可以重载，可以重写，但是父子类中允许方法签名一致的静态方法，称之为Hide</li>
+</ul>
+</li>
+<li><p>静态代码块</p>
+<ul>
+<li>只在类加载的时候执行一次</li>
+</ul>
+</li>
+</ul>
+<h2 id="14-final"><a href="#14-final" class="headerlink" title="14.final"></a>14.final</h2><ul>
+<li>常量： 定义之后不可变</li>
+<li>最终方法：不能被重写/不可以被隐藏(不可改变)，可以被继承</li>
+<li>最终类：不能被继承</li>
+</ul>
+<h2 id="15-abstract"><a href="#15-abstract" class="headerlink" title="15.abstract"></a>15.abstract</h2><ul>
+<li>如果所有的子类都对父类中的某个或者某些方法做了重写，那么<br>父类中的方法保留方法体是没有意义的，就可以将父类中的方法定义<br>为抽象方法</li>
+<li>抽象方法所在的类一定是抽象类</li>
+<li>抽象类不能创建对象，不能被final修饰；子类在被继承之后必须重写<br>其中的方法</li>
+<li>抽象方法可以重载一定被重写。不能用final/static/private修饰符</li>
+</ul>
+<h2 id="16-interface"><a href="#16-interface" class="headerlink" title="16.interface"></a>16.interface</h2><ul>
+<li>JDK1.8之前，接口中所有的方法都是抽象方法；JDK1.8开始，接口中的<br>方法可以出现实体方法,允许定义实体方法，必须使用default作为限制；<br>允许出现静态方法；类似多继承结构，能够提高代码的复用性</li>
+<li>类和接口之间是多实现，接口和接口之间是多继承</li>
+<li>接口中的所有方法默认都是public abstract修饰；接口中的属性都是<br>public static final修饰</li>
+<li>作用：MVC思想– 软件分层思想，提供约束或者模板</li>
+</ul>
+<h2 id="17-内部类-lt-了解即可-gt"><a href="#17-内部类-lt-了解即可-gt" class="headerlink" title="17.内部类&lt;了解即可&gt;"></a>17.内部类&lt;了解即可&gt;</h2><ul>
+<li>方法内部类、成员内部类、静态内部类、匿名内部类</li>
+<li>内部类在开发中很少用，往往是在框架的底层源码中常用</li>
+</ul>
+<h2 id="18-包"><a href="#18-包" class="headerlink" title="18.包"></a>18.包</h2><ul>
+<li>作用：区分同名类；进行模块的划分；</li>
+<li>导包语句：import* </li>
+</ul>
+<h2 id="19-垃圾回收"><a href="#19-垃圾回收" class="headerlink" title="19.垃圾回收"></a>19.垃圾回收</h2><ul>
+<li>针对堆内存</li>
+<li>利用GC(Garbage Collector)进行回收， 一般而言堆内存的使用率达到<br>70%的时候，就会启动GC进行垃圾回收</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/04/21/OrientedObject/" data-id="ckautpoir000294rhgakncp8r" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-JAVA" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/19/JAVA/" class="article-date">
+  <time datetime="2020-04-19T09:58:10.440Z" itemprop="datePublished">2020-04-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/19/JAVA/">JAVA</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="java内存常识"><a href="#java内存常识" class="headerlink" title="java内存常识"></a>java内存常识</h1><ul>
+<li>1.计数器、虚拟机栈、本地方法栈数据不共享；堆、方法区中数据共享。</li>
+<li>2.常量池：用来存放字面量和符号引用，是方法区的一部分。运行时，也可以使用String.intern()方法将新的常量加入其中。</li>
+<li>3.sun hotspot 把本地方法栈和虚拟机栈合二为一</li>
+<li>4.jdk7时字符串常量从永久代移除，jdk8 永久代PermGen被MetaSpace取代，使用native内存，由虚拟机负责管理。</li>
+</ul>
+<h1 id="垃圾回收以及算法"><a href="#垃圾回收以及算法" class="headerlink" title="垃圾回收以及算法"></a>垃圾回收以及算法</h1><p>OMM：调大内存参数，或者</p>
+<p>引用计数法：当有一个地方使用计数值+1，失效时-1，为0时是不可再被引用的对象<br>缺点：循环引用时，某些对象将无法被回收掉</p>
+<p>可达性分析算法：通过一系列的称为GCROOTS的对象作为起点，往下搜索（路径为引用链），当对象不与GC任何引用链相连时，则这些对象是不可达的。<br>GCROOTS对象包括：</p>
+<ul>
+<li>1.虚拟机栈中引用的对象</li>
+<li>2.方法区中静态属性或者常量引用的对象</li>
+<li>3.本地方法引用的对象</li>
+</ul>
+<p>垃圾收集算法：</p>
+<ul>
+<li>1.标记清除（造成碎皮空间）</li>
+<li>2.复制算法 (内存使用率50%)</li>
+<li>3.标记整理 (比标记清除多一步，将存活对象移动到一端，清除其他的对象)    </li>
+<li>4.分代算法 (新生代：复制算法 老年代：标记清除或者标记整理)</li>
+</ul>
+<p>垃圾收集器：<br><img src="./garbage-collection-outline.jpg" alt="garbage-collection-outline"> </p>
+<ul>
+<li>ParNew(多线程 高吞吐)</li>
+<li>CMS(初始标记，并发标记（时间长），重新标记，并发清除（时间长）低延迟)<br><img src="./CMS.jpg" alt="CMS垃圾收集过程图"><ul>
+<li>G1(将整个堆划分为一个个小块，1-32M,RememberSet指向块的内存地址) 调整小 -XX:InitiatingHeapOccupancyPercent=45% 增多Minor GC频率，减少Full GC频率<br><img src="./G1.jpg" alt="G1垃圾收集过程图"></li>
+</ul>
+</li>
+</ul>
+<p>人员分组：3后台 1前台 1测试  30人左右 18 7 64 运维</p>
+<h1 id="JDK和JRE有什么区别？"><a href="#JDK和JRE有什么区别？" class="headerlink" title="JDK和JRE有什么区别？"></a>JDK和JRE有什么区别？</h1><ul>
+<li>JDK:java开发工具包，提供了java开发环境和运行环境</li>
+<li>JRE:java运行环境<br>具体来说JDK包含了JRE，同时还包含了编译器，程序调试和分析工具</li>
+</ul>
+<h1 id="和-equals区别"><a href="#和-equals区别" class="headerlink" title="== 和 equals区别"></a>== 和 equals区别</h1><p>==</p>
+<ul>
+<li>基本类型：比较的是值是否相同</li>
+<li>引用类型：比较的是引用是否相同</li>
+</ul>
+<p>equals</p>
+<ul>
+<li><p>本质上是==，比较引用，只不过String和Integer等重写了equals方法，把它变成了值比较</p>
+</li>
+<li><p>基本类型八种：byte short int long float double boolean</p>
+</li>
+<li><p>复杂数据类型：== 比较地址，重写之后equals 比较内容相同时也为true</p>
+</li>
+</ul>
+<h1 id="两个对象的HashCode-相同，则equals也一定为true，对吗？"><a href="#两个对象的HashCode-相同，则equals也一定为true，对吗？" class="headerlink" title="两个对象的HashCode()相同，则equals也一定为true，对吗？"></a>两个对象的HashCode()相同，则equals也一定为true，对吗？</h1><ul>
+<li>不对。”通话”和”重地”的HashCode相同，然而equals为false</li>
+</ul>
+<h1 id="final-在java中作用？"><a href="#final-在java中作用？" class="headerlink" title="final 在java中作用？"></a>final 在java中作用？</h1><p>修饰最终类、最终方法、常量(必须初始化，初始化后值不能被修改)</p>
+<h1 id="java中操作字符串的类有哪些？各有什么区别？"><a href="#java中操作字符串的类有哪些？各有什么区别？" class="headerlink" title="java中操作字符串的类有哪些？各有什么区别？"></a>java中操作字符串的类有哪些？各有什么区别？</h1><ul>
+<li><p>操作字符串的类有：String、StringBuffer、StringBuilder</p>
+</li>
+<li><p>区别：String是不可变类，每次操作字符串都会生成新的String对象;另外两个可以在原有对象的基础上进行操作，所以经常改变的字符串最好不要使用String</p>
+</li>
+<li><p>StringBuffer 和 StringBuilder 最大的区别在于，StringBuffer是线程安全的，StringBuilder线程不安全，但是StringBuilder性能高于StringBuffer，单线程下推荐使用StringBuilder,多线程使用StringBuffer</p>
+</li>
+</ul>
+<h1 id="String-类常用的方法都有哪些？"><a href="#String-类常用的方法都有哪些？" class="headerlink" title="String 类常用的方法都有哪些？"></a>String 类常用的方法都有哪些？</h1><ul>
+<li>indexOf():返回指定字符串的索引</li>
+<li>charAt():返回指定索引处的字符</li>
+<li>replace():字符串替换</li>
+<li>trim():去除字符串两端空白</li>
+<li>split():分割字符串，返回一个分割后的字符数组</li>
+<li>getBytes():返回字符串的byte类型数组</li>
+</ul>
+<h1 id="抽象类和普通类的区别？"><a href="#抽象类和普通类的区别？" class="headerlink" title="抽象类和普通类的区别？"></a>抽象类和普通类的区别？</h1><ul>
+<li>普通类不能有抽象方法，抽象类可以有抽象方法</li>
+<li>抽象类不能被直接实例化，普通类可以直接</li>
+</ul>
+<h1 id="接口和抽象类的区别？"><a href="#接口和抽象类的区别？" class="headerlink" title="接口和抽象类的区别？"></a>接口和抽象类的区别？</h1><ul>
+<li>接口被实现，抽象类被继承</li>
+<li>类可以实现多个接口，但是只能继承一个类</li>
+<li>接口中不能有main方法，抽象类中可以有</li>
+<li>接口不能有构造放啊发，抽象类可以有</li>
+<li>接口中方法默认使用public修饰，抽象类中的方法可以是任意修饰符</li>
+</ul>
+<h1 id="java-io流分为几种？"><a href="#java-io流分为几种？" class="headerlink" title="java io流分为几种？"></a>java io流分为几种？</h1><ul>
+<li>按功能来分：输入流(input)、输出流(output)</li>
+<li>按类型来分：字节流和字符流</li>
+<li>两者区别：<ul>
+<li>字节流按8位 传输以字节为单位输入输出数据</li>
+<li>字符流按16位传输以字节位单位输入输出数据</li>
+</ul>
+</li>
+</ul>
+<h1 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h1><p>1.冒泡排序<br><img src="%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F.png" alt="冒泡排序"></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 冒泡</span></span><br><span class="line"><span class="comment"> *  注意别掉了等号 j &gt;= i+1</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">bubble</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = arr.length-<span class="number">1</span>; j &gt;= i+<span class="number">1</span> ; j--) &#123;</span><br><span class="line">            <span class="keyword">if</span> (arr[j] &lt; arr[j-<span class="number">1</span>]) &#123;</span><br><span class="line">                <span class="keyword">int</span> tmp = arr[j];</span><br><span class="line">                arr[j] = arr[j-<span class="number">1</span>];</span><br><span class="line">                arr[j-<span class="number">1</span>] = tmp;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i : arr) &#123;</span><br><span class="line">        System.out.print(i+<span class="string">"\t"</span>);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>2.插入排序<br><img src="%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F.png" alt="插入排序"></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 插入排序 </span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">insert</span><span class="params">()</span> </span>&#123;</span><br><span class="line">     <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">        <span class="keyword">int</span> tmp =arr[i];</span><br><span class="line">        <span class="keyword">int</span> pos = i;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = i-<span class="number">1</span>; j &gt;= <span class="number">0</span> &amp;&amp; tmp &lt; arr[j] ; j--) &#123;</span><br><span class="line">            arr[j+<span class="number">1</span>] =arr[j];</span><br><span class="line">            pos = j;</span><br><span class="line">        &#125;</span><br><span class="line">        arr[pos] =tmp;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i : arr) &#123;</span><br><span class="line">        System.out.print(i+<span class="string">"\t"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>3.选择排序<br><img src="%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F.png" alt="选择排序"></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 选择排序</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">select</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">        <span class="keyword">int</span> min_index = i;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = i+<span class="number">1</span>; j &lt; arr.length; j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (arr[j]&lt; arr[i])</span><br><span class="line">                min_index = j;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> x = arr[i];</span><br><span class="line">        arr[i] = arr[min_index];</span><br><span class="line">        arr[min_index] = x;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i : arr) &#123;</span><br><span class="line">        System.out.print(i+<span class="string">"\t"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="方法重写和重载"><a href="#方法重写和重载" class="headerlink" title="方法重写和重载"></a>方法重写和重载</h1><ul>
+<li>重写<ul>
+<li>==两等两小一大==：方法名 参数列表相同 抛出异常、返回类型小于父类，修饰符大于父类</li>
+</ul>
+</li>
+<li>重载<ul>
+<li>发生在同一个类中</li>
+<li>方法名相同 返回值类型相同</li>
+</ul>
+</li>
+</ul>
+<h1 id="异常处理机制"><a href="#异常处理机制" class="headerlink" title="异常处理机制"></a>异常处理机制</h1><p><img src="exception.png" alt=""></p>
+<ul>
+<li>Error 和 Exception区别<ul>
+<li>Error是Throwable子类，由虚拟机生成并抛出，包括动态链接失败，虚拟机错误等程序不需要处理</li>
+<li>Exception 分为检查异常和运行时异常，<br>  -检查异常再编译时会被提示不通过，<pre><code>- Java.lang.ClassNotFoundException
+- Java.lang.NoSuchMetodException
+- java.io.IOException</code></pre><ul>
+<li>运行时是运行时候的异常<ul>
+<li>ava.lang.ArithmeticException</li>
+<li>Java.lang.ArrayStoreExcetpion</li>
+<li>Java.lang.ClassCastException</li>
+<li>Java.lang.IndexOutOfBoundsException</li>
+<li>Java.lang.NullPointerException</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="BIO、NIO、AIO有什么区别？"><a href="#BIO、NIO、AIO有什么区别？" class="headerlink" title="BIO、NIO、AIO有什么区别？"></a>BIO、NIO、AIO有什么区别？</h1><ul>
+<li>BIO：Block IO同步阻塞式IO，模式使用方便，并发处理能力低</li>
+<li>NIO：New IO 同步非阻塞IO，客户端和服务器通过Channel(通道)通讯，实现了多路复用</li>
+<li>AIO：Asynchronous IO是NIO升级，也叫NIO2，实现了异步非阻塞IO，异步IO的操作基于事件和回调机制</li>
+</ul>
+<h1 id="Collection-和-Collections-有什么区别？"><a href="#Collection-和-Collections-有什么区别？" class="headerlink" title="Collection 和 Collections 有什么区别？"></a>Collection 和 Collections 有什么区别？</h1><p><img src="Collection.png" alt="Collection"></p>
+<ul>
+<li>java.util.Collection是集合类的顶级接口；它提供了对集合对象进行基本操作的通用接口方法。</li>
+<li>Collections则是集合类的一个工具类/帮助类，提供了一系列的静态方法，用于对集合中元素进行排序，搜索以及线程安全等各种操作</li>
+</ul>
+<h1 id="List、Set、Map之间的区别是什么？"><a href="#List、Set、Map之间的区别是什么？" class="headerlink" title="List、Set、Map之间的区别是什么？"></a>List、Set、Map之间的区别是什么？</h1><p><img src="640.jpg" alt="区别"></p>
+<h1 id="HashMap-和-Hashtable有什么区别？"><a href="#HashMap-和-Hashtable有什么区别？" class="headerlink" title="HashMap 和 Hashtable有什么区别？"></a>HashMap 和 Hashtable有什么区别？</h1><ul>
+<li>HashMap去掉了Hashtable的contains方法，但是加上了containsValue() 和 containsKey()方法</li>
+<li>Hashtable是同步的，而HashMap是非同步的，效率更高</li>
+<li>HashMap允许空键值，而Hashtable不允许</li>
+</ul>
+<h1 id="如何决定使用HashMap-还是-TreeMap？"><a href="#如何决定使用HashMap-还是-TreeMap？" class="headerlink" title="如何决定使用HashMap 还是 TreeMap？"></a>如何决定使用HashMap 还是 TreeMap？</h1><ul>
+<li>需要频繁插入，删除，定位元素，使用HashMap</li>
+<li>需要对一个有序的key集合进行遍历，TreeMap</li>
+</ul>
+<h1 id="HashMap的实现原理？"><a href="#HashMap的实现原理？" class="headerlink" title="HashMap的实现原理？"></a>HashMap的实现原理？</h1><ul>
+<li>HashMap概述:HashMap是基于Hash表Map接口的非同步实现，不保证有序、顺序恒久不变</li>
+<li>HashMap数据结构：最基本的结构两种，数组、模拟指针(引用)，数组加链表</li>
+<li>put元素过程：首先根据key的hashcode重新计算hash值，根据hash值得到数组中的下标，如果数组在该位置放了其他元素，那么在这个位置上的元素将以链表的形式存放，新加入的元素放在链头，如果数组中该位置没有元素，就直接将元素放到数组的该位置上</li>
+<li>JDK 1.8中对HashMap的实现做了优化，当链表中的节点数据超过八个之后，该链表转为红黑树来提高查询效率，从原来的O(n)到O(logn)</li>
+</ul>
+<h1 id="HashSet实现原理"><a href="#HashSet实现原理" class="headerlink" title="HashSet实现原理"></a>HashSet实现原理</h1><ul>
+<li>HashSet底层由HashMap实现</li>
+<li>HashSet的值存放在HashMap的key上</li>
+<li>HashMap的value统一为present</li>
+</ul>
+<h1 id="ArrayList-和-LinkedList-的区别是什么？"><a href="#ArrayList-和-LinkedList-的区别是什么？" class="headerlink" title="ArrayList 和 LinkedList 的区别是什么？"></a>ArrayList 和 LinkedList 的区别是什么？</h1><ul>
+<li>ArrayList是数组结构，支持随机访问，而LinkedList的底层数据结构是双向循环链表，不支持随机访问。使用下表访问一个元素，ArrayList的时间复杂度是O(1),而LinkedList是O(n)</li>
+</ul>
+<h1 id="数组和List区别"><a href="#数组和List区别" class="headerlink" title="数组和List区别"></a>数组和List区别</h1><ul>
+<li>数组可以存基本类型和对象，而ArrayList只能容纳对象</li>
+<li>数组是指定大小的，而ArrayList是固定的</li>
+<li>数组没有ArrayList那么多功能，比如addAll,removeAll和iterator</li>
+</ul>
+<h1 id="线程安全的集合有哪些？"><a href="#线程安全的集合有哪些？" class="headerlink" title="线程安全的集合有哪些？"></a>线程安全的集合有哪些？</h1><ul>
+<li>vetor:同步后的arraylist</li>
+<li>stack:堆栈类，先进后出</li>
+<li>hashtable</li>
+<li>enumeration:枚举</li>
+</ul>
+<h1 id="迭代器是什么？"><a href="#迭代器是什么？" class="headerlink" title="迭代器是什么？"></a>迭代器是什么？</h1><p>迭代器是一种设计模式，它是一个对象，它可以遍历并选择序列中的对象，而开发人员不需要了解该学列的底层结构。迭代器通常被称”轻量级”对象，因为创建它的代价小</p>
+<h1 id="并行和并发有什么区别？"><a href="#并行和并发有什么区别？" class="headerlink" title="并行和并发有什么区别？"></a>并行和并发有什么区别？</h1><ul>
+<li>并行是指两个或者多个事件在同一时刻发生；而并发指两个或者多个事件在用以时间间隔发生</li>
+<li>并行是不同实体上的多个事件，并发是在同一实体上的多个事件</li>
+</ul>
+<h1 id="线程和进程区别"><a href="#线程和进程区别" class="headerlink" title="线程和进程区别"></a>线程和进程区别</h1><ul>
+<li>进程是程序运行和资源分配的基本的单位，一个程序至少有一个进程，一个进程至少有一个线程</li>
+<li>进程在执行过程中拥有独立的内存单元，而多个线程共享内存资源，减少切换次数</li>
+<li>线程是cpu调度和分派的基本单位，是比程序更小的能独立运行的基本单位</li>
+</ul>
+<h1 id="创建线程的方法"><a href="#创建线程的方法" class="headerlink" title="创建线程的方法"></a>创建线程的方法</h1><p>①继承Thread类创建线程类</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span> <span class="keyword">extends</span> <span class="title">Thread</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"A run"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">new</span> A().start()</span><br></pre></td></tr></table></figure>
+<p>②通过Runnable接口创建线程类</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">B</span> <span class="keyword">implements</span> <span class="title">Runnable</span></span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"true = "</span> + <span class="keyword">true</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">new</span> Thread(<span class="keyword">new</span> B()).start();</span><br></pre></td></tr></table></figure>
+<p>③通过Callable和Future创建线程</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">C</span>&lt;<span class="title">v</span>&gt; <span class="keyword">implements</span> <span class="title">Callable</span>&lt;<span class="title">v</span>&gt; </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> v <span class="title">call</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"callable thread"</span>+Thread.currentThread().getName());</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 启动方式一 线程启动</span></span><br><span class="line">allable&lt;String&gt; callable = <span class="keyword">new</span> C&lt;&gt;();</span><br><span class="line">Future&lt;String&gt; aTask = <span class="keyword">new</span> FutureTask&lt;String&gt;(callable);</span><br><span class="line">Thread a = <span class="keyword">new</span> Thread((Runnable) aTask);</span><br><span class="line">a.start();</span><br><span class="line"><span class="comment">// 启动方式二 线程池启动</span></span><br><span class="line">ExecutorService es = Executors.newFixedThreadPool(<span class="number">5</span>);</span><br><span class="line">Future&lt;String&gt; f = es.submit(<span class="keyword">new</span> C&lt;String&gt;());</span><br><span class="line">System.out.println(f.get());</span><br><span class="line">es.shutdown();</span><br></pre></td></tr></table></figure>
+<ul>
+<li>线程池<ul>
+<li>newFixedThreadPool 固定大小的线程池 阻塞式队列LinkedBlockingQueue</li>
+<li>newSingleThreadExecutor 只有一个线程的线程池 LinkedBlockingQueue</li>
+<li>newCachedThreadPool 缓存线程池 默认存活60s，SynchronousQueue</li>
+<li>newScheduledThreadPool </li>
+</ul>
+</li>
+</ul>
+<h1 id="Runnable-和-callable"><a href="#Runnable-和-callable" class="headerlink" title="Runnable 和 callable"></a>Runnable 和 callable</h1><ul>
+<li>Runnable 接口中的run()方法的返回值是void，它做的事情知识纯粹地去执行run()方法中的代码而已</li>
+<li>Callable接口中的call方法是有返回值的，是一个泛型，和Future、FutureTask配合可以用来获取异步执行的结果</li>
+</ul>
+<h1 id="线程的状态"><a href="#线程的状态" class="headerlink" title="线程的状态"></a>线程的状态</h1><p>创建、就绪、运行、阻塞、死亡</p>
+<h1 id="sleep和wait有什么区别？"><a href="#sleep和wait有什么区别？" class="headerlink" title="sleep和wait有什么区别？"></a>sleep和wait有什么区别？</h1><p>sleep():方法是线程类(Thread)的静态方法，让调用线程进入睡眠状态，不释放锁<br>wait():方法是Object类中的，当一个线程执行wait方法时，进入和一个该对象相关的等待池，释放锁</p>
+<h1 id="创建线程池的集中方式"><a href="#创建线程池的集中方式" class="headerlink" title="创建线程池的集中方式"></a>创建线程池的集中方式</h1><p>①newFixedThreadPool(int nThreads)<br>②newCachedThreadPool()<br>③newSingleThreadExecutor<br>④newScheduledThreadPool(int corePoolSize)</p>
+<ul>
+<li>线程池状态：Running ShutDown Stop Tidying Terminated</li>
+<li>线程池中的执行方法submit() execute()区别<ul>
+<li>接收的参数不一样</li>
+<li>submit 有返回值，而execute没有</li>
+<li>submit 方便异常处理</li>
+</ul>
+</li>
+</ul>
+<h1 id="如何保证线程安全"><a href="#如何保证线程安全" class="headerlink" title="如何保证线程安全"></a>如何保证线程安全</h1><ul>
+<li>原子性：提供互斥访问，同一时刻只能有一个线程对数据进行操作</li>
+<li>可见性：一个线程对主内存的修改可以及时地被其他线程看见</li>
+<li>有序性：一个程序观察其他线程中的指令顺序，由于指令重排序，该观察结果一般杂乱无序</li>
+</ul>
+<h1 id="多线程锁升级原理"><a href="#多线程锁升级原理" class="headerlink" title="多线程锁升级原理"></a>多线程锁升级原理</h1><p>锁有四种状态：无状态锁，偏向锁，轻量锁，重量锁<br><img src="641.jpg" alt=""><br>自旋：<br>    自旋是指某线程需要获取锁，但该锁已经被其他线程占用时，该线程不会被挂起，而是在不断的消耗CPU的时间，不停的试图获取锁。</p>
+<p>偏向锁<br>    引入偏向锁是为了在无多线程竞争的情况下尽量减少不必要的轻量级锁执行路径，因为轻量级锁的获取及释放依赖多次CAS原子指令，而偏向锁只需要在置换ThreadID的时候依赖一次CAS原子指令。<br>    当只有一个线程去竞争锁的时候，我们不需要阻塞，也不需要自旋，因为只有一个线程在竞争，我们只要去判断该偏向锁中的ThreadID是否为当前线程即可。如果是就执行同步代码，不是就尝试使用CAS修改ThreadID，修改成功执行同步代码，不成功就将偏向锁升级成轻量锁。</p>
+<p>轻量锁<br>    获取轻量锁的过程与偏向锁不同，竞争锁的线程首先需要拷贝对象头中的Mark Word到帧栈的锁记录中。拷贝成功后使用CAS操作尝试将对象的Mark Word更新为指向当前线程的指针。如果这个更新动作成功了，那么这个线程就拥有了该对象的锁。如果更新失败，那么意味着有多个线程在竞争。<br>    当竞争线程尝试占用轻量级锁失败多次之后（使用自旋）轻量级锁就会膨胀为重量级锁，重量级线程指针指向竞争线程，竞争线程也会阻塞，等待轻量级线程释放锁后唤醒他。</p>
+<p>重量锁<br>    重量级锁的加锁、解锁过程和轻量级锁差不多，区别是：竞争失败后，线程阻塞，释放锁后，唤醒阻塞的线程，不使用自旋锁，不会那么消耗CPU，所以重量级锁适合用在同步块执行时间长的情况下。</p>
+<h1 id="死锁"><a href="#死锁" class="headerlink" title="死锁"></a>死锁</h1><p>死锁由于锁之间嵌套造成的,四个必要条件 </p>
+<ul>
+<li>1.互斥使用，一个资源被一个线程使用时，别的线程不能使用</li>
+<li>2.不可抢占，资源请求者不能从资源占有者手中抢夺资源</li>
+<li>3.请求和保持，当资源请求者再请求其他的资源的同时，保持对原有资源的占有。</li>
+<li>4.循环等待，即存在一个等待队列，P1占有P2的资源，P2占有P1的资源<br>解决办法:</li>
+<li>破坏‘请求和保持’：<ul>
+<li>所有进程在运行之前，必须一次性地申请在整个运行过程中所需的全部资源。</li>
+<li>要求每个进程提出新的资源申请前，释放它所占有的资源。</li>
+</ul>
+</li>
+<li>破坏：‘不可抢占’<ul>
+<li>如果一个进程请求当前被另一个进程占有的一个资源，则操作系统可以抢占另一个进程，要求它释放资源。只有在任意两个进程的优先级都不相同的条件下，该方法才能预防死锁。</li>
+</ul>
+</li>
+<li>破坏“循环等待”条件：<ul>
+<li>将系统中的所有资源统一编号，进程可在任何时刻提出资源申请，但所有申请必须按照资源的编号顺序（升序）提出。这样做就能保证系统不出现死锁。</li>
+</ul>
+</li>
+</ul>
+<h1 id="同步锁-synchronize底层实现原理"><a href="#同步锁-synchronize底层实现原理" class="headerlink" title="同步锁 synchronize底层实现原理"></a>同步锁 synchronize底层实现原理</h1><p>synchronized可以保证方法或者代码块在运行时，同一时刻只能有一个方法可以临界区，同时它还可以保证共享变量的内存可见性</p>
+<ul>
+<li>普通同步方法，锁是当前实例对象</li>
+<li>静态同步方法，锁是当前的class对象</li>
+<li>同步方法块，锁是括号里面的对象</li>
+</ul>
+<h1 id="synchronized-和-volatile"><a href="#synchronized-和-volatile" class="headerlink" title="synchronized 和 volatile"></a>synchronized 和 volatile</h1><ul>
+<li>volatile本质是在告诉jvm当前变量在寄存器(工作内存)中的值不确定，需要从主内存中读取；synchronize锁定当前变量，只有当前线程可以当问该变量，其他线程被阻塞住</li>
+<li>volatile仅能使用在变量级别 synchronize可以使用在变量、方法、类</li>
+<li>volatile仅实现变量的修改可见性，不能保证原子性；而synchronized则都可以保证</li>
+<li>volatile不会造成线程的阻塞；synchronized会造成线程的阻塞</li>
+<li>volatile变量不会被编译器优化；synchronized标记的变量可以被编译器优化</li>
+</ul>
+<h1 id="synchronize-和Lock有什么区别"><a href="#synchronize-和Lock有什么区别" class="headerlink" title="synchronize 和Lock有什么区别"></a>synchronize 和Lock有什么区别</h1><ul>
+<li>一个是关键字，一个是java类</li>
+<li>synchronized 无法判断是否获取锁的状态，Lock可以判断是否获取到锁</li>
+<li>synchronized 会自动释放锁，Lock需要在finally中释放锁，容易造成线程死锁</li>
+<li>synchronized 锁可重入，不可中断，非公平，而Lock锁可重入，可判断、可公平</li>
+<li>Lock锁适合大量同步的代码的同步问题，synchronized锁适合代码少量的同步问题</li>
+</ul>
+<h1 id="synchronize-和-ReentrantLock-区别"><a href="#synchronize-和-ReentrantLock-区别" class="headerlink" title="synchronize 和 ReentrantLock 区别"></a>synchronize 和 ReentrantLock 区别</h1><p>ReentrantLock扩展了synchronized</p>
+<ul>
+<li>ReentrantLock可以对锁的等待事件进行设置，这样就避免了死锁</li>
+<li>ReentrantLock可以获取各种锁的信息</li>
+<li>ReentrantLock可以灵活地实现多路通知<br>两者加锁机制不一样：<ul>
+<li>ReentrantLock底层调用的是Unsafe的park方法加锁</li>
+<li>synchronized操作对象头中的mark word信息进行加锁</li>
+</ul>
+</li>
+</ul>
+<h1 id="atomic原理"><a href="#atomic原理" class="headerlink" title="atomic原理"></a>atomic原理</h1><ul>
+<li>Atomic包中的类基本的特性就是多线程环境下，当多个线程同时对单个变量进行操作时，具有排他性，即当多个线程同时对该变量的值进行更新时，仅有一个线程能成功，而未成功的线程可以像自旋锁一样，继续尝试，一直等待执行成功</li>
+<li>sun.misc.Unsafe 这个类包含了大量的对C代码的操作，包括很多直接内存分配以及原子操作的调用</li>
+</ul>
+<h1 id="什么是反射"><a href="#什么是反射" class="headerlink" title="什么是反射"></a>什么是反射</h1><p>反射是指程序可以访问、检测和修改它本身状态或行为的一种能力<br>Java反射机制主要提供了以下功能：</p>
+<ul>
+<li>在运行时判断任意一个对象所属的类</li>
+<li>在运行时构造任意一个类的对象</li>
+<li>在运行时判断任意一个类所具有的成员变量和方法</li>
+<li>在运行时调用任意一个对象的方法</li>
+</ul>
+<h1 id="反射中一些方法的区别"><a href="#反射中一些方法的区别" class="headerlink" title="反射中一些方法的区别"></a>反射中一些方法的区别</h1><ul>
+<li>getFields() getDeclaredFields区别<ul>
+<li>getFields()返回的是申明为public的属性，包括父类中定义的</li>
+<li>getDelaredFields() 返回指定类定义的所有定义的属性，不包括父类中的</li>
+</ul>
+</li>
+</ul>
+<h1 id="反射创建实例的三种方式"><a href="#反射创建实例的三种方式" class="headerlink" title="反射创建实例的三种方式"></a>反射创建实例的三种方式</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 方式一 通过Class对象直接调用newInstance方法</span></span><br><span class="line">Class&lt;String&gt; clz = String<span class="class">.<span class="keyword">class</span></span>;</span><br><span class="line">String str = clz.newInstance();</span><br><span class="line">System.out.println(<span class="string">"str = "</span> + str);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 方式二 调用默认Constructor对象的newInstances方法</span></span><br><span class="line">Class&lt;String&gt; clz = (Class&lt;String&gt;) Class.forName(<span class="string">"java.lang.String"</span>);</span><br><span class="line">Constructor&lt;String&gt; cons= clz.getConstructor();</span><br><span class="line">String s = cons.newInstance();</span><br><span class="line">System.out.println(<span class="string">"s = "</span> + s);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 方式三 调用含参Constructor对象的newInstances方法</span></span><br><span class="line">Class&lt;String&gt; clz = String<span class="class">.<span class="keyword">class</span></span>;</span><br><span class="line">Constructor&lt;String&gt; cons = clz.getDeclaredConstructor(String<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">String hello_world = cons.newInstance(<span class="string">"hello world"</span>);</span><br><span class="line">System.out.println( hello_world);</span><br></pre></td></tr></table></figure>
+
+<h1 id="Class-forName和ClassLoader-loadClass有什么区别"><a href="#Class-forName和ClassLoader-loadClass有什么区别" class="headerlink" title="Class.forName和ClassLoader.loadClass有什么区别"></a>Class.forName和ClassLoader.loadClass有什么区别</h1><ul>
+<li>类初加载的过程分为：加载 连接 初始化</li>
+<li>Class.forNama(className,true,classloader) true表示loadClass之后必须初始化</li>
+<li>ClassLoader.loadClass(className,false)目标对象被装载后不进行连接，不会去执行静态块中的内容</li>
+</ul>
+<h1 id="什么是Java序列化？什么情况下需要序列化"><a href="#什么是Java序列化？什么情况下需要序列化" class="headerlink" title="什么是Java序列化？什么情况下需要序列化?"></a>什么是Java序列化？什么情况下需要序列化?</h1><p>简单的说就是为了保存在内存中的各种对象的状态(将类各种属性序列化为文件)，并且可以把保存的对象再读出来。</p>
+<ul>
+<li>当你想把内存中的对象状态保存到一个文件中或者数据库中时</li>
+<li>当你想用套接字在网络上传送对象的时候</li>
+<li>当你想通过RMI传输对象的时候</li>
+</ul>
+<h1 id="动态代理是什么？有哪些应用？"><a href="#动态代理是什么？有哪些应用？" class="headerlink" title="动态代理是什么？有哪些应用？"></a>动态代理是什么？有哪些应用？</h1><ul>
+<li>动态代理：当想要给实现了某个接口的类中的方法添加一些额外的处理。比如说加日志，加事务等。可以给整个类创建一个代理，这个类不仅包含原来类方法的功能，而且在原来的基础上加了额外处理的新类。这个类是动态生成的，具有解耦意义，灵活，扩展性强。<ul>
+<li>Spring AOP<ul>
+<li>加事务</li>
+<li>加权限</li>
+<li>加日志</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="怎么实现动态代理？"><a href="#怎么实现动态代理？" class="headerlink" title="怎么实现动态代理？"></a>怎么实现动态代理？</h1><p>首先必须定义一个接口，还要有一个InvocationHandler(将实现接口的类的对象传递给它)处理类。再有一个代理类Proxy，调用他的newInstance()可以产生代理对象。利用到InvocationHandler，拼接代理类源码，将其编译编译成代理类的二进制码，利用加载器加载，将其实例化产生代理对象，最后返回。</p>
+<h1 id="为什么要使用克隆？"><a href="#为什么要使用克隆？" class="headerlink" title="为什么要使用克隆？"></a>为什么要使用克隆？</h1><p>想对一个对象进行处理，又想保留原有的数据进行接下来的操作，就需要克隆了，Java语言中克隆针对的是类的实例</p>
+<h1 id="如何实现对象的克隆"><a href="#如何实现对象的克隆" class="headerlink" title="如何实现对象的克隆"></a>如何实现对象的克隆</h1><ul>
+<li>1）实现Cloneable接口并重写Object类中的clone()方法</li>
+<li>2）实现Serializable接口，通过对象的序列化和反序列实现克隆<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.io.ByteArrayInputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.ByteArrayOutputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.ObjectInputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.ObjectOutputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.Serializable;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyUtil</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">MyUtil</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> AssertionError();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@SuppressWarnings</span>(<span class="string">"unchecked"</span>)</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> &lt;T extends Serializable&gt; <span class="function">T <span class="title">clone</span><span class="params">(T obj)</span> </span></span><br><span class="line"><span class="function">                                  <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        ByteArrayOutputStream bout = <span class="keyword">new</span> ByteArrayOutputStream();</span><br><span class="line">        ObjectOutputStream oos = <span class="keyword">new</span> ObjectOutputStream(bout);</span><br><span class="line">        oos.writeObject(obj);</span><br><span class="line"></span><br><span class="line">        ByteArrayInputStream bin = </span><br><span class="line">                    <span class="keyword">new</span> ByteArrayInputStream(bout.toByteArray());</span><br><span class="line">        ObjectInputStream ois = <span class="keyword">new</span> ObjectInputStream(bin);</span><br><span class="line">        <span class="keyword">return</span> (T) ois.readObject();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 说明：调用ByteArrayInputStream</span></span><br><span class="line">        <span class="comment">//或ByteArrayOutputStream对象的close方法没有任何意义</span></span><br><span class="line">        <span class="comment">// 这两个基于内存的流只要垃圾回收器清理对象就能够释放资源，</span></span><br><span class="line">        <span class="comment">//这一点不同于对外部资源（如文件流）的释放</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h1 id="深度拷贝和浅拷贝的区别是什么？"><a href="#深度拷贝和浅拷贝的区别是什么？" class="headerlink" title="深度拷贝和浅拷贝的区别是什么？"></a>深度拷贝和浅拷贝的区别是什么？</h1><ul>
+<li>浅拷贝只是复制了对象的引用地址，两个对象指向同一个内存地址，所以修改其中的任意值，另一个值都会随之变化。</li>
+<li>深度拷贝是将对象以及值复制过来，两个对象修改其中任意的值，另一个对象不受影响<br>例如：JSON.parse()和JSON.stringify()，但是无法复制方法</li>
+</ul>
+<h1 id="Jsp有哪些内置对象？作用分别是？"><a href="#Jsp有哪些内置对象？作用分别是？" class="headerlink" title="Jsp有哪些内置对象？作用分别是？"></a>Jsp有哪些内置对象？作用分别是？</h1><ul>
+<li>9个内置对象：<ul>
+<li>request:封装客户端的请求，其中包含来自get或者psot请求的参数</li>
+<li>response:封装服务器对客户端的响应</li>
+<li>pageContext:通过该对象可以获取其他对象</li>
+<li>session:封装服务器运行环境的对象</li>
+<li>application:封装服务器运行环境的对象</li>
+<li>out:输出服务器响应的输出流对象</li>
+<li>config:web应用的配置对象</li>
+<li>page:jsp页面本身(相当于Java程序中的this)</li>
+<li>exception:封装页面抛出异常的对象</li>
+</ul>
+</li>
+<li>4大作用域<ul>
+<li>page 代表与一个页面相关的对象和属性</li>
+<li>request 代表与web客户机发出的一个请求相关的对象和属性</li>
+<li>session 代表与某个应用与服务器建立的一次会话相关的对象和属性</li>
+<li>application 代表与整个web应用程序相关的对象和属性</li>
+</ul>
+</li>
+</ul>
+<h1 id="session-和-cookie区别"><a href="#session-和-cookie区别" class="headerlink" title="session 和 cookie区别"></a>session 和 cookie区别</h1><ul>
+<li>session 是在服务端保存的一个数据结构，用来跟踪用户的状态，整个数据可以保存在集群、数据库、文件中</li>
+<li>cookie是客户端保存用户信息的一种机制，用来记录用户的一些信息，也是实现session的一种方法</li>
+</ul>
+<h1 id="如何防止sql注入？"><a href="#如何防止sql注入？" class="headerlink" title="如何防止sql注入？"></a>如何防止sql注入？</h1><ul>
+<li>PreparedStatement</li>
+<li>使用正则表达式过滤传入的参数</li>
+<li>字符串过滤</li>
+<li>jsp中调用该函数检查是否包含非法字符</li>
+<li>Jsp页面判断代码</li>
+</ul>
+<h1 id="final-finally-finalize"><a href="#final-finally-finalize" class="headerlink" title="final finally finalize"></a>final finally finalize</h1><ul>
+<li>final 可以修饰类，变量，方法</li>
+<li>finally 一般作用在try-catch代码块中，在处理异常的时候finally中的代码块会执行</li>
+<li>finalize是Object类中的一个方法，一般由垃圾收集器来调用，当我们调用<code>System.gc()</code>方法的时候，垃圾收集器调用finalize方法;调用此方法，实际上是FInalizerThread将对象从ReferenceQueue中移除，java虚拟机就可以进行回收<br><a href="https://blog.csdn.net/qq_33619378/article/details/90408073" target="_blank" rel="noopener">finalize方法原理详解</a></li>
+</ul>
+<h1 id="try-catch-finally-中哪部份可以省略？"><a href="#try-catch-finally-中哪部份可以省略？" class="headerlink" title="try-catch-finally 中哪部份可以省略？"></a>try-catch-finally 中哪部份可以省略？</h1><ul>
+<li>catch 可以省略 </li>
+</ul>
+<h1 id="try-catch-finally-如果catch中return了，finally还会执行吗？"><a href="#try-catch-finally-如果catch中return了，finally还会执行吗？" class="headerlink" title="try-catch-finally 如果catch中return了，finally还会执行吗？"></a>try-catch-finally 如果catch中return了，finally还会执行吗？</h1><p>会执行，在return前执行</p>
+<h1 id="常见的异常类有哪些？"><a href="#常见的异常类有哪些？" class="headerlink" title="常见的异常类有哪些？"></a>常见的异常类有哪些？</h1><ul>
+<li>NullPointException</li>
+<li>SQLException</li>
+<li>IndexOutOfBoundsException</li>
+<li>NumberFormatException</li>
+<li>FileNotFoundException</li>
+<li>IOException</li>
+<li>ClassCastException</li>
+</ul>
+<h1 id="http响应码301和302代表什么？有什么区别"><a href="#http响应码301和302代表什么？有什么区别" class="headerlink" title="http响应码301和302代表什么？有什么区别"></a>http响应码301和302代表什么？有什么区别</h1><ul>
+<li>都是HTTP状态的编码，都代表者某个URL发生了转移<ul>
+<li>301 代表永久性转移</li>
+<li>302 代表暂时性转移</li>
+</ul>
+</li>
+</ul>
+<h1 id="forward-和-redirect区别"><a href="#forward-和-redirect区别" class="headerlink" title="forward 和 redirect区别"></a>forward 和 redirect区别</h1><ul>
+<li>Forward 一次请求和响应</li>
+<li>Redirect 两次请求和响应</li>
+</ul>
+<h1 id="tcp-和-udp-有什么区别？"><a href="#tcp-和-udp-有什么区别？" class="headerlink" title="tcp 和 udp 有什么区别？"></a>tcp 和 udp 有什么区别？</h1><ul>
+<li>1.tcp基于连接，udp无连接</li>
+<li>2.tcp对系统要求的资源较多，udp较少</li>
+<li>3.udp程序结构较简单</li>
+<li>4.tcp流模式与udp数据包模式</li>
+<li>5.tcp保证数据正确性，顺序，udp可能丢包</li>
+</ul>
+<h1 id="Tcp三次握手，四次挥手"><a href="#Tcp三次握手，四次挥手" class="headerlink" title="Tcp三次握手，四次挥手"></a>Tcp三次握手，四次挥手</h1><p><img src="tcp%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B.png" alt="tcp三次握手"><br>第一次握手：建立连接时，客户端发送syn包(syn=x)到服务器，并进入SYN_SENT状态，等待服务器确认；SYN：同步序列编号(Synchronize Sequence Numbers)<br>第二次握手：服务器收到syn包，必须确认客户端的SYN(ack=x+1)，同时自己也发送一个SYN包(syn=y)，即SYN+ACK包，此时服务器进入SYN_RECV状态<br>第三次握手：客户端收到收到服务器SYN+ACK包，向服务器发送确认包ACK(ack=y+1)，此包发送完比，客户端和服务器连接成功，完成三次握手</p>
+<p><img src="%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B.png" alt="四次挥手"><br>1）客户端进程发出连接释放报文，并且停止发送数据。释放数据报文首部，FIN=1，其序列号为seq=u（等于前面已经传送过来的数据的最后一个字节的序号加1），此时，客户端进入FIN-WAIT-1（终止等待1）状态。 TCP规定，FIN报文段即使不携带数据，也要消耗一个序号。<br>2）服务器收到连接释放报文，发出确认报文，ACK=1，ack=u+1，并且带上自己的序列号seq=v，此时，服务端就进入了CLOSE-WAIT（关闭等待）状态。TCP服务器通知高层的应用进程，客户端向服务器的方向就释放了，这时候处于半关闭状态，即客户端已经没有数据要发送了，但是服务器若发送数据，客户端依然要接受。这个状态还要持续一段时间，也就是整个CLOSE-WAIT状态持续的时间。<br>3）客户端收到服务器的确认请求后，此时，客户端就进入FIN-WAIT-2（终止等待2）状态，等待服务器发送连接释放报文（在这之前还需要接受服务器发送的最后的数据）。<br>4）服务器将最后的数据发送完毕后，就向客户端发送连接释放报文，FIN=1，ack=u+1，由于在半关闭状态，服务器很可能又发送了一些数据，假定此时的序列号为seq=w，此时，服务器就进入了LAST-ACK（最后确认）状态，等待客户端的确认。<br>5）客户端收到服务器的连接释放报文后，必须发出确认，ACK=1，ack=w+1，而自己的序列号是seq=u+1，此时，客户端就进入了TIME-WAIT（时间等待）状态。注意此时TCP连接还没有释放，必须经过2∗∗MSL（最长报文段寿命）的时间后，当客户端撤销相应的TCB后，才进入CLOSED状态。<br>6）服务器只要收到了客户端发出的确认，立即进入CLOSED状态。同样，撤销TCB后，就结束了这次的TCP连接。可以看到，服务器结束TCP连接的时间要比客户端早一些。</p>
+<h1 id="OSI七层模型"><a href="#OSI七层模型" class="headerlink" title="OSI七层模型"></a>OSI七层模型</h1><p><img src="f58f6ad856c6802b636d20d8f5ba2c3e.jpeg" alt=""></p>
+<ul>
+<li>应用层：网络服务与最终用户的一个接口</li>
+<li>表示层：数据的表示，安全，压缩</li>
+<li>会话层：建立管理终止会话</li>
+<li>传输层：定义传输数据的协议端口号，以及流空和差错校验</li>
+<li>网络层：进行逻辑地址寻址，实现不用网络之间的路径选择</li>
+<li>数据链路层：建立逻辑连接，进行硬件地址寻址，差错校验等功能</li>
+<li>物理层：建立、维护、断开物理连接</li>
+</ul>
+<h1 id="get和post请求有哪些区别"><a href="#get和post请求有哪些区别" class="headerlink" title="get和post请求有哪些区别"></a>get和post请求有哪些区别</h1><ul>
+<li>get在浏览器回退时是无害的，而Post会再次提交请求</li>
+<li>get产生URL地址可以被Bookmark，而Post不可以</li>
+<li>get请求会被浏览器主动cache,而Post不会，除非手动设置</li>
+<li>get请求只能进行url编码，而Post支持多种编码方法</li>
+<li>get请求参数会被完整保留在浏览器历史记录里，而Post中的参数不会被保留</li>
+<li>get请求参数长度有限制，而post没有</li>
+<li>参数类型，get只接收ASCII字符，而post没有限制</li>
+<li>Get比Post更不安全，因为参数直接暴露在URL上，所以不能用来传递敏感信息</li>
+<li>Get参数通过URL传递，Post放在Request　Body中</li>
+</ul>
+<p>＃　如何实现跨域</p>
+<ul>
+<li><p>1.图片ping或者script标签跨域</p>
+<ul>
+<li>图片ping常用于跟踪用户点击页面或动态广告曝光次数。 </li>
+<li>script标签可以得到从其他来源数据，这也是JSONP依赖的根据</li>
+</ul>
+</li>
+<li><p>2.JSONP跨域</p>
+<ul>
+<li>JSONP（JSON with Padding）是数据格式JSON的一种“使用模式”，可以让网页从别的网域要数据。根据 XmlHttpRequest 对象受到同源策略的影响，而利用 script元素的这个开放策略，网页可以得到从其他来源动态产生的JSON数据，而这种使用模式就是所谓的 JSONP。用JSONP抓到的数据并不是JSON，而是任意的JavaScript，用 JavaScript解释器运行而不是用JSON解析器解析。所有，通过Chrome查看所有JSONP发送的Get请求都是js类型，而非XHR。 </li>
+<li>只能使用Get请求</li>
+<li>不能注册success、error等事件监听函数，不能很容易的确定JSONP请求是否失败</li>
+<li>JSONP是从其他域中加载代码执行，容易受到跨站请求伪造的攻击，其安全性无法确保</li>
+</ul>
+</li>
+<li><p>3.CORS</p>
+<ul>
+<li>Cross-Origin Resource Sharing（CORS）跨域资源共享是一份浏览器技术的规范，提供了 Web 服务从不同域传来沙盒脚本的方法，以避开浏览器的同源策略，确保安全的跨域数据传输。现代浏览器使用CORS在API容器如XMLHttpRequest来减少HTTP请求的风险来源。与 JSONP 不同，CORS 除了 GET 要求方法以外也支持其他的 HTTP 要求。服务器一般需要增加如下响应头的一种或几种：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Access-Control-Allow-Origin: *</span><br><span class="line">Access-Control-Allow-Methods: POST, GET, OPTIONS</span><br><span class="line">Access-Control-Allow-Headers: X-PINGOTHER, Content-Type</span><br><span class="line">Access-Control-Max-Age: 86400</span><br></pre></td></tr></table></figure>
+设置跨域携带参数<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&quot;Access-Control-Allow-Credentials&quot;: true</span><br><span class="line">&#x2F;&#x2F; Ajax设置</span><br><span class="line">&quot;withCredentials&quot;: true</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>JASONP 实现原理</p>
+<ul>
+<li>jsonp 即 json+padding，动态创建script标签，利用script标签的src属性可以获取任何域下的js脚本，通过这个特性(也可以说漏洞)，服务器端不在返回json格式，而是返回一段调用某个函数的js代码，在src中进行了调用，这样实现了跨域。</li>
+</ul>
+</li>
+</ul>
+<h1 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h1><ul>
+<li><p>1.单例模式</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Singleton singleton;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (singleton == <span class="keyword">null</span>) &#123;</span><br><span class="line">        singleton = <span class="keyword">new</span> Singleton();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> singleton;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>懒汉式</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;  </span><br><span class="line">   <span class="keyword">private</span> <span class="keyword">static</span> Singleton instance;  </span><br><span class="line">   <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>&#123;&#125;  </span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">synchronized</span> Singleton <span class="title">getInstance</span><span class="params">()</span> </span>&#123;  </span><br><span class="line">   <span class="keyword">if</span> (instance == <span class="keyword">null</span>) &#123;  </span><br><span class="line">       instance = <span class="keyword">new</span> Singleton();  </span><br><span class="line">   &#125;  </span><br><span class="line">   <span class="keyword">return</span> instance;  </span><br><span class="line">   &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>饿汉式</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;  </span><br><span class="line">   <span class="keyword">private</span> <span class="keyword">static</span> Singleton instance = <span class="keyword">new</span> Singleton();  </span><br><span class="line">   <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span> <span class="params">()</span></span>&#123;&#125;  </span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span> </span>&#123;  </span><br><span class="line">   <span class="keyword">return</span> instance;  </span><br><span class="line">   &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>静态内部类</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">SingletonHolder</span> </span>&#123;</span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">static</span> Singleton INSTANCE = <span class="keyword">new</span> Singleton();  &#125;</span><br><span class="line">        <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span> <span class="params">()</span></span>&#123;&#125;</span><br><span class="line">        </span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> SingletonHolder.INSTANCE;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>双重校验锁</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">volatile</span> <span class="keyword">static</span> Singleton singleton;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span> <span class="params">()</span></span>&#123;&#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getSingleton</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (singleton == <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">synchronized</span> (Singleton<span class="class">.<span class="keyword">class</span>) </span>&#123;</span><br><span class="line">            <span class="keyword">if</span> (singleton == <span class="keyword">null</span>) &#123;</span><br><span class="line">                singleton = <span class="keyword">new</span> Singleton();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> singleton;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>2.观察者模式</p>
+</li>
+<li><p>对象间一对多的依赖关系，当一个对象的状态发生改变时，所有依赖于它的对象都得到通知并被自动更新。</p>
+</li>
+<li><p>3.装饰者模式</p>
+</li>
+<li><p>对已有的业务逻辑进一步的封装，使其增加额外的功能，如Java中的IO流就使用了装饰者模式，用户在使用的时候，可以任意组装，达到自己想要的效果。</p>
+</li>
+<li><p>4.适配器模式</p>
+</li>
+<li><p>5.工厂模式</p>
+<ul>
+<li>抽象工厂模式，具体工厂模式，抽象产品模式，具体产品模式。不再是由一个工厂类去实例化具体的产品，而是由抽象工厂的子类去实例化产品</li>
+</ul>
+</li>
+<li><p>6.代理模式(proxy)</p>
+<ul>
+<li>静态代理</li>
+</ul>
+</li>
+</ul>
+<h1 id="spring"><a href="#spring" class="headerlink" title="spring"></a>spring</h1><ul>
+<li><p>它是一个轻量级的控制反转(IOC)和面向切面的容器框架</p>
+<ul>
+<li>控制反转：通过控制反转，对象在被创建的时候，由一个调控系统内所有对象的外界实体，将其所依赖的对象的引用传递给它</li>
+<li>面向切面：Spring提供了面向切面编程的丰富支持，允许通过分离应用的业务逻辑与系统级服务（例如审计（auditing）和事务（transaction）管理）进行内聚性的开发。应用对象只实现它们应该做的——完成业务逻辑——仅此而已。它们并不负责（甚至是意识）其它的系统级关注点，例如日志或事务支持。</li>
+</ul>
+</li>
+<li><p>Spring容器包含并管理应用对象的配置和生命周期，你可以配置你的每个bean如何被创建——基于一个可配置原型（prototype），你的bean可以创建一个单独的实例或者每次需要时都生成一个新的实例——以及它们是如何相互关联的。</p>
+</li>
+<li><p>Spring可以将简单的组件配置、组合成为复杂的应用。在Spring中，应用对象被声明式地组合，典型地是在一个XML文件里。Spring也提供了很多基础功能（事务管理、持久化框架集成等等），将应用逻辑的开发留给了你。</p>
+</li>
+</ul>
+<h1 id="AOP-IOC"><a href="#AOP-IOC" class="headerlink" title="AOP  IOC"></a>AOP  IOC</h1><ul>
+<li><p>AOP（Aspect-Oriented Programming，面向方面编程），可以说是OOP（Object-Oriented Programing，面向对象编程）的补充和完善。OOP引入封装、继承和多态性等概念来建立一种对象层次结构</p>
+</li>
+<li><p>依赖注入<br><img src="640.webp" alt=""></p>
+</li>
+</ul>
+<h1 id="spring-常用注入方式"><a href="#spring-常用注入方式" class="headerlink" title="spring 常用注入方式"></a>spring 常用注入方式</h1><ul>
+<li>构造方法注入</li>
+<li>setter注入</li>
+<li>基于注解注入</li>
+</ul>
+<h1 id="spring-bean作用域"><a href="#spring-bean作用域" class="headerlink" title="spring bean作用域"></a>spring bean作用域</h1><ul>
+<li>singleton<ul>
+<li>对于singleton作用域的Bean，每次请求该Bean都将获得相同的实例。容器负责跟踪Bean实例的状态，负责维护Bean实例的生命周期行为,默认使用模式</li>
+</ul>
+</li>
+<li>prototype<ul>
+<li>程序每次请求该id的Bean，Spring都会新建一个Bean实例，然后返回给程序。在这种情况下，Spring容器仅仅使用new 关键字创建Bean实例，一旦创建成功，容器不在跟踪实例，也不会维护Bean实例的状态。</li>
+</ul>
+</li>
+<li>request</li>
+<li>session</li>
+<li>globalsession</li>
+</ul>
+<h1 id="spring自动装载bean的方式"><a href="#spring自动装载bean的方式" class="headerlink" title="spring自动装载bean的方式"></a>spring自动装载bean的方式</h1><ul>
+<li>隐式的bean发现机制和自动装配</li>
+<li>在Java代码或者行xml中进行显式配置</li>
+</ul>
+<h1 id="spring-事务实现方法"><a href="#spring-事务实现方法" class="headerlink" title="spring 事务实现方法"></a>spring 事务实现方法</h1><ul>
+<li>编程式事务管理对基于POJO的应用来说是唯一的选择，我们需要在代码中调用beginTransaction()、commit()、rollback()等事务管理相关的方法</li>
+<li>基于TransactionProxyFactoryBean的声明式事务管理</li>
+<li>基于@Transactional的声明式事务管理</li>
+<li>基于Aspect AOP配置事务</li>
+</ul>
+<h1 id="spring事务隔离"><a href="#spring事务隔离" class="headerlink" title="spring事务隔离"></a>spring事务隔离</h1><ul>
+<li><p>脏读：一个事务读到另一个事务未提交的更新数据。</p>
+</li>
+<li><p>幻读：例如第一个事务对一个表中的数据进行了修改，比如这种修改涉及到表中的“全部数据行”。同时，第二个事务也修改这个表中的数据，这种修改是向表中插入“一行新数据”。那么，以后就会发生操作第一个事务的用户发现表中还存在没有修改的数据行，就好象发生了幻觉一样。</p>
+</li>
+<li><p>不可重复读：比方说在同一个事务中先后执行两条一模一样的select语句，期间在此次事务中没有执行过任何DDL语句，但先后得到的结果不一致，这就是不可重复读。</p>
+</li>
+</ul>
+<h1 id="spring-MVC-运行流程"><a href="#spring-MVC-运行流程" class="headerlink" title="spring MVC 运行流程"></a>spring MVC 运行流程</h1><p><img src="641.webp" alt=""></p>
+<ul>
+<li>客户端发出一个请求web服务请求，DispatchServlet将请求转给处理器映射器HandlerMapping,HM根据url找到对应的处理器适配器</li>
+<li>处理器适配器调用处理器相应的功能，处理器返回ModelAndView给处理器适配器，处理器适配器返回给前端控制器</li>
+<li>前端控制器解析视图viewResolver,然后将解析之后的参数放入到view中，并返回给客户端</li>
+</ul>
+<h1 id="RequestMapping的作用是什么？"><a href="#RequestMapping的作用是什么？" class="headerlink" title="@RequestMapping的作用是什么？"></a>@RequestMapping的作用是什么？</h1><ul>
+<li>RequestMapping是一个用来处理请求地址映射的注解，可用于类或方法上。用于类上，表示类中的所有响应请求的方法都是以该地址作为父路径。</li>
+</ul>
+<h1 id="spring-boot"><a href="#spring-boot" class="headerlink" title="spring boot"></a>spring boot</h1><p>spring boot 是一个框架，一种全新的编程规范，它的生产简化了框架的使用，简化了Spring众多框架中所需的大量且繁琐的配置文件，所以SpringBoot是一个服务于框架的框架，服务范围是简化配置文件。</p>
+<h1 id="为什么要用Spring-boot"><a href="#为什么要用Spring-boot" class="headerlink" title="为什么要用Spring boot"></a>为什么要用Spring boot</h1><ul>
+<li>Spring Boot 使编码变简单</li>
+<li>Spring Boot 使配置变简单</li>
+<li>Spring Boot 使部署简单</li>
+<li>Spring Boot 使监控变简单</li>
+</ul>
+<h1 id="spring-boot配置我呢见有哪几种-？有什么区别"><a href="#spring-boot配置我呢见有哪几种-？有什么区别" class="headerlink" title="spring boot配置我呢见有哪几种 ？有什么区别"></a>spring boot配置我呢见有哪几种 ？有什么区别</h1><ul>
+<li>Spring Boot提供了两种常用的配置文件properties文件和yml文件</li>
+<li>相对于properties文件而言，yml文件更年轻，会因为空格破坏了层级关系</li>
+</ul>
+<h1 id="Spring-Boot实现热部署"><a href="#Spring-Boot实现热部署" class="headerlink" title="Spring Boot实现热部署"></a>Spring Boot实现热部署</h1><ul>
+<li>1.使用 spring loaded<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;build&gt;</span><br><span class="line">        &lt;plugins&gt;</span><br><span class="line">            &lt;plugin&gt;</span><br><span class="line">                &lt;!-- springBoot编译插件--&gt;</span><br><span class="line">                &lt;groupId&gt;org.springframework.boot&lt;&#x2F;groupId&gt;</span><br><span class="line">                &lt;artifactId&gt;spring-boot-maven-plugin&lt;&#x2F;artifactId&gt;</span><br><span class="line">                &lt;dependencies&gt;</span><br><span class="line">                    &lt;!-- spring热部署 --&gt;</span><br><span class="line">                    &lt;!-- 该依赖在此处下载不下来，可以放置在build标签外部下载完成后再粘贴进plugin中 --&gt;</span><br><span class="line">                    &lt;dependency&gt;</span><br><span class="line">                        &lt;groupId&gt;org.springframework&lt;&#x2F;groupId&gt;</span><br><span class="line">                        &lt;artifactId&gt;springloaded&lt;&#x2F;artifactId&gt;</span><br><span class="line">                        &lt;version&gt;1.2.6.RELEASE&lt;&#x2F;version&gt;</span><br><span class="line">                    &lt;&#x2F;dependency&gt;</span><br><span class="line">                &lt;&#x2F;dependencies&gt;</span><br><span class="line">            &lt;&#x2F;plugin&gt;</span><br><span class="line">        &lt;&#x2F;plugins&gt;</span><br><span class="line">    &lt;&#x2F;build&gt;</span><br></pre></td></tr></table></figure></li>
+<li>2.使用spring-boot-devtools<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--热部署jar--&gt;</span><br><span class="line"> &lt;dependency&gt;</span><br><span class="line">     &lt;groupId&gt;org.springframework.boot&lt;&#x2F;groupId&gt;</span><br><span class="line">     &lt;artifactId&gt;spring-boot-devtools&lt;&#x2F;artifactId&gt;</span><br><span class="line"> &lt;&#x2F;dependency&gt;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h1 id="什么使spring-cloud"><a href="#什么使spring-cloud" class="headerlink" title="什么使spring cloud"></a>什么使spring cloud</h1><ul>
+<li><p>spring cloud 就是致力于分布式系统、云服务的框架</p>
+</li>
+<li><p>提供了快速构建分布式系统中一些常见模式的工具</p>
+</li>
+<li><p>NetFlix Eureka：一个RESTful服务，用来定位运行在AWS地区（Region）中的中间层服务。由两个组件组成：Eureka服务器和Eureka客户端。Eureka服务器用作服务注册服务器。Eureka客户端是一个java客户端，用来简化与服务器的交互、作为轮询负载均衡器，并提供服务的故障切换支持。</p>
+</li>
+<li><p>NetFlix Ribbon：主要提供客户侧的软件负载均衡算法。Ribbon客户端组件提供一系列完善的配置选项，比如连接超时、重试、重试算法等。Ribbon内置可插拔、可定制的负载均衡组件。</p>
+</li>
+<li><p>Netflix Hystrix：断路器可以防止一个应用程序多次试图执行一个操作，即很可能失败，允许它继续而不等待故障恢复或者浪费 CPU 周期，而它确定该故障是持久的。断路器模式也使应用程序能够检测故障是否已经解决。如果问题似乎已经得到纠正，应用程序可以尝试调用操作</p>
+</li>
+<li><p>Netflix Zuul:类似nginx，反向代理的功能，不过netflix自己增加了一些配合其他组件的特性。</p>
+</li>
+<li><p>Spring Cloud Config：这个还是静态的，得配合Spring Cloud Bus实现动态的配置更新。</p>
+</li>
+</ul>
+<h1 id="mybatis-中使用-和"><a href="#mybatis-中使用-和" class="headerlink" title="mybatis 中使用#{} 和${}"></a>mybatis 中使用#{} 和${}</h1><ul>
+<li>#{}预编译的 ${}是替换字段</li>
+<li>Mybatis在处理#{}时，会将sql中的#{}替换为?号，调用PreparedStatement 的set方法来赋值</li>
+<li>MyBatis在处理${}时，就是把${}替换为变量的值</li>
+<li>使用#{}可以有效的防止SQL注入攻击，提高系统的安全性</li>
+</ul>
+<h1 id="mybatis-有几种分页方式"><a href="#mybatis-有几种分页方式" class="headerlink" title="mybatis 有几种分页方式"></a>mybatis 有几种分页方式</h1><ul>
+<li>数组分页</li>
+<li>sql分页</li>
+<li>拦截器分页</li>
+<li>RowBounds分页</li>
+</ul>
+<h1 id="Mybatis逻辑分页和物理分页的区别是什么？"><a href="#Mybatis逻辑分页和物理分页的区别是什么？" class="headerlink" title="Mybatis逻辑分页和物理分页的区别是什么？"></a>Mybatis逻辑分页和物理分页的区别是什么？</h1><ul>
+<li>物理分页速度上并不一定快于逻辑分页，逻辑分页速度也并不一定快于物理分页</li>
+<li>物理分页总是优于逻辑分页：没有必要将属于数据库端的压力加到应用端来，就算速度上存在优势，然后其它性能上的优点足以弥补整个缺点</li>
+</ul>
+<h1 id="双亲委派模型"><a href="#双亲委派模型" class="headerlink" title="双亲委派模型"></a>双亲委派模型</h1><ul>
+<li><p>类加载器分类：每一个类加载器都有一个独立的名命空间</p>
+<ul>
+<li>启动类加载器：是虚拟机自身的一部分，用来加载JAVA_HOME/lib/目录中的类</li>
+<li>扩展类加载器：负责加载java.ext.dirs系统变量指定的路径中所有的类库</li>
+<li>应用程序类加载器：负责加载用户类路径上的指定类库，默认使用的类加载器</li>
+</ul>
+</li>
+<li><p>如果一个类加载器收到了类加载的请求，它首先不会去加载这个类，而是把这个请求委派给父类加载器去完成，每一层的加载器都是如此，这样所有的加载请求会被传到顶层的启动类加载器中，只有当父类加载无法完成加载请求时，子加载器才会尝试去加载类<br><img src="425.png" alt=""></p>
+</li>
+</ul>
+<h1 id="类加载执行过程"><a href="#类加载执行过程" class="headerlink" title="类加载执行过程"></a>类加载执行过程</h1><ul>
+<li>加载：根据查找路径找到相应的class文件然后导入</li>
+<li>检查：检查加载的class文件的正确性</li>
+<li>准备：给类中的静态变量分配内存空间</li>
+<li>解析：虚拟机将常量池中的符号引用替换成直接引用的过程。符号引用就理解为一个标识，直接指向内存中的地址。</li>
+<li>初始化：对静态变量和静态代码块行执行初始化工作</li>
+</ul>
+<h1 id="基本类型"><a href="#基本类型" class="headerlink" title="基本类型"></a>基本类型</h1><p>boolean 1字节   true false            false<br>byte    1字节   -2^7   ~  2^7-1       0<br>char    2字节   0      ~  2^16-1      \u0000<br>short   2字节   -2^15  ~  2^15-1      0<br>int     4字节   -2^31  ~  2^31-1      0<br>float   4字节                         0f<br>long    8字节   -2^63  ~  2^63-1      0L<br>double  8字节                         0d</p>
+<h1 id="String类可以被继承吗？为什么"><a href="#String类可以被继承吗？为什么" class="headerlink" title="String类可以被继承吗？为什么"></a>String类可以被继承吗？为什么</h1><p>不可以，因为String类被final修饰</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String str = <span class="string">"ABCD"</span>;</span><br><span class="line">String str1 = <span class="keyword">new</span> String(<span class="string">"ABCD"</span>);</span><br></pre></td></tr></table></figure>
+<p><img src="20200412234359327.png" alt=""></p>
+<ul>
+<li>两种方式是有区别的<ul>
+<li>前者会创建1或者0个对象，后者创建1或者2个对象<ul>
+<li>前者字符串常量池中如果有，则直接引用；</li>
+<li>后者在堆内存中创建一个实例对象去引用常量池中的对象；</li>
+</ul>
+</li>
+<li>变量和引用存储在栈中，常量存储在常量池中</li>
+<li>为提升JVM虚拟机性能，避免字符串重复创建，项目中还是尽量不要使用new String(“xxxx”)<br><a href="https://blog.csdn.net/Xin6Yang/article/details/88842671" target="_blank" rel="noopener">详情请参考</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="ArrayList-和-LinkedList-有什么区别"><a href="#ArrayList-和-LinkedList-有什么区别" class="headerlink" title="ArrayList 和 LinkedList 有什么区别"></a>ArrayList 和 LinkedList 有什么区别</h1><p>ArrayList 和 LinkedList都实现了List接口</p>
+<ul>
+<li>ArrayList底层是数据，时间复杂度为O(1);LinkedList底层是链表，时间复杂度为O(n)</li>
+<li>LinkedList插入，添加，删除操作速度更快；ArrayList查找较快</li>
+<li>LinkedList比ArrayList更占内存，因为LinkedList为每一个节点存储了两个引用，一个指向前一个元素，一个指向后一个元素</li>
+</ul>
+<h1 id="类的实例化顺序new-的时候是怎么样的？"><a href="#类的实例化顺序new-的时候是怎么样的？" class="headerlink" title="类的实例化顺序new()的时候是怎么样的？"></a>类的实例化顺序new()的时候是怎么样的？</h1><ul>
+<li>父类静态变量</li>
+<li>父类静态代码块</li>
+<li>子类的静态变量</li>
+<li>子类静态代码块</li>
+<li>父类非静态变量</li>
+<li>父类构造函数</li>
+<li>子类非静态变量</li>
+<li>子类构造函数<ul>
+<li>静态变量 静态代码块 非静态变量 构造函数</li>
+</ul>
+</li>
+</ul>
+<h1 id="哪些情况会触发类的初始化"><a href="#哪些情况会触发类的初始化" class="headerlink" title="哪些情况会触发类的初始化"></a>哪些情况会触发类的初始化</h1><ul>
+<li>new创建类实例</li>
+<li>访问某个类的或者接口的静态变量，或者对该静态变量赋值</li>
+<li>调用类的静态方法</li>
+<li>反射<code>class.forName(&quot;com.xxx.xxx&quot;)</code></li>
+<li>初始化一个类的子类</li>
+<li>java虚拟机启动时被标名为启动类的类</li>
+</ul>
+<h1 id="HashMap-HashTable-LinkedHashMap-TreeMap"><a href="#HashMap-HashTable-LinkedHashMap-TreeMap" class="headerlink" title="HashMap HashTable LinkedHashMap TreeMap"></a>HashMap HashTable LinkedHashMap TreeMap</h1><p><a href="https://zhuanlan.zhihu.com/p/21673805" target="_blank" rel="noopener">详细地址</a><br>HashMap(数组+链表+红黑树)</p>
+<ul>
+<li><p>它根据键的hashCode值存储数据，大多数情况下可以直接定位到它的值，因而具有很快的访问速度，，但是遍历顺序是不确定的。</p>
+</li>
+<li><p>HashMap最多只允许一条记录的键为null,允许多条值为null</p>
+</li>
+<li><p>HashMap线程不安全，可以使用Collections.synchronizedMap()方法或者使用ConcurrentHashMap</p>
+</li>
+<li><p>扩容机制</p>
+<ul>
+<li>Node[] table 的初始化长度(默认为16)，load factor负载因子，threshold是HashMap所能容纳的最大数据量的Node个数。threshold = length * loadfactor</li>
+<li>如果超过threshold在相应的length * load factor的最大数目，就会重新resize(扩容)，扩容之后HashMap的容量是之前的两倍，默认负载因子0.75是对空间和时间效率的一个平衡选择。</li>
+<li>哈希桶数组的table长度大小必须为2的n次方，这是一种非常规设计，这主要是为了在取模和扩容时做优化，同时为了减少冲突，HashMap定位哈希桶索引位置时，也</li>
+</ul>
+</li>
+<li><p>线程是安全的，任一时间只有一个线程能写Hashtable，并发性不如ConcurrentHashMap,因为ConcurrentHashMap引入了分段锁。Hashtable不建议在新代码中，不需要线程安全的场合可以用HashMap替换，需要线程安全的场合可以使用ConcurrentHashMap替换</p>
+</li>
+</ul>
+<p>LinkedHashMap</p>
+<ul>
+<li>它是HashMap的一个子类，保存了记录的插入顺序，在用Iterator遍历LinkedHashMap时，先得到的记录肯定先插入，也可以在构造时带参，按照访问次序排序</li>
+</ul>
+<p>TreeMap</p>
+<ul>
+<li><p>TreeMap实现SortedMap接口，能够把它保存的记录根据键排序，默认是按键升序排序，也可以指定排序的比较器，当使用TreeMap时，key必须实现Comparable接口，或者在构造TreeMap传入自定义的Comparator,否则会在运行时抛出java.lang.ClassCastException</p>
+</li>
+<li><p>对于上面四种Map类型，要求映射的key是不可变对象，不可变对象是该对象在创建后它的哈希值不会被改变，如果对象哈希值发生变化，Map对象很可能就定位不到映射的位置</p>
+</li>
+</ul>
+<h1 id="动态代理有哪几种实现方式，有什么区别？"><a href="#动态代理有哪几种实现方式，有什么区别？" class="headerlink" title="动态代理有哪几种实现方式，有什么区别？"></a>动态代理有哪几种实现方式，有什么区别？</h1><p>Jdk动态代理<br>CGlib动态代理</p>
+<ul>
+<li>区别<ul>
+<li>jdk动态代理由java内部的反射机制来实现的(基于接口)，cglib动态代理底层则式借助asm来实现的(基于类)</li>
+</ul>
+</li>
+<li>相同<ul>
+<li>代理类对target对象的方法进行拦截，让代理类持有target对象的引用，当外部引用aop包围方法时，调用的其实是代理类对应的方法，代理类持有target对象，便可以控制target方法执行时的全方位拦截<br><a href="https://blog.csdn.net/HEYUTAO007/article/details/49738887" target="_blank" rel="noopener">详情参考</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="权限修饰符"><a href="#权限修饰符" class="headerlink" title="权限修饰符"></a>权限修饰符</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">作用域     当前类 同一package   子孙类 其他package </span><br><span class="line">public      √       √           √       √ </span><br><span class="line">protected   √       √           √       × </span><br><span class="line">default     √       √           ×       × </span><br><span class="line">private     √       ×           ×       × </span><br><span class="line">default权限比protected小，少了一个子孙类可用</span><br></pre></td></tr></table></figure>
+<p><a href="https://blog.csdn.net/weixin_43495390/article/details/86533482" target="_blank" rel="noopener">原文地址</a></p>
+<h1 id="jvm-调优"><a href="#jvm-调优" class="headerlink" title="jvm 调优"></a>jvm 调优</h1><p>内存泄漏</p>
+<ul>
+<li>java.lang.OutOfMemoryError: Java heap space 堆满</li>
+<li>java.lang.OutOfMemoryError: PermGen space 持久代满</li>
+<li>java.lang.StackOverflowError 栈溢出</li>
+<li>Fatal: Stack size too small 线程数过多</li>
+<li>java.lang.OutOfMemoryError: unable to create new native thread 系统内存被沾满<br>优化方法：</li>
+<li>优化GC：<ul>
+<li>1.适当调整-XX:ServivorRatio的比例</li>
+<li>2.选择适合自己业务的垃圾收集器，web服务一般是ParNew+CMS</li>
+<li>3.调整jvm老年代，新生代以及持久代的比例，测试出一个比较满意的值</li>
+<li>4.设置-XX:MaxTenuringThreshold 让新生代提前进入老年代，减少在survivor区域的复制</li>
+<li>5.调整 -XX:CMSInitiatingOccupancyFraction=60，控制minor gc频率</li>
+<li>6.-XX+UseCMSCompactAtFullCollection消除cms碎片</li>
+</ul>
+</li>
+</ul>
+<h1 id="tomcat-调优"><a href="#tomcat-调优" class="headerlink" title="tomcat 调优"></a>tomcat 调优</h1><ul>
+<li>内存优化 主要是对tomcat启动参数进行优化</li>
+<li>修改最小空闲连接数，提高系统处理性能</li>
+<li>优化缓存，打开压缩功能，修改参数，压缩输出内容默认大小为2kb</li>
+</ul>
+<h1 id="select-poll-epoll"><a href="#select-poll-epoll" class="headerlink" title="select poll epoll"></a>select poll epoll</h1><p>在select/poll中，进程只有在调用一定的方法后，内核才对所有监视的文件描述符进行扫描，而epoll事先通过epoll_ctl()来注册一个文件描述符，一旦基于某个文件描述符就绪时，内核会采用类似callback的回调机制，迅速激活这个文件描述符，当进程调用epoll_wait()时便得到通知。<br><a href="https://yq.aliyun.com/articles/10525" target="_blank" rel="noopener">原文地址</a></p>
+<h1 id="countdownLatch-和-cyclicBarrier-的内部原理和用法"><a href="#countdownLatch-和-cyclicBarrier-的内部原理和用法" class="headerlink" title="countdownLatch 和 cyclicBarrier 的内部原理和用法"></a>countdownLatch 和 cyclicBarrier 的内部原理和用法</h1><p>CountDownLatch是一个同步辅助类，在完成一组正在其他线程中执行的操作之前，它运行一个或者多个线程一直处于等待状态。<br>CyclicBarrier要做的事情是，让一组线程到达一个屏障（也可以叫同步点）时被阻塞，直到最后一个线程到达屏障时，屏障才会开门，所有被屏障拦截的线程才会继续运行。<br>CyclicBarrier初始化的时候，设置一个屏障数。线程调用await()方法的时候，这个线程就会被阻塞，当调用await()的线程数量到达屏障数的时候，主线程就会取消所有被阻塞线程的状态。</p>
+<p>前者是递减，不可循环，后者是递加，可循环用</p>
+<h1 id="Mysql和oracle区别"><a href="#Mysql和oracle区别" class="headerlink" title="Mysql和oracle区别"></a>Mysql和oracle区别</h1><p>1.Mysql 中from 后面是子查询表，那么必须有别名<br>2.连接字符串Oracle || ,Mysql concat 方法<br>3.Mysql没有Oracle的动态游标，只有显示游标<br>4.Mysql的group by中可以是没有被select中的字段，Oracle中就会报错<br>5.数据类型 varchar2 number 对应mysql中的 varchar int 类型<br>6.mysql的非空字段有空的内容，oracle定义了非空的字段就不能有空内容<br>7.mysql中用limit(offset,count)分页，oracle中使用rownum&lt;100来进行分页</p>
+<h1 id="fail-fast-和fail-safe区别"><a href="#fail-fast-和fail-safe区别" class="headerlink" title="fail-fast 和fail-safe区别"></a>fail-fast 和fail-safe区别</h1><p>fail-fast原理：当迭代器遍历集合中的内容时，迭代器中由一个参数modCount，当集合中的元素被修改，modCount会改变，迭代器遍历下一个元素时，发现modCount!=expectedmodeCount时，就抛出异常Current modification exception<br>fail-safe:由于迭代时是对原集合的拷贝进行遍历，所以遍历过程中对原集合所作的修改并不能被迭代器检测到<br>fail-safe会比较占内存，并且读取到的数据可能不是最新的 例子：CopyOnWriteArrayList ConcurrentHashMap</p>
+<h1 id="socket-编程如果断电了，服务器如何快速知道？"><a href="#socket-编程如果断电了，服务器如何快速知道？" class="headerlink" title="socket 编程如果断电了，服务器如何快速知道？"></a>socket 编程如果断电了，服务器如何快速知道？</h1><p>使用Tcp 的Keepalive机制,tcp 内嵌由心跳包，以服务端为例，当server检测到超过一定时间没有数据传输，那么会向client端发送一个keepalive packet</p>
+<h1 id="drop-truncate-delete"><a href="#drop-truncate-delete" class="headerlink" title="drop truncate delete"></a>drop truncate delete</h1><ul>
+<li><p>delete是每次删除一行或者多行</p>
+</li>
+<li><p>truncate是删除整个表中的数据，包括索引，保留一张空表</p>
+</li>
+<li><p>drop则是删除整张表</p>
+</li>
+<li><p>drop 删除表，视图，索引 </p>
+</li>
+<li><p>delete truncate删除表中数据</p>
+</li>
+</ul>
+<h1 id="Bean工厂和Application-Context有什么区别"><a href="#Bean工厂和Application-Context有什么区别" class="headerlink" title="Bean工厂和Application Context有什么区别"></a>Bean工厂和Application Context有什么区别</h1><p>BeanFactory:是Spring框架最核心的接口，它提供了高级IOC的配置机制<br>ApplicationContext:建立在BeanFactory的基础之上<br>BeanFactory在初始化容器时，并未实例化Bean，直到第一次访问某个Bean才实例化它<br>；而ApplicationContext则时在初始化应用的时候就实例化所有单例对象的Bean</p>
+<h1 id="short-s1-1-s1-s1-1-有错吗-short-s1-1-s1-1-有错吗？"><a href="#short-s1-1-s1-s1-1-有错吗-short-s1-1-s1-1-有错吗？" class="headerlink" title="short s1 = 1; s1 = s1 + 1;有错吗?short s1 = 1; s1 += 1;有错吗？"></a>short s1 = 1; s1 = s1 + 1;有错吗?short s1 = 1; s1 += 1;有错吗？</h1><p>对于short s1 = 1; s1 = s1 + 1;由于1是int类型，因此s1+1运算结果也是int 型，需要强制转换类型才能赋值给short型。而short s1 = 1; s1 += 1;可以正确编译，因为s1+= 1;相当于s1 = (short)(s1 + 1);其中有隐含的强制类型转换。</p>
+<h1 id="一次HTTP请求到浏览器呈现页面都发生了什么"><a href="#一次HTTP请求到浏览器呈现页面都发生了什么" class="headerlink" title="一次HTTP请求到浏览器呈现页面都发生了什么"></a>一次HTTP请求到浏览器呈现页面都发生了什么</h1><ul>
+<li>1.浏览器通过url中的域名查找对应的ip,首先检查本地是否有对应的ip,没有就回去DNS服务器上查找</li>
+<li>2.浏览器通过ip加url端口跟服务器建立tcp连接(三次握手)</li>
+<li>3.浏览器向服务器发送http请求</li>
+<li>4.服务器收到浏览器请求并返回http响应</li>
+<li>5.浏览器解析渲染页面</li>
+<li>6.断开tcp连接，四次挥手</li>
+</ul>
+<h1 id="http-1-0-和-http-1-1的区别"><a href="#http-1-0-和-http-1-1的区别" class="headerlink" title="http 1.0 和 http 1.1的区别"></a>http 1.0 和 http 1.1的区别</h1><ol>
+<li>http 1.1支持长连接，和请求的流水线处理</li>
+</ol>
+<ul>
+<li>在请求完毕时，客户端会使用Connection请求头值为Keep-Alive通知服务器，保持连接。在服务器响应之前，客户端可以发送新请求，服务器会按请求顺序依次响应。</li>
+</ul>
+<ol start="2">
+<li>http 1.1增加host字段 比如Host: <a href="http://www.baidu.com" target="_blank" rel="noopener">www.baidu.com</a></li>
+<li>100(Continue)状态码，允许客户端在发送request body之前先用request header试探以下，如果服务器允许，再发送request body</li>
+<li>http/1.1 中引入了chunked transfer-coding来解决数据块过大的问题，切割数据块，最后用一个零长度的块作为消息结束的标识，避免缓冲整个消息造成过载</li>
+<li>http/1.1在1.0基础上加入了一些cache的新特性，当缓存对象的Age超过Expire时变为stale对象，cache不需要直接抛弃stale对象，而是与服务器进行重新激活</li>
+</ol>
+<h1 id="springboot启动流程"><a href="#springboot启动流程" class="headerlink" title="springboot启动流程"></a>springboot启动流程</h1><p><img src="springboot.webp" alt="springboot"></p>
+<ul>
+<li>第一部分：SpringApplication的初始化，配置一些基本的环境变量、资源、构造器、监听器</li>
+<li>第二部份：实现了应用具体的启动方法，包括启动流程的监听模块、加载配置环境模块、以及核心的创建上下文环境模块</li>
+<li>第三部分：自动化配置模块，该模块作为springboot自动配置核心</li>
+</ul>
+<h1 id="redis-AOF-和RDB区别"><a href="#redis-AOF-和RDB区别" class="headerlink" title="redis AOF 和RDB区别"></a>redis AOF 和RDB区别</h1><p>RDB：实时快照方法，定时备份，记录了数据的变更<br>AOF：基于语句追加方法，记录了整个写操作</p>
+<h1 id="redis-数据类型"><a href="#redis-数据类型" class="headerlink" title="redis 数据类型"></a>redis 数据类型</h1><ul>
+<li>String Hash(双层Map结构) </li>
+<li>List(双向链表结构lpush插入数据 lpop移除数据) </li>
+<li>Set 元素不能重复无序</li>
+<li>Zset 元素不能重复有序</li>
+</ul>
+<h1 id="redis-分片连接池-采用一致性Hash算法"><a href="#redis-分片连接池-采用一致性Hash算法" class="headerlink" title="redis 分片连接池 采用一致性Hash算法"></a>redis 分片连接池 采用一致性Hash算法</h1><ul>
+<li>放入元素时计算hash，(key.hashCode()&amp;Integer.MAX_VALUE)%N</li>
+<li>一个0 ~ 2^32-1整数区间的Hash环，散列算法实现数据映射到0-43亿整数区间</li>
+<li>为了平衡节点数据量，Jedis中引入了虚拟节点，160 * weght权重值个</li>
+</ul>
+<h1 id="redis-cluster如何确定哪个槽道由哪个节点管理"><a href="#redis-cluster如何确定哪个槽道由哪个节点管理" class="headerlink" title="redis-cluster如何确定哪个槽道由哪个节点管理"></a>redis-cluster如何确定哪个槽道由哪个节点管理</h1><ul>
+<li>redis通过一个二进制 0 1数组 和 一个保存对象引用的数组维持槽道所属权</li>
+<li>两个数组的长度均为 16384，槽道数长度</li>
+</ul>
+<h1 id="倒排索引"><a href="#倒排索引" class="headerlink" title="倒排索引"></a>倒排索引</h1><p>倒排索引是 “单词-文档矩阵”的一种具体存储形式</p>
+<h1 id="mycat原理"><a href="#mycat原理" class="headerlink" title="mycat原理"></a>mycat原理</h1><p>mycat主要通过对sql的拦截，然后经过一定规则的分片解析，路由分析，读写分离分析，缓存分析等，然后将sql发送给后端真实的数据块，并将返回的结果做适当处理返回给客户端</p>
+<h1 id="sso单点登陆实现原理"><a href="#sso单点登陆实现原理" class="headerlink" title="sso单点登陆实现原理"></a>sso单点登陆实现原理</h1><p><img src="mvgyfyd1cq.jpeg" alt="sso"></p>
+<ul>
+<li>用户访问系统1的受保护资源，系统1发现用户未登录，跳转至sso认证中心，并将自己的地址作为参数</li>
+<li>sso认证中心发现用户未登录，将用户引导至登录页面</li>
+<li>用户输入用户名密码提交登录申请</li>
+<li>sso认证中心校验用户信息，创建用户与sso认证中心之间的会话，称为全局会话，同时创建授权令牌</li>
+<li>sso认证中心带着令牌跳转会最初的请求地址（系统1）</li>
+<li>系统1拿到令牌，去sso认证中心校验令牌是否有效</li>
+<li>sso认证中心校验令牌，返回有效，注册系统1</li>
+<li>系统1使用该令牌创建与用户的会话，称为局部会话，返回受保护资源</li>
+<li>用户访问系统2的受保护资源</li>
+<li>系统2发现用户未登录，跳转至sso认证中心，并将自己的地址作为参数</li>
+<li>sso认证中心发现用户已登录，跳转回系统2的地址，并附上令牌</li>
+<li>系统2拿到令牌，去sso认证中心校验令牌是否有效</li>
+<li>sso认证中心校验令牌，返回有效，注册系统2</li>
+<li>系统2使用该令牌创建与用户的局部会话，返回受保护资源<br>　   用户登录成功之后，会与sso认证中心及各个子系统建立会话，用户与sso认证中心建立的会话称为全局会话，用户与各个子系统建立的会话称为局部会话，局部会话建立之后，用户访问子系统受保护资源将不再通过sso认证中心，全局会话与局部会话有如下约束关系</li>
+</ul>
+<p>局部会话存在，全局会话一定存在<br>全局会话存在，局部会话不一定存在<br>全局会话销毁，局部会话必须销毁<br><a href="https://cloud.tencent.com/developer/article/1166255" target="_blank" rel="noopener">详情参考</a></p>
+<ul>
+<li>单点登录自然也要单点注销，在一个子系统中注销，所有子系统的会话都将被销毁，用下面的图来说明<br><img src="w0719vs47g.jpeg" alt=""></li>
+<li>用户向系统1发起注销请求</li>
+<li>系统1根据用户与系统1建立的会话id拿到令牌，向sso认证中心发起注销请求</li>
+<li>sso认证中心校验令牌有效，销毁全局会话，同时取出所有用此令牌注册的系统地址</li>
+<li>sso认证中心向所有注册系统发起注销请求</li>
+<li>各注册系统接收sso认证中心的注销请求，销毁局部会话</li>
+<li>sso认证中心引导用户至登录页面</li>
+</ul>
+<h1 id="父子节点自关联"><a href="#父子节点自关联" class="headerlink" title="父子节点自关联"></a>父子节点自关联</h1><p>父节点.字段 = 子节点.字段</p>
+<h1 id="大表小表查询"><a href="#大表小表查询" class="headerlink" title="大表小表查询"></a>大表小表查询</h1><p>大表放后面进行join</p>
+<h1 id="接口和抽象类"><a href="#接口和抽象类" class="headerlink" title="接口和抽象类"></a>接口和抽象类</h1><ul>
+<li>相同点<ul>
+<li>两者都是抽象类，都不能实例化</li>
+<li>interface实现类</li>
+</ul>
+</li>
+<li>不同点<ul>
+<li>抽象类相当于接口和类之间的过渡</li>
+<li>interface强调特定功能的实现 ,而抽象类强调所属关系</li>
+<li>需要实现特定的功能，这些功能之间没有关系</li>
+<li>不想让子类实现所有接口中的方法，这个时候就可以使用抽象类实现不需要重写的方法</li>
+</ul>
+</li>
+</ul>
+<h1 id="删除重复行"><a href="#删除重复行" class="headerlink" title="删除重复行"></a>删除重复行</h1><p>DELETE FROM table WHERE id NOT IN<br>    (SELECT MAX(id) FROM table GROUP BY date);</p>
+<h1 id="oracle-分页"><a href="#oracle-分页" class="headerlink" title="oracle 分页"></a>oracle 分页</h1><p>SELECT *<br>FROM (SELECT ROWNUM AS rowno, t.*<br>FROM emp t<br>WHERE hire_date BETWEEN TO_DATE (‘20060501’, ‘yyyymmdd’)<br>AND TO_DATE (‘20060731’, ‘yyyymmdd’)<br>AND ROWNUM &lt;= 20) table_alias<br> WHERE table_alias.rowno &gt;= 10;</p>
+<h1 id="final-finally-finalize-1"><a href="#final-finally-finalize-1" class="headerlink" title="final finally finalize"></a>final finally finalize</h1><p>final：java中的关键字，修饰符。<br>A).如果一个类被声明为final，就意味着它不能再派生出新的子类，不能作为父类被继承。因此，一个类不能同时被声明为abstract抽象类的和final的类。<br>B).如果将变量或者方法声明为final，可以保证它们在使用中不被改变.<br>　　1)被声明为final的变量必须在声明时给定初值，而在以后的引用中只能读取，不可修改。<br>　　2)被声明final的方法只能使用，不能重载。<br>finally：java的一种异常处理机制。<br>　　finally是对Java异常处理模型的最佳补充。finally结构使代码总会执行，而不管无异常发生。使用finally可以维护对象的内部状态，并可以清理非内存资源。特别是在关闭数据库连接这方面，如果程序员把数据库连接的close()方法放到finally中，就会大大降低程序出错的几率。<br>finalize：Java中的一个方法名。<br>Java技术使用finalize()方法在垃圾收集器将对象从内存中清除出去前，做必要的清理工作。这个方法是由垃圾收集器在确定这个对象没被引用时对这个对象调用的。它是在Object类中定义的，因此所的类都继承了它。子类覆盖finalize()方法以整理系统资源或者执行其他清理工作。finalize()方法是在垃圾收集器删除对象之前对这个对象调用的。</p>
+<h1 id="为什么要有垃圾收集"><a href="#为什么要有垃圾收集" class="headerlink" title="为什么要有垃圾收集"></a>为什么要有垃圾收集</h1><ul>
+<li>清理无用对象，防止内存泄漏</li>
+<li>不断清理提高内存复用</li>
+<li>GC的回收时间是不确定的，即使你显示的调用的System.gc()。因为和线程优先级有关</li>
+<li>使用了finalize（）方法之后，GC是在这个方法执行之后的下一次进行垃圾的回收。</li>
+</ul>
+<h1 id="常识题"><a href="#常识题" class="headerlink" title="常识题"></a>常识题</h1><p>定义包装类 赋值一个基本类型会自动装箱，-128 ~ 127会是同一个对象</p>
+<h1 id="ConcurrentHashMap-1-7和1-8区别"><a href="#ConcurrentHashMap-1-7和1-8区别" class="headerlink" title="ConcurrentHashMap 1.7和1.8区别"></a>ConcurrentHashMap 1.7和1.8区别</h1><p><a href="https://baijiahao.baidu.com/s?id=1617089947709260129&wfr=spider&for=pc" target="_blank" rel="noopener">详情参考</a></p>
+<h1 id="数据库事务"><a href="#数据库事务" class="headerlink" title="数据库事务"></a>数据库事务</h1><p>事务特点 （ACID）</p>
+<ul>
+<li><p>原子性(Automicity)：指事务是一个不可分割的单位，在这个单位中所有操作<br>全部成功或者失败；</p>
+</li>
+<li><p>一致性(Consistency)：是指事务执行前后，数据在完整性上仍然保持一致的特性；</p>
+</li>
+<li><p>隔离性(Isolation)：事务库中可以通知执行多个事务，防止多个事务直接互相影响，<br>需要将这些事务分开，分开的方式就是利用隔离性来操作，隔离性本质式在解决线程安全问题；</p>
+</li>
+<li><p>持久性(Durability)：事务一旦提交，则会在数据库中发生真实的修改，这个过<br>程不可逆，一回滚，事务会撤销回原有的数据内容；</p>
+</li>
+<li><p>隔离安全</p>
+<ul>
+<li>脏读:   一个事务读取到另一个事务没有提交的数据；</li>
+<li>重复读:  一个事务读取到另一个事务已经提交的数据；</li>
+<li>虚度/幻读： 在整表操作中，一个事务读取到另外一个事务已经提交的事务；</li>
+</ul>
+</li>
+<li><p>隔离级别</p>
+<ul>
+<li><p>为了防止事务之间的互相影响的问题，而建立的；</p>
+<ul>
+<li>read uncommitted  最低隔离级别，不能防止脏读、不可重复读，虚读/幻读；</li>
+<li>read committed    较低的隔离级别可以防止脏读、不可以防止重复读，虚读/幻读；</li>
+<li>repeatable read   较高的隔离级别可以防止脏读、重复读，不可以防止虚读/幻读(mysql default)；</li>
+<li>serializable      最高的数据库隔离级别，可以防止脏读、重复读、虚读/幻读；<ul>
+<li>在serializable隔离级别下，数据库将以串行的方式运行;</li>
+</ul>
+</li>
+<li>修改数据库服务器的隔离级别，需要重启服务器<ul>
+<li>set global transaction isolation level repeatable read;</li>
+</ul>
+</li>
+<li>设置窗口隔离级别<ul>
+<li>set session transaction isolation level repeatable read;</li>
+</ul>
+</li>
+<li>只对下一个事务生效<ul>
+<li>set transaction isolation level repeatable read;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>查看隔离级别 select @@tx_isolation;<br><img src="11464886-82267cb5926d26fb.webp" alt=""></p>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="Autowired-Resource区别"><a href="#Autowired-Resource区别" class="headerlink" title="@Autowired @Resource区别"></a>@Autowired @Resource区别</h1><p>@Autowired是默认按照类型装配的 @Resource默认是按照名称装配的 如果没有配置name属性值则先按名字查找，找不到则按类型查找</p>
+<h1 id="遍历HashMap的四种方法"><a href="#遍历HashMap的四种方法" class="headerlink" title="遍历HashMap的四种方法"></a>遍历HashMap的四种方法</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 方法一 通过keySet遍历</span></span><br><span class="line"><span class="keyword">for</span> (String key:map.keySet())</span><br><span class="line">    System.out.println(<span class="string">"Key: "</span>+key+<span class="string">" Value: "</span>+map.get(key));</span><br><span class="line"></span><br><span class="line"><span class="comment">// 方法二 通过Map.entrySet使用iterator遍历Key和 value</span></span><br><span class="line">Iterator mapI = map.entrySet().Iterator();</span><br><span class="line"><span class="keyword">while</span> (mapI.hasNext()) &#123;</span><br><span class="line">    Map.Entry&lt;String,String&gt; entry = (Entry&lt;String,String&gt;) mapI.next();</span><br><span class="line">    System.out.println(<span class="string">"Key: "</span>+entry.getKey()+<span class="string">" Value: "</span>+entry.getValue())</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 第三种 通过Map.entrySet 遍历key 和value 推荐使用</span></span><br><span class="line"><span class="keyword">for</span> (Map.Entry&lt;String,String&gt; entry: map.entrySet()) &#123;</span><br><span class="line">    System.out.println(<span class="string">"Key: "</span>+ entry.getKey()+ <span class="string">" Value: "</span>+entry.getValue());</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 第四种 通过Map.values()遍历所有的value</span></span><br><span class="line"><span class="keyword">for</span> (String v: map.values())</span><br><span class="line">    System.out.println(<span class="string">"value"</span> + v);</span><br></pre></td></tr></table></figure>
+
+<h1 id="eureka-的发现服务以及保证存活机制"><a href="#eureka-的发现服务以及保证存活机制" class="headerlink" title="eureka 的发现服务以及保证存活机制"></a>eureka 的发现服务以及保证存活机制</h1><p>当Eureka客户端向Eureka Server注册时，它提供自身的元数据，比如IP地址、端口，运行状况指示符URL，主页等</p>
+<p>Eureka Client会每隔30秒发送一次心跳来续约。 通过续约来告知Eureka Server该Eureka客户仍然存在，没有出现问题。 正常情况下，如果Eureka Server在90秒没有收到Eureka客户的续约，它会将实例从其注册表中删除。 建议不要更改续约间隔。</p>
+<p>Eureka客户端从服务器获取注册表信息，并将其缓存在本地。客户端会使用该信息查找其他服务从而进行远程调用，该注册列表信息(每30s)更新一次。每次返回注册列表信息可能与Eureka客户端的缓存信息不同， Eureka客户端自动处理。如果由于某种原因导致注册列表信息不能及时匹配，Eureka客户端则会重新获取整个注册表信息。</p>
+<h1 id="如何实现基于AOP来记录所有的新增，修改，删除"><a href="#如何实现基于AOP来记录所有的新增，修改，删除" class="headerlink" title="如何实现基于AOP来记录所有的新增，修改，删除"></a>如何实现基于AOP来记录所有的新增，修改，删除</h1><h1 id="空字符串str-为null时，str-toString-、-String-str、String-valueOf-str-、分别会出现什么情况？"><a href="#空字符串str-为null时，str-toString-、-String-str、String-valueOf-str-、分别会出现什么情况？" class="headerlink" title="空字符串str 为null时，str.toString()、(String)str、String.valueOf(str)、分别会出现什么情况？"></a>空字符串str 为null时，str.toString()、(String)str、String.valueOf(str)、分别会出现什么情况？</h1><p>空指针异常 正常运行 正常运行</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// String中的 valueOf</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">valueOf</span><span class="params">(Object obj)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (obj == <span class="keyword">null</span>) ? <span class="string">"null"</span> : obj.toString();</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//String中的 toString</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="Oracle跟MySql分页关键字"><a href="#Oracle跟MySql分页关键字" class="headerlink" title="Oracle跟MySql分页关键字"></a>Oracle跟MySql分页关键字</h1><p>rowNum limit</p>
+<h1 id="数据库隔离级别"><a href="#数据库隔离级别" class="headerlink" title="数据库隔离级别"></a>数据库隔离级别</h1><p>read uncommited<br>read commited   防止脏读<br>repeatable      防止脏读 重复读 default 级别<br>serializable    防止脏读 重复度 幻读</p>
+<h1 id="spring-配置类注入"><a href="#spring-配置类注入" class="headerlink" title="spring 配置类注入"></a>spring 配置类注入</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span>      <span class="comment">//声明该类为配置类</span></span><br><span class="line"><span class="meta">@PropertySource</span>(<span class="string">"classpath:jdbc.properties"</span>)        <span class="comment">//指明配置文件位置  会自动去resouces下找到此文件</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Myconfig</span> </span>&#123;</span><br><span class="line">     <span class="meta">@Value</span>(<span class="string">"$&#123;jdbc.driverclass&#125;"</span>)       <span class="comment">//使用EL表达式获取到对应的值   会为属性自动注入对应的值</span></span><br><span class="line">     <span class="keyword">private</span> String driverClass;</span><br><span class="line">     <span class="meta">@Value</span>(<span class="string">"$&#123;jdbc.url&#125;"</span>)</span><br><span class="line">     <span class="keyword">private</span> String url;</span><br><span class="line">     <span class="meta">@Value</span>(<span class="string">"$&#123;jdbc.username&#125;"</span>)</span><br><span class="line">     <span class="keyword">private</span> String username;</span><br><span class="line">     <span class="meta">@Value</span>(<span class="string">"$&#123;jdbc.password&#125;"</span>)</span><br><span class="line">     <span class="keyword">private</span> String password;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> DataSource <span class="title">dataSource</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        DruidDataSource druidDataSource = <span class="keyword">new</span> DruidDataSource();</span><br><span class="line"></span><br><span class="line">        druidDataSource.setDriverClassName(driverClass);</span><br><span class="line">        druidDataSource.setUrl(url);</span><br><span class="line">        druidDataSource.setUsername(username);</span><br><span class="line">        druidDataSource.setPassword(password);</span><br><span class="line">        <span class="keyword">return</span> druidDataSource;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 设置默认值方式</span></span><br><span class="line"><span class="meta">@Value</span>(<span class="string">"$&#123;some.key:my default value&#125;"</span>)</span><br><span class="line"><span class="keyword">private</span> String stringWithDefaultValue;</span><br></pre></td></tr></table></figure>
+
+<h1 id="nginx-负载均衡配置"><a href="#nginx-负载均衡配置" class="headerlink" title="nginx 负载均衡配置"></a>nginx 负载均衡配置</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">upstream backend &#123;</span><br><span class="line">    server backend1.example.com       weight&#x3D;5;</span><br><span class="line">    server backend2.example.com:8080;</span><br><span class="line">    server unix:&#x2F;tmp&#x2F;backend3;</span><br><span class="line"></span><br><span class="line">    server backup1.example.com:8080   backup;</span><br><span class="line">    server backup2.example.com:8080   backup;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">server &#123;</span><br><span class="line">    location &#x2F; &#123;</span><br><span class="line">        proxy_pass http:&#x2F;&#x2F;backend;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="js代码输出结果"><a href="#js代码输出结果" class="headerlink" title="js代码输出结果"></a>js代码输出结果</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> foo = <span class="number">1</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">baidu</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(foo);</span><br><span class="line">    <span class="keyword">var</span> foo = <span class="number">2</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(foo);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//“JavaScript 中，函数及变量的声明都将被提升到函数的最顶部”，注意，“只有声明的变量会提升，初始化的值却不会。”</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">baidu</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">     <span class="keyword">var</span> foo;  <span class="comment">//提升到函数最顶部</span></span><br><span class="line">     <span class="built_in">console</span>.log(foo);  <span class="comment">//输出未定义</span></span><br><span class="line">     foo =<span class="number">2</span>; </span><br><span class="line">     <span class="built_in">console</span>.log(foo); <span class="comment">//输出2</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="常识-有关SessionFactory"><a href="#常识-有关SessionFactory" class="headerlink" title="常识 有关SessionFactory"></a>常识 有关SessionFactory</h1><p>一个SessionFactory对象对应一个数据库存储源<br>SessionFactory是重量级的对象，不应该随意创建，如果系统中只有一个数据库存储源，只需要创建一个<br>它是线程安全得</p>
+<h1 id="mysql主从复制配置"><a href="#mysql主从复制配置" class="headerlink" title="mysql主从复制配置"></a>mysql主从复制配置</h1><h1 id="redis-和mysql区别"><a href="#redis-和mysql区别" class="headerlink" title="redis 和mysql区别"></a>redis 和mysql区别</h1><ul>
+<li>mysql是经典的关系型数据库，而redis是非关系型数据库。</li>
+<li>这两者的主要差异在于查询，redis只能用key去获取value，不支持sql语句来进行查询。而mysql则只能通过sql语句来进行查询，不能直接通过key来获取value。</li>
+<li>因为redis的数据读取过程的时间复杂度是O(1)，也就是说和数据量无关。再加上数据保存在内存，所以读取速度在理论上已经达到了上限。而mysql的查询则是通过扫描表来进行，读取的速度取决于数据量，以及是否有合适的索引。<br><a href="https://www.zhihu.com/question/61566731/answer/189296602" target="_blank" rel="noopener">原文链接</a></li>
+</ul>
+<h1 id="redis知识点"><a href="#redis知识点" class="headerlink" title="redis知识点"></a>redis知识点</h1><p><a href="https://www.lagou.com/lgeduarticle/82159.html" target="_blank" rel="noopener">原文参见</a></p>
+<h1 id="java字符串拼接"><a href="#java字符串拼接" class="headerlink" title="java字符串拼接"></a>java字符串拼接</h1><p><a href="https://www.cnblogs.com/lujiahua/p/11408689.html" target="_blank" rel="noopener">原文参见</a></p>
+<h1 id="sql"><a href="#sql" class="headerlink" title="sql"></a>sql</h1><p>选课数超过三门学生的sid，课程数，平均成绩，<br>select sid,count(cid),avg(score) from sc where sid in(<br>    select sid from sc group by sid having count(cid) &gt;=3) GROUP BY sid ;</p>
+<p>找出没有选修过李四老师讲授课程的所有学生姓名<br>select sid,sname from student where sid not in (<br>select sc.sid from sc,course c ,teacher t where<br>sc.cid=c.cid and t.tid=c.tid and tname = ‘李四’);</p>
+<p>列出两门及两门以上不及格同学的姓名和平均成绩<br>select sname,avg(score) from sc,student s where sc.sid = s.sid and sc.score &lt;60 group by sc.sid having count(cid)&gt;=2</p>
+<h1 id="题目：有n个人围成一圈，顺序排号。从第一个人开始报数（从1到3报数），凡报到3的人退出圈子，问最后留下的是原来第几号的那位。"><a href="#题目：有n个人围成一圈，顺序排号。从第一个人开始报数（从1到3报数），凡报到3的人退出圈子，问最后留下的是原来第几号的那位。" class="headerlink" title="题目：有n个人围成一圈，顺序排号。从第一个人开始报数（从1到3报数），凡报到3的人退出圈子，问最后留下的是原来第几号的那位。"></a>题目：有n个人围成一圈，顺序排号。从第一个人开始报数（从1到3报数），凡报到3的人退出圈子，问最后留下的是原来第几号的那位。</h1><p>解题思路: 一直遍历这个数组，每隔2个删除一个元素，直到只剩下一个元素 如果遇到了数组的结尾，那么就跳转到开头</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        ArrayList&lt;Integer&gt; list = <span class="keyword">new</span> ArrayList&lt;Integer&gt;();</span><br><span class="line">        list.add(<span class="number">1</span>);</span><br><span class="line">        list.add(<span class="number">2</span>);</span><br><span class="line">        list.add(<span class="number">3</span>);</span><br><span class="line">        list.add(<span class="number">4</span>);</span><br><span class="line">        list.add(<span class="number">5</span>);</span><br><span class="line">        list.add(<span class="number">6</span>);</span><br><span class="line">        list.add(<span class="number">7</span>);</span><br><span class="line">        list.add(<span class="number">8</span>);</span><br><span class="line">        list.add(<span class="number">9</span>);</span><br><span class="line">        list.add(<span class="number">10</span>);</span><br><span class="line">        list.add(<span class="number">11</span>);</span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">         * 第二种思路 一直遍历这个数组，每隔2个删除一个元素，直到只剩下一个元素 如果遇到了数组的结尾，那么就跳转到开头</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (list.size() != <span class="number">1</span>) &#123;</span><br><span class="line">            <span class="comment">// 如果到了末尾，则重新回到开头</span></span><br><span class="line">            <span class="keyword">if</span> (i + <span class="number">1</span> &gt;= list.size()) &#123;</span><br><span class="line">                i = -<span class="number">1</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (i + <span class="number">2</span> &gt;= list.size()) &#123;</span><br><span class="line">                i = -<span class="number">2</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 删除元素</span></span><br><span class="line">            i = i + <span class="number">2</span>;</span><br><span class="line">            System.out.println(<span class="string">"删除"</span> + list.get(i) + <span class="string">"号"</span>);</span><br><span class="line">            list.remove(i);</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">"最后剩下的人是"</span> + list.get(<span class="number">0</span>) + <span class="string">"号"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="不可变类"><a href="#不可变类" class="headerlink" title="不可变类"></a>不可变类</h1><p>不可变对象(Immutable Object)：对象一旦被创建后，对象所有的状态及属性在其生命周期内不会发生任何变化。<br>不可变类特点：<br>将类声明为final，所以它不能被继承；</p>
+<p>将所有的成员声明为私有的，这样就不允许直接访问这些成员；</p>
+<p>对变量不要提供setter方法；</p>
+<p>将所有可变的成员声明为final，这样只能对它们赋值一次；</p>
+<p>通过构造器初始化所有成员，进行深拷贝（deep copy）；</p>
+<p>在getter方法中，不要直接返回对象本身，而是克隆对象，并返回对象的拷贝；</p>
+<h1 id="面试题-当一个对象被当作参数传递到一个方法后，此方法可改变这个对象的属性，并可返回变化后的结果，那么这里到底是值传递还是引用传递"><a href="#面试题-当一个对象被当作参数传递到一个方法后，此方法可改变这个对象的属性，并可返回变化后的结果，那么这里到底是值传递还是引用传递" class="headerlink" title="面试题:当一个对象被当作参数传递到一个方法后，此方法可改变这个对象的属性，并可返回变化后的结果，那么这里到底是值传递还是引用传递?"></a>面试题:当一个对象被当作参数传递到一个方法后，此方法可改变这个对象的属性，并可返回变化后的结果，那么这里到底是值传递还是引用传递?</h1><p>答:是值传递。Java编程语言只有值传递参数。当一个对象实例作为一个参数被传递到方法中时，参数的值就是该对象的引用一个副本。指向同一个对象,对象的内容可以在被调用的方法中改变，但对象的引用(不是引用的副本)是永远不会改变的。</p>
+<h1 id="union-和-union-all-区别"><a href="#union-和-union-all-区别" class="headerlink" title="union 和 union all 区别"></a>union 和 union all 区别</h1><p>union：对两个结果集进行并集操作，不包括重复行，同时进行默认规则的排序；<br>union All：对两个结果集进行并集操作，包括重复行，不进行排序；</p>
+<h1 id="oracle有几种临时表，有什么区别"><a href="#oracle有几种临时表，有什么区别" class="headerlink" title="oracle有几种临时表，有什么区别"></a>oracle有几种临时表，有什么区别</h1><ul>
+<li>会话级临时表采用 on commit preserve rows ;而事务级则采用 on commit delete rows ;</li>
+<li>用法上，会话级别只有当会话结束临时表中的数据才会被截断，而且事务级临时表则不管是 commit 、 rollback 或者是会话结束，临时表中的数据都将被截断</li>
+</ul>
+<h1 id="压缩字符串-aaabbbc-gt-a3b3c"><a href="#压缩字符串-aaabbbc-gt-a3b3c" class="headerlink" title="压缩字符串 aaabbbc =&gt; a3b3c"></a>压缩字符串 aaabbbc =&gt; a3b3c</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">compressStr</span><span class="params">(String str)</span></span>&#123;</span><br><span class="line">      StringBuilder sb = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">      <span class="keyword">int</span> sum =<span class="number">1</span>;</span><br><span class="line">      <span class="keyword">char</span> c1 = str.charAt(<span class="number">0</span>);</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; str.length(); i++) &#123;</span><br><span class="line">          <span class="keyword">char</span> c2 = str.charAt(i);</span><br><span class="line">          <span class="keyword">if</span> (c1 == c2) &#123;</span><br><span class="line">              sum ++;</span><br><span class="line">              <span class="keyword">continue</span>;</span><br><span class="line">          &#125;</span><br><span class="line">          <span class="keyword">if</span> (sum &gt;<span class="number">1</span>)&#123;</span><br><span class="line">              sb.append(c1).append(sum);</span><br><span class="line">          &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">              sb.append(c1);</span><br><span class="line">          &#125;</span><br><span class="line">          c1 =c2;</span><br><span class="line">          sum =<span class="number">1</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">if</span> (sum &gt;<span class="number">1</span>)&#123;</span><br><span class="line">          sb.append(c1).append(sum);</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          sb.append(c1);</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">return</span> sb.toString();</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="查询用户最新的记录"><a href="#查询用户最新的记录" class="headerlink" title="查询用户最新的记录"></a>查询用户最新的记录</h1><p>select id,time from user_a gorup by id order by time desc;</p>
+<h1 id="springMVC中controller式单例的-如何保证并发的安全？"><a href="#springMVC中controller式单例的-如何保证并发的安全？" class="headerlink" title="springMVC中controller式单例的,如何保证并发的安全？"></a>springMVC中controller式单例的,如何保证并发的安全？</h1><p>1、不要在controller中定义成员变量。定义为静态的变量<br>2、万一必须要定义一个非静态成员变量时候，则通过注解@Scope(“prototype”)，将其设置为多例模式。<br>3、在Controller中使用ThreadLocal变量</p>
+<h1 id="微服务架构的优势"><a href="#微服务架构的优势" class="headerlink" title="微服务架构的优势"></a>微服务架构的优势</h1><p>可扩展性:在增加业务功能时，单一应用架构需要在原先架构的代码基础上做比较大的调整，而微服务架构只需要增加新的微服务节点，并调整与之有关联的微服务节点即可。在增加业务响应能力时，单一架构需要进行整体扩容，而微服务架构仅需要扩容响应能力不足的微服务节点。</p>
+<p>容错性:在系统发生故障时，单一应用架构需要进行整个系统的修复，涉及到代码的变更和应用的启停，而微服务架构仅仅需要针对有问题的服务进行代码的变更和服务的启停。其他服务可通过重试、熔断等机制实现应用层面的容错。</p>
+<p>技术选型灵活:微服务架构下，每个微服务节点可以根据完成需求功能的不同，自由选择最适合的技术栈，即使对单一的微服务节点进行重构，成本也非常低。</p>
+<p>开发运维效率更高:每个微服务节点都是一个单一进程，都专注于单一功能，并通过定义良好的接口清晰表述服务边界。由于体积小、复杂度低，每个微服务可由一个小规模团队或者个人完全掌控，易于保持高可维护性和开发效率。</p>
+<h1 id="kafka概念以及如何保证kafka消息不丢"><a href="#kafka概念以及如何保证kafka消息不丢" class="headerlink" title="kafka概念以及如何保证kafka消息不丢"></a>kafka概念以及如何保证kafka消息不丢</h1><ul>
+<li><p>Kafka是分布式发布-订阅消息系统，它最初是由LinkedIn公司开发的，之后成为Apache项目的一部分，Kafka是一个分布式，可划分的，冗余备份的持久性的日志服务，它主要用于处理流式数据。</p>
+</li>
+<li><p>生产者可靠性：</p>
+<ul>
+<li>通过配置参数 request.required.acks=-1，所有ISR列表中的所有副本同步数据完成后才leader向生产者发送成功消息；</li>
+<li>开启副本数 min.insync.replicas&gt;=2</li>
+<li>开启幂等性 enable.idempotence=true</li>
+<li>开启不允许非isr副本选举为 leader,unclean.leader.election.enable=false</li>
+</ul>
+</li>
+<li><p>消费者可靠性：</p>
+<ul>
+<li>enable.auto.commit=false 关闭自动提交offset</li>
+</ul>
+</li>
+</ul>
+<h1 id="tree、b-tree、b-tree数据结构"><a href="#tree、b-tree、b-tree数据结构" class="headerlink" title="tree、b tree、b+tree数据结构"></a>tree、b tree、b+tree数据结构</h1><p><a href="https://www.cnblogs.com/fengff/p/10216184.html" target="_blank" rel="noopener">原文参见</a></p>
+<h1 id="jstl-遍历list"><a href="#jstl-遍历list" class="headerlink" title="jstl 遍历list"></a>jstl 遍历list</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;c:forEach var&#x3D;&quot;userList&quot;  items&#x3D;&quot;$&#123; list &#125;&quot;&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">        &lt;td&gt;$&#123;userList.id&#125;&lt;&#x2F;td&gt;</span><br><span class="line">        &lt;td&gt;$&#123;userList.username &#125;&lt;&#x2F;td&gt;</span><br><span class="line">        &lt;td&gt;$&#123;userList.password &#125;&lt;&#x2F;td&gt;</span><br><span class="line">        &lt;td&gt;$&#123;userList.birthday &#125;&lt;&#x2F;td&gt;</span><br><span class="line">        &lt;td&gt;$&#123;userList.salary &#125;&lt;&#x2F;td&gt;</span><br><span class="line">        &lt;%-- 也可以&lt;td&gt;&lt;c:out value&#x3D;&quot;$&#123;userList.id&#125;&quot;&#x2F;&gt;&lt;&#x2F;td&gt; --%&gt;</span><br><span class="line">    &lt;&#x2F;tr&gt;</span><br><span class="line">&lt;&#x2F;c:forEach&gt;</span><br><span class="line">&#96;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/04/19/JAVA/" data-id="ckautpojr000e94rh6vqsatiu" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-sql_optimize" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/19/sql_optimize/" class="article-date">
+  <time datetime="2020-04-19T04:50:58.044Z" itemprop="datePublished">2020-04-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/19/sql_optimize/">sql_optimize</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>– 添加索引<br>– create index index_name on tableName(column_name);<br>– alter table user add index name_index(name);<br>– alter table user add unique index id_index(id);<br>– alter table user add index id_name_index(id,name);<br>– alter table teacherCard add constraint pk_tcid primary key(tcid);<br>– alter table teacher add constraint uk_tcid unique index(tcid);<br>– primary key 是主键索引 和 唯一索引相似<br>        – 区别 主键不能为Null,唯一索引可以为Null</p>
+<p>– 删除索引<br>– drop index name_index on user;<br>– show index from user;</p>
+<p>– 连接层 服务层 引擎层 存储层</p>
+<p>– 查询课程编号为2或者教师证编号为2的老师信息<br>– explain select t.* from teacher t,course c,teacherCard tc<br>–     where c.tid = t.tid and t.tcid=tc.tcid<br>–         and (c.cid=2 or tc.tcid=3)</p>
+<p>– t3 – tc3 – c4<br>– tc3 – c4 – t6<br>– 结论:数据量小,优先查询</p>
+<p>– id值不同,Id值越大越优先查询(嵌套子查询先查内层,再查外层)<br>– id值相同,又有不同,Id值越大越优先;id值相同,从上往下执行;</p>
+<p>– 查询教sql老师的描述<br>– 多表关联<br>– explain select tc.tcdesc from teacherCard tc,teacher t,course c<br>–     where c.tid=t.tid and t.tcid=tc.tcid  and c.cname=’sql’;</p>
+<p>– 子查询<br>– explain select tc.* from teacherCard tc where tc.tcid = (<br>–     select t.tcid from teacher t where t.tid = (<br>–         select c.tid from course c where c.cname=’sql’));</p>
+<p>– 子查询+两表关联<br>– explain select tc.* from teacher t,teacherCard tc<br>–     where t.tcid = tc.tcid and t.tid = (<br>–         select c.tid from course c where c.cname=’sql’);</p>
+<p>–  索引类型 system &gt; const &gt; eq_ref &gt; ref &gt; range &gt; index &gt; all<br>– system const 理想情况,实际情况在ref &gt; range<br>– system 只有一条数据的系统表,或 衍生表只有一条数据的主查询;<br>– const 仅仅能查到一条数据的sql,用于primary key 或者unique key<br>– eq_ref 唯一索引,对于每个索引建的查询,返回匹配唯一行的数据(有且仅有一条,不能是0)</p>
+<p>– explain select t.tcid from teacher t,teacherCard tc where t.tcid=tc.tcid;</p>
+<p>– ref 非唯一索引(0,more)<br>– explain select * from teacher where tname=’zhao’;</p>
+<p>– range 范围查询 &lt; &gt;= betwween and in<br>– alter table teacher add index tid_index(tid);</p>
+<p>– explain select t.* from teacher t where t.tid in (1,1);<br>– explain select t.* from teacher t where t.tid &lt;3;<br>– explain select t.* from teacher t where t.tid &gt;2;<br>– explain select t.* from teacher t where t.tid between 1 and 2;</p>
+<p>– index扫描索引列  all 扫描整个表<br>– explain select t.tid from teacher t</p>
+<p>– key_len 用一个字节标识null,用两个字节标识可变长度varchar;<br>– utf8  一个字符3字节<br>– gbk   一个字符2字节<br>– latin 一个字符1字节</p>
+<p>– 如何避免using filesort 常见于order by<br>– 单索引 where a1 order by a1<br>– 复合索引– 不能跨列 alter table test02 add index a1_a2_a3_index (a1,a2,a3,a4);<br>– 只有 where a1=’’ order by a2; 或者 where a1=’’ and a2 = ‘’ order by a3;<br>– 复合缩影跨列使用时,跨列索引会失效 where a1=’’ and a2=’’ and a4=’’则a4索引失效</p>
+<p>– using temporary 常见于group by<br>– 避免请使用:select a1 from test02 where a1 in (1,2,3) group by a1;</p>
+<p>– using index (不需回表查询)<br>– using where (需要回原表查询)</p>
+<p>– impossible where<br>– explain select * from teacher t where t.tname = ‘zhao’ and t.tname=’wang’;</p>
+<p>– <a href="https://www.cnblogs.com/annsshadow/p/5037667.html" target="_blank" rel="noopener">https://www.cnblogs.com/annsshadow/p/5037667.html</a></p>
+<p>– select * from table1,table2;</p>
+<p>– select * from table1,table2 where table1.uid=table2.uid;</p>
+<p>– select * from table1 a left outer join table2 b on a.uid = b.uid;</p>
+<p>– select a.uid,count(b.oid) total from table1 a<br>–     left outer join table2 b on a.uid = b.uid<br>–         where a.name=’mike’<br>–             group by a.uid<br>–                 having count(b.uid)&lt;2<br>–                     order by total desc<br>–                         limit 1;</p>
+<p>– select uid,name from table1 having name=’mike’;</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/04/19/sql_optimize/" data-id="ckautpojd000a94rh04dhdq3t" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-mysql_review_note" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/19/mysql_review_note/" class="article-date">
+  <time datetime="2020-04-19T04:49:50.360Z" itemprop="datePublished">2020-04-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/19/mysql_review_note/">mysql_review_note</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>– select prod_name from products;<br>– select prod_id,prod_name,prod_price<br>– from Products;<br>– select * from Products;<br>– select distinct vend_id from Products;<br>– SELECT prod_name FROM Products LIMIT 5;<br>– 返回表中第五行起的五行数据limit 5 offset 5;<br>– 注意取第一行数据是从offset 0开始<br>– limit 1 offset 0<br>– MySQL和MariaDB支持简化写法limit offset,limitnum</p>
+<h1 id="select-prod-name-from-Products-limit-0-1"><a href="#select-prod-name-from-Products-limit-0-1" class="headerlink" title="select prod_name from Products limit 0,1;"></a>select prod_name from Products limit 0,1;</h1><p>– Oracle中的写法<br>– SELECT prod_name<br>– FROM Products<br>– WHERE ROWNUM &lt;=5;<br>/<em>fds</em>/</p>
+<p>– SELECT prod_id, prod_price, prod_name<br>– FROM Products order by prod_price,prod_name;</p>
+<p>– SELECT prod_name, prod_price<br>– FROM Products<br>– WHERE prod_price = 3.49;</p>
+<p>– 一般情况下 != 和&lt;&gt;可以互换<br>– SELECT vend_id, prod_name<br>– FROM Products<br>– WHERE vend_id &lt;&gt; ‘DLL01’;</p>
+<p>– 判断空值null<br>– select cust_name from customers where cust_email is null;</p>
+<p>– 注意运算优先级 最好加括号<br>– SELECT vend_id,prod_name, prod_price<br>– FROM Products<br>– WHERE vend_id = ‘DLL01’ OR vend_id = ‘BRS01’;</p>
+<p>– SELECT prod_name, prod_price<br>– FROM Products<br>– WHERE (vend_id = ‘DLL01’ OR vend_id = ‘BRS01’)<br>– AND prod_price &gt;= 10;</p>
+<p>– in 和 or 用来匹配值得关键字时，都能起到这种效果，那么用in有什么好处？<br>– 1.在很多合法选项时，in操作符的语法更清楚，更直观。<br>– 2.在与其他and 和 or操作符组合使用in时，求值顺序更容易管理。<br>– 3.in 操作符一般比一组or操作符执行得更快。<br>– 4.in 最大优点是可以包括其他select 语句，能够动态地建立where子句，进行复杂查询。</p>
+<p>– SELECT prod_name, prod_price<br>– FROM Products<br>– WHERE vend_id IN ( ‘DLL01’, ‘BRS01’ )<br>– ORDER BY prod_name;</p>
+<p>– SELECT vend_id,prod_name, prod_price<br>– FROM Products<br>– WHERE vend_id = ‘DLL01’ OR vend_id = ‘BRS01’;</p>
+<p>– NOT 用在where子句中用来否定其后条件的关键字<br>– select prod_name<br>– from Products<br>– where not vend_id = ‘DLL01’ ORDER BY prod_name;</p>
+<p>– SELECT prod_name<br>– FROM Products<br>– WHERE vend_id &lt;&gt; ‘DLL01’<br>– ORDER BY prod_name;</p>
+<p>–  not 和 &lt;&gt;都能达到取非得操作，使用not有什么好处呢？<br>– 在与in操作符联合使用时，not可以非常简单地找出与条件列表不匹配的行</p>
+<p>– 搜索以词Fish开头的产品<br>– %表示任何字符出现任意次数（包括0次）<br>– %无法匹配null值<br>– SELECT prod_id, prod_name FROM Products<br>– WHERE prod_name LIKE ‘Fish%’;</p>
+<p>– SELECT prod_id, prod_name<br>– FROM Products<br>– WHERE prod_name LIKE ‘%bean bag%’;</p>
+<p>– SELECT prod_name<br>– FROM Products<br>– WHERE prod_name LIKE ‘F%y’;</p>
+<p>– SELECT prod_id, prod_name<br>– FROM Products<br>– WHERE prod_name LIKE ‘__ inch teddy bear’;</p>
+<p>– SELECT Concat(vend_name, ‘ (‘, vend_country, ‘)’) AS vend_title<br>– FROM Vendors<br>– ORDER BY vend_name;</p>
+<p>– SELECT now();<br>– SELECT TRIM(‘ hello ‘);<br>– SubString  Convert  CURRENT_DATE<br>– select CURRENT_DATE</p>
+<p>– SELECT vend_name, UPPER(vend_name) AS vend_name_upcase<br>– FROM Vendors<br>– ORDER BY vend_name</p>
+<p>– 常见函数<br>– left right        返回字符串左(右)边的字符<br>– length             返回字符串的长度<br>– ltrim rtrim     去掉字符串左(右)边的字符<br>– soundex            返回字符串的soundex值<br>– upper lower     将字符串转化为大(小)写</p>
+<p>– soundex 是一种将任何文本串转为描述其语音表示的字母数字模式的算法。soundex考虑了类似的发音字符和音节，使得能对字符串进行发音比较而不是字母比较。<br>– SELECT cust_name, cust_contact<br>– FROM Customers<br>– WHERE SOUNDEX(cust_contact) = SOUNDEX(‘Michael Green’);</p>
+<p>– Oracle中日期处理函数没有datepart<br>– to_char()函数用来提取日期的成分，to_number()用来将提取出的成分转化为数值，以便能与2012进行比较。<br>– SELECT order_num<br>– FROM Orders<br>– WHERE to_number(to_char(order_date, ‘YYYY’)) = 2012;</p>
+<p>– SELECT order_num<br>– FROM Orders<br>– WHERE order_date BETWEEN to_date(‘01-01-2012’)<br>– AND to_date(‘12-31-2012’);</p>
+<p>– mysql 使用Year()函数提取年<br>– SELECT order_num<br>– FROM Orders<br>– WHERE YEAR(order_date) = 2012;</p>
+<p>– 常见时间函数<br>– 1. CURDATE()以‘YYYY-MM-DD’形式或值的形式返回当前时间<br>– SELECT CURDATE();</p>
+<p>– 2.DATE(expr)  获取指定时间的年月日部分<br>– SELECT DATE(‘2003-12-31 01:02:03’);</p>
+<p>– 3.DATEDIFF(expr1,expr2) 返回时间值expr1 - 时间值expr2之间相差的天数。<br>– SELECT DATEDIFF(‘2007-12-31 23:59:59’,’2007-12-30’) as diff;</p>
+<p>– 4.DATE_FORMAT(date,format) date根据format的格式转换成字符串<br>– SELECT DATE_FORMAT(‘2009-10-04 22:23:00’, ‘%W %M %Y’);</p>
+<p>– 5.DAYNAME(date) 返回指定日期是周几<br>– select dayname(‘2020-03-05’);</p>
+<p>– 6. DAYOFMONTH(date)  DAYOFWEEK(date)<br>– DAYOFYEAR(date) LAST_DAY(date) FROM_UNIXTIME(unix_timestamp) NOW()</p>
+<p>– 7.PERIOD_ADD(P,N) 将N个月添加到P中<br>– SELECT PERIOD_ADD(200801,2);</p>
+<p>– 8.区分sysdate 和 now函数<br>– select SYSDATE();<br>– select NOW();<br>– NOW()取的是语句开始执行的时间，SYSDATE()取的是动态的实时时间。<br>– 因为NOW()取自mysql的一个变量”TIMESTAMP”，而这个变量在语句开始执行的时候就设定好了，因此在整个语句执行过程中都不会变化。</p>
+<p>– 9.UNIX_TIMESTAMP([date]) 如果不带参数，则返回一个unix时间戳；如果带date格式，则返回与’1970-01-01 00:00:00’UTC 相差的秒数形式的参数值<br>– SELECT UNIX_TIMESTAMP();<br>– SELECT UNIX_TIMESTAMP(‘2020-03-04 11:51:41’);</p>
+<p>– 10 CONVERT_TZ(dt,from_tz,to_tz)<br>– SELECT CONVERT_TZ(‘2004-01-01 12:00:00’,’+00:00’,’+10:00’);</p>
+<p>– 数值处理函数<br>– ABS(X) COS(X) SIN(X) TAN(X) EXP(X) 返回指数值 PI()返回圆周率 SQRT(X) 返回一个数的平方根 </p>
+<p>– 聚集函数<br>– AVG() 函数忽略列值为NULL的行<br>– SELECT AVG(prod_price) AS avg_price<br>– FROM Products<br>– WHERE vend_id = ‘DLL01’;</p>
+<p>– count(*)对表中的行的数目进行技术，不管表列中的是空指，还是非空值<br>– COUNT(COLUMN)</p>
+<p>– SELECT COUNT(*) AS num_cust<br>– FROM Customers;<br>– SELECT COUNT(cust_email) AS num_cust<br>– FROM Customers;</p>
+<p>– 在用于文本数据时，MAX()返回按该列排序后的最后一行数据，MAX()函数忽略列值为NULL的行</p>
+<p>– SELECT AVG(DISTINCT prod_price) AS avg_price<br>– FROM Products<br>– WHERE vend_id = ‘DLL01’;</p>
+<p>– 分组 GROUP BY<br>– SELECT vend_id, COUNT(*) AS num_prods<br>– FROM Products<br>– GROUP BY vend_id;</p>
+<p>– 注意 GROUP BY 子句中出现的每一列必须是检索列或者有效的表达式(但不能是聚集函数)，如果SELECT中使用表达式，则必须在 GROUP BY 子句中指定相同的表达式，不能使用别名。</p>
+<p>– where 可以用来过滤行，而having 可以用来过滤组<br>– SELECT cust_id, COUNT(<em>) AS orders<br>– FROM Orders<br>– GROUP BY cust_id<br>– HAVING COUNT(</em>) &gt;= 2;</p>
+<p>– SELECT vend_id, COUNT(<em>) AS num_prods<br>– FROM Products<br>– WHERE prod_price &gt;= 4<br>– GROUP BY vend_id<br>– HAVING COUNT(</em>) &gt;= 2;</p>
+<p>– 分组与排序<br>– GROUP BY 和 ORDER BY</p>
+<p>– SELECT order_num, COUNT(<em>) AS items<br>– FROM OrderItems<br>– GROUP BY order_num<br>– HAVING COUNT(</em>) &gt;= 3<br>– ORDER BY items, order_num;</p>
+<p>– SELECT cust_name, cust_contact<br>– FROM Customers<br>– WHERE cust_id IN (SELECT cust_id<br>– FROM Orders<br>– WHERE order_num IN (SELECT order_num<br>– FROM OrderItems<br>– WHERE prod_id = ‘RGAN01’));</p>
+<p>– SELECT cust_name,<br>– cust_state,<br>– (SELECT COUNT(*)<br>– FROM Orders<br>– WHERE Orders.cust_id = Customers.cust_id) AS orders<br>– FROM Customers<br>– ORDER BY cust_name;</p>
+<p>– SELECT vend_name, prod_name, prod_price<br>– FROM Vendors, Products<br>– WHERE Vendors.vend_id = Products.vend_id;</p>
+<p>– 内连接查询<br>– SELECT vend_name, prod_name, prod_price<br>– FROM Vendors INNER JOIN Products<br>– ON Vendors.vend_id = Products.vend_id;</p>
+<p>– 多表关联查询<br>– SELECT prod_name, vend_name, prod_price, quantity<br>– FROM OrderItems, Products, Vendors<br>– WHERE Products.vend_id = Vendors.vend_id<br>– AND OrderItems.prod_id = Products.prod_id<br>– AND order_num = 20007;</p>
+<p>– SELECT cust_name, cust_contact<br>– FROM Customers, Orders, OrderItems<br>– WHERE Customers.cust_id = Orders.cust_id<br>– AND OrderItems.order_num = Orders.order_num<br>– AND prod_id = ‘RGAN01’;</p>
+<p>– 自联结<br>– 自联结通常作为外部语句，用来代替从相同表中检索的使用子查询的语句<br>– SELECT c1.cust_id, c1.cust_name, c1.cust_contact<br>– FROM Customers AS c1, Customers AS c2<br>– WHERE c1.cust_name = c2.cust_name<br>– AND c2.cust_contact = ‘Jim Jones’;</p>
+<p>– 子查询<br>– SELECT cust_id, cust_name, cust_contact<br>– FROM Customers<br>– WHERE cust_name = (SELECT cust_name<br>– FROM Customers<br>– WHERE cust_contact = ‘Jim Jones’);</p>
+<p>– 自然联接 使用SELECT tablename.* 使每一列只返回一次<br>– SELECT C.*, O.order_num, O.order_date,<br>– OI.prod_id, OI.quantity, OI.item_price<br>– FROM Customers AS C, Orders AS O, OrderItems AS OI<br>– WHERE C.cust_id = O.cust_id<br>– AND OI.order_num = O.order_num<br>– AND prod_id = ‘RGAN01’;</p>
+<p>– 外联接<br>– SELECT Customers.cust_id, Orders.order_num<br>– FROM Customers LEFT OUTER JOIN Orders<br>– ON Customers.cust_id = Orders.cust_id;</p>
+<p>– SELECT Customers.cust_id, Orders.order_num<br>– FROM Customers RIGHT OUTER JOIN Orders<br>– ON Orders.cust_id = Customers.cust_id;</p>
+<p>– SELECT Customers.cust_id, Orders.order_num<br>– FROM Orders LEFT OUTER JOIN Customers<br>– ON Orders.cust_id = Customers.cust_id<br>– UNION<br>– SELECT Customers.cust_id, Orders.order_num<br>– FROM Orders RIGHT OUTER JOIN Customers<br>– ON Orders.cust_id = Customers.cust_id order by cust_id;</p>
+<p>– 聚合函数 应用于联接中<br>– SELECT Customers.cust_id,<br>– COUNT(Orders.order_num) AS num_ord<br>– FROM Customers INNER JOIN Orders<br>– ON Customers.cust_id = Orders.cust_id<br>– GROUP BY Customers.cust_id;</p>
+<p>– SELECT Customers.cust_id,<br>– COUNT(Orders.order_num) AS num_ord<br>– FROM Customers LEFT OUTER JOIN Orders<br>– ON Customers.cust_id = Orders.cust_id<br>– GROUP BY Customers.cust_id;</p>
+<p>– SELECT cust_name, cust_contact, cust_email<br>– FROM Customers<br>– WHERE cust_state IN (‘IL’,’IN’,’MI’)<br>– OR cust_name = ‘Fun4All’;</p>
+<p>– 使用UNION时默认回去重，如果想显式所有行，则使用UNION ALL<br>– SELECT cust_name, cust_contact, cust_email<br>– FROM Customers<br>– WHERE cust_state IN (‘IL’,’IN’,’MI’)<br>– UNION ALL<br>– SELECT cust_name, cust_contact, cust_email<br>– FROM Customers<br>– WHERE cust_name = ‘Fun4All’;</p>
+<p>– SELECT cust_name, cust_contact, cust_email<br>– FROM Customers<br>– WHERE cust_state IN (‘IL’,’IN’,’MI’)<br>– UNION<br>– SELECT cust_name, cust_contact, cust_email<br>– FROM Customers<br>– WHERE cust_name = ‘Fun4All’<br>– ORDER BY cust_name, cust_contact;</p>
+<p>– insert 语句<br>– INSERT INTO Customers(cust_id,<br>– cust_name,<br>– cust_address,<br>– cust_city,<br>– cust_state,<br>– cust_zip,<br>– cust_country,<br>– cust_contact,<br>– cust_email)<br>– VALUES(‘1000000006’,<br>– ‘Toy Land’,<br>– ‘123 Any Street’,<br>– ‘New York’,<br>– ‘NY’,<br>– ‘11111’,<br>– ‘USA’,<br>– NULL,<br>– NULL);</p>
+<p>– INSERT INTO Customers(cust_id,<br>– cust_contact,<br>– cust_email,<br>– cust_name,<br>– cust_address,<br>– cust_city,<br>– cust_state,<br>– cust_zip,<br>– cust_country)<br>– SELECT cust_id,<br>– cust_contact,<br>– cust_email,<br>– cust_name,<br>– cust_address,<br>– cust_city,<br>– cust_state,<br>– cust_zip,<br>– cust_country<br>– FROM CustNew;</p>
+<p>– ISNERT SELECT导出数据， SELECT INTO导入数据<br>– SELECT *<br>– INTO CustCopy<br>– FROM Customers;</p>
+<p>– CREATE TABLE CustCopy AS<br>– SELECT * FROM Customers;</p>
+<p>– DELETE删除整行 甚至是删除表中所有的行，删除列使用update<br>– 删除表中的内容使用 TRUNCATE TABLE 语句更快(因为不记录数据的变动)</p>
+<p>– 更改表结构<br>– ALTER TABLE Vendors<br>– ADD vend_phone CHAR(20);</p>
+<p>– ALTER TABLE Vendors<br>– DROP COLUMN vend_phone;</p>
+<p>– DROP TABLE CustCopy;</p>
+<p>– 创建视图<br>– CREATE VIEW ProductCustomers AS<br>– SELECT cust_name, cust_contact, prod_id<br>– FROM Customers, Orders, OrderItems<br>– WHERE Customers.cust_id = Orders.cust_id<br>– AND OrderItems.order_num = Orders.order_num;</p>
+<p>– select cust_name,cust_contact<br>–     from ProductCustomers<br>–         where prod_id = ‘RGAN01’;</p>
+<p>– CREATE VIEW VendorLocations AS<br>– SELECT Concat(vend_name, ‘ (‘, vend_country, ‘)’)<br>– AS vend_title<br>– FROM Vendors;</p>
+<p>– SELECT *<br>– FROM VendorLocations;</p>
+<p>– CREATE VIEW CustomerEMailList AS<br>– SELECT cust_id, cust_name, cust_email<br>– FROM Customers<br>– WHERE cust_email IS NOT NULL;<br>–<br>– SELECT *<br>– FROM CustomerEMailList;</p>
+<p>– CREATE VIEW OrderItemsExpanded AS<br>– SELECT order_num,<br>– prod_id,<br>– quantity,<br>– item_price,<br>– quantity*item_price AS expanded_price<br>– FROM OrderItems;<br>–<br>– SELECT *<br>– FROM OrderItemsExpanded<br>– WHERE order_num = 20008;</p>
+<p>– 视图为虚拟表，它们包含的不是数据而是根据需要检索数据的查询。视图提供了一种封装SELECT语句的层次，可用来简化数据处理，重新格式化或保护基础数据。</p>
+<p>– 存储过程 为了以后使用而保存的一条或多条SQL语句。可将其视为批文件，虽然它们的作用不仅限于批处理。<br>– SAVEPOINT delete1;<br>– ROLLBACK TO delete1;</p>
+<p>– mysql里得写在一个存储过程里，而且mysql的声明都要一起写在最前面<br>– DECLARE CustCursor CURSOR<br>– FOR<br>– SELECT * FROM Customers<br>– WHERE cust_email IS NULL;<br>–<br>– OPEN CURSOR CustCursor</p>
+<p>– 定义外键<br>– CREATE TABLE Orders<br>– (<br>– order_num INTEGER NOT NULL PRIMARY KEY,<br>– order_date DATETIME NOT NULL,<br>– cust_id CHAR(10) NOT NULL REFERENCES<br>–     Customers(cust_id)<br>– );</p>
+<p>– ALTER TABLE Orders<br>– ADD CONSTRAINT<br>– FOREIGN KEY (cust_id) REFERENCES Customers (cust_id)</p>
+<p>– 级联删除：在从一个表中删除行时，除删除所有相关的数据。<br>– 唯一约束用来保证一列中的数据是唯一的。它们类似与主键但是存在区别：<br>    – 表可以包含多个唯一约束，但每个表只允许一个主键<br>    – 唯一约束列可以包含NULL值。<br>    – 唯一约束列可以修改或更新。<br>    – 唯一约束列的值可重复使用。<br>    – 与主键不一样，唯一约束不能用来定义外键。</p>
+<pre><code>-- 检查约束
+-- 检查数量必须&gt;0才能插入行</code></pre><p>– CREATE TABLE OrderItems<br>– (<br>– order_num INTEGER NOT NULL,<br>– order_item INTEGER NOT NULL,<br>– prod_id CHAR(10) NOT NULL,<br>– quantity INTEGER NOT NULL CHECK (quantity &gt; 0),<br>– item_price MONEY NOT NULL<br>– );</p>
+<p>– 索引<br>    – 索引改善检索操作性能，但降低了数据插入、修改和删除的性能。在执行这些操作时，DBMS必须动态的更新索引。<br>    – 索引数据可能要占用大量的存储空间。<br>    – 并非所有的数据都适合做索引。取值不多的数据（如州）不如具有更多可能值得数据（如姓或名），能通过索引得到那么多的好处。<br>    – 索引用于数据过滤和数据排序。如果经常以某种特定的顺序排序数据，则该数据可能更适合做索引。<br>    – 可以在索引中定义多个列（例如，州加上城市）。这样的索引仅在以州加城市的顺序排序时有用。如果想按城市排序，则这种索引没有用处。</p>
+<p>– 创建索引<br>– CREATE INDEX prod_name_ind<br>– ON Products (prod_name);</p>
+<p>– 触发器<br>– 触发器是特殊的储存过程，它在特殊的数据库活动发生时自动执行。触发器可以与特定表上的INSERT、UPDATE和DELETE操作（或组合）相关联。与存储过程不一样（存储过程只是简单的存储SQL语句），触发器与单个表相关联。</p>
+<p>– 窗口函数<br>函数名 OVER 子句<br>如果不为空，则支持以下4中语法来设置窗口。<br>①window_name：给窗口指定一个别名。如果SQL中涉及的窗口较多，采用别名可以看起来更清晰易读；<br>②PARTITION BY 子句：窗口按照哪些字段进行分组，窗口函数在不同的分组上分别执行；<br>③ORDER BY子句：按照哪些字段进行排序，窗口函数将按照排序后的记录顺序进行编号；<br>④FRAME子句：FRAME是当前分区的一个子集，子句用来定义子集的规则，通常用来作为滑动窗口使用。</p>
+<p>①序号函数 row_number() rank() dense_rank()<br>ROW_NUMBER()：顺序排序——1、2、3<br>RANK()：并列排序，跳过重复序号——1、1、3<br>DENSE_RANK()：并列排序，不跳过重复序号——1、1、2</p>
+<p>mysql&gt; SELECT *<br>    -&gt; FROM(<br>    -&gt;     SELECT stu_id,<br>    -&gt;     ROW_NUMBER() OVER (PARTITION BY stu_id ORDER BY score DESC) AS score_order,<br>    -&gt;     lesson_id, score<br>    -&gt;     FROM t_score) t<br>    -&gt; WHERE score_order &lt;= 3<br>    -&gt; ;<br>+——–+————-+———–+——-+<br>| stu_id | score_order | lesson_id | score |<br>+——–+————-+———–+——-+<br>|      1 |           1 | L005      |    98 |<br>|      1 |           2 | L001      |    98 |<br>|      1 |           3 | L004      |    88 |<br>|      2 |           1 | L002      |    90 |<br>|      2 |           2 | L003      |    86 |<br>|      2 |           3 | L001      |    84 |<br>|      3 |           1 | L001      |   100 |<br>|      3 |           2 | L002      |    91 |<br>|      3 |           3 | L003      |    85 |<br>|      4 |           1 | L001      |    99 |<br>|      4 |           2 | L005      |    98 |<br>|      4 |           3 | L002      |    88 |<br>+——–+————-+———–+——-+</p>
+<p>②分布函数 PERCENT_RANK()、CUME_DIST()<br>PERCENT_RANK()<br>用途：每行按照公式(rank-1) / (rows-1)进行计算。其中，rank为RANK()函数产生的序号，rows为当前窗口的记录总行数</p>
+<p>用途：分组内小于、等于当前rank值的行数 / 分组内总行数<br>应用场景：查询小于等于当前成绩（score）的比例<br>mysql&gt; SELECT stu_id, lesson_id, score,<br>    -&gt; CUME_DIST() OVER (ORDER BY score) AS cd1,<br>    -&gt; CUME_DIST() OVER (PARTITION BY lesson_id ORDER BY score) AS cd2<br>    -&gt; FROM t_score<br>    -&gt; WHERE lesson_id IN (‘L001’,’L002’)<br>    -&gt; ;<br>+——–+———–+——-+——-+——+<br>| stu_id | lesson_id | score | cd1   | cd2  |<br>+——–+———–+——-+——-+——+<br>|      2 | L001      |    84 | 0.125 | 0.25 |<br>|      1 | L001      |    98 |  0.75 |  0.5 |<br>|      4 | L001      |    99 | 0.875 | 0.75 |<br>|      3 | L001      |   100 |     1 |    1 |<br>|      1 | L002      |    86 |  0.25 | 0.25 |<br>|      4 | L002      |    88 | 0.375 |  0.5 |<br>|      2 | L002      |    90 |   0.5 | 0.75 |<br>|      3 | L002      |    91 | 0.625 |    1 |<br>+——–+———–+——-+——-+——+</p>
+<p>③前后函数：LAG(expr,n)、LEAD(expr,n)<br>用途：返回位于当前行的前n行（LAG(expr,n)）或后n行（LEAD(expr,n)）的expr的值<br>应用场景：查询前1名同学的成绩和当前同学成绩的差值</p>
+<p>mysql&gt; SELECT stu_id, lesson_id, score, pre_score,<br>    -&gt; score-pre_score AS diff<br>    -&gt; FROM(<br>    -&gt;     SELECT stu_id, lesson_id, score,<br>    -&gt;     LAG(score,1) OVER w AS pre_score<br>    -&gt;     FROM t_score<br>    -&gt;     WHERE lesson_id IN (‘L001’,’L002’)<br>    -&gt;     WINDOW w AS (PARTITION BY lesson_id ORDER BY score)) t<br>    -&gt; ;<br>+——–+———–+——-+———–+——+<br>| stu_id | lesson_id | score | pre_score | diff |<br>+——–+———–+——-+———–+——+<br>|      2 | L001      |    84 |      NULL | NULL |<br>|      1 | L001      |    98 |        84 |   14 |<br>|      4 | L001      |    99 |        98 |    1 |<br>|      3 | L001      |   100 |        99 |    1 |<br>|      1 | L002      |    86 |      NULL | NULL |<br>|      4 | L002      |    88 |        86 |    2 |<br>|      2 | L002      |    90 |        88 |    2 |<br>|      3 | L002      |    91 |        90 |    1 |<br>+——–+———–+——-+———–+——+</p>
+<p>④头尾函数：FIRST_VALUE(expr)、LAST_VALUE(expr)<br>用途：返回第一个（FIRST_VALUE(expr)）或最后一个（LAST_VALUE(expr)）expr的值<br>应用场景：截止到当前成绩，按照日期排序查询第1个和最后1个同学的分数<br>添加新列：mysql&gt; ALTER TABLE t_score ADD create_time DATE;</p>
+<p>mysql&gt; SELECT stu_id, lesson_id, score, create_time,<br>    -&gt; FIRST_VALUE(score) OVER w AS first_score,<br>    -&gt; LAST_VALUE(score) OVER w AS last_score<br>    -&gt; FROM t_score<br>    -&gt; WHERE lesson_id IN (‘L001’,’L002’)<br>    -&gt; WINDOW w AS (PARTITION BY lesson_id ORDER BY create_time)<br>    -&gt; ;<br>+——–+———–+——-+————-+————-+————+<br>| stu_id | lesson_id | score | create_time | first_score | last_score |<br>+——–+———–+——-+————-+————-+————+<br>|      3 | L001      |   100 | 2018-08-07  |         100 |        100 |<br>|      1 | L001      |    98 | 2018-08-08  |         100 |         98 |<br>|      2 | L001      |    84 | 2018-08-09  |         100 |         99 |<br>|      4 | L001      |    99 | 2018-08-09  |         100 |         99 |<br>|      3 | L002      |    91 | 2018-08-07  |          91 |         91 |<br>|      1 | L002      |    86 | 2018-08-08  |          91 |         86 |<br>|      2 | L002      |    90 | 2018-08-09  |          91 |         90 |<br>|      4 | L002      |    88 | 2018-08-10  |          91 |         88 |<br>+——–+———–+——-+————-+————-+————+</p>
+<p>⑤其它函数：NTH_VALUE(expr, n)、NTILE(n)<br>NTH_VALUE(expr,n)<br>用途：返回窗口中第n个expr的值。expr可以是表达式，也可以是列名<br>应用场景：截止到当前成绩，显示每个同学的成绩中排名第2和第3的成绩的分数<br>mysql&gt; SELECT stu_id, lesson_id, score,<br>    -&gt; NTH_VALUE(score,2) OVER w AS second_score,<br>    -&gt; NTH_VALUE(score,3) OVER w AS third_score<br>    -&gt; FROM t_score<br>    -&gt; WHERE stu_id IN (1,2)<br>    -&gt; WINDOW w AS (PARTITION BY stu_id ORDER BY score)<br>    -&gt; ;<br>+——–+———–+——-+————–+————-+<br>| stu_id | lesson_id | score | second_score | third_score |<br>+——–+———–+——-+————–+————-+<br>|      1 | L003      |    79 |         NULL |        NULL |<br>|      1 | L002      |    86 |           86 |        NULL |<br>|      1 | L004      |    88 |           86 |          88 |<br>|      1 | L001      |    98 |           86 |          88 |<br>|      1 | L005      |    98 |           86 |          88 |<br>|      2 | L004      |    75 |         NULL |        NULL |<br>|      2 | L005      |    77 |           77 |        NULL |<br>|      2 | L001      |    84 |           77 |          84 |<br>|      2 | L003      |    86 |           77 |          84 |<br>|      2 | L002      |    90 |           77 |          84 |<br>+——–+———–+——-+————–+————-+</p>
+<p>NTILE(n)<br>用途：将分区中的有序数据分为n个等级，记录等级数<br>应用场景：将每门课程按照成绩分成3组<br>mysql&gt; SELECT<br>    -&gt; NTILE(3) OVER w AS nf,<br>    -&gt; stu_id, lesson_id, score<br>    -&gt; FROM t_score<br>    -&gt; WHERE lesson_id IN (‘L001’,’L002’)<br>    -&gt; WINDOW w AS (PARTITION BY lesson_id ORDER BY score)<br>    -&gt; ;<br>+——+——–+———–+——-+<br>| nf   | stu_id | lesson_id | score |<br>+——+——–+———–+——-+<br>|    1 |      2 | L001      |    84 |<br>|    1 |      1 | L001      |    98 |<br>|    2 |      4 | L001      |    99 |<br>|    3 |      3 | L001      |   100 |<br>|    1 |      1 | L002      |    86 |<br>|    1 |      4 | L002      |    88 |<br>|    2 |      2 | L002      |    90 |<br>|    3 |      3 | L002      |    91 |<br>+——+——–+———–+——-+<br>NTILE(n)函数在数据分析中应用较多，比如由于数据量大，需要将数据平均分配到n个并行的进程分别计算，此时就可以用NTILE(n)对数据进行分组（由于记录数不一定被n整除，所以数据不一定完全平均），然后将不同桶号的数据再分配。</p>
+<p>⑥聚合函数作为窗口函数：<br>用途：在窗口中每条记录动态地应用聚合函数（SUM()、AVG()、MAX()、MIN()、COUNT()），可以动态计算在指定的窗口内的各种聚合函数值<br>应用场景：截止到当前时间，查询stu_id=1的学生的累计分数、分数最高的科目、分数最低的科目</p>
+<p>mysql&gt; SELECT stu_id, lesson_id, score, create_time,<br>    -&gt; SUM(score) OVER w AS score_sum,<br>    -&gt; MAX(score) OVER w AS score_max,<br>    -&gt; MIN(score) OVER w AS score_min<br>    -&gt; FROM t_score<br>    -&gt; WHERE stu_id = 1<br>    -&gt; WINDOW w AS (PARTITION BY stu_id ORDER BY create_time)<br>    -&gt; ;<br>+——–+———–+——-+————-+———–+———–+———–+</p>
+<p>| stu_id | lesson_id | score | create_time | score_sum | score_max | score_min |</p>
+<p>+——–+———–+——-+————-+———–+———–+———–+</p>
+<p>|      1 | L001      |    98 | 2018-08-08  |       184 |        98 |        86 |</p>
+<p>|      1 | L002      |    86 | 2018-08-08  |       184 |        98 |        86 |</p>
+<p>|      1 | L003      |    79 | 2018-08-09  |       263 |        98 |        79 |</p>
+<p>|      1 | L004      |    88 | 2018-08-10  |       449 |        98 |        79 |</p>
+<p>|      1 | L005      |    98 | 2018-08-10  |       449 |        98 |        79 |</p>
+<p>+——–+———–+——-+————-+———–+———–+———–+</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/04/19/mysql_review_note/" data-id="ckautpoj6000794rhg5sa33ug" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-summary for bigdata" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/18/summary%20for%20bigdata/" class="article-date">
+  <time datetime="2020-04-18T15:15:47.691Z" itemprop="datePublished">2020-04-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/18/summary%20for%20bigdata/">summary for bigdata</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="sql题"><a href="#sql题" class="headerlink" title="sql题"></a>sql题</h1><p>select<br>    t1.date,<br>    t1.qq,<br>    t1.msg,<br>    t1.活跃度,<br>    t2.region<br>from (<br>    select<br>        date,<br>        qq,msg,<br>        case when msg&gt;200 then ‘高活跃’ when msg &lt;200 and msg &gt;0 then ‘低活跃’ else ‘未知’ end as ‘活跃度’<br>    from table_act<br>    where DATE_FORMAT(date,’%Y%m’) = ‘201701’) t1 , (<br>    select<br>        date,<br>        qq,<br>        region<br>        from table_user<br>        where<br>        gender = ‘女’ and<br>        age &gt;= 18 and<br>        region = ‘广东省’<br>        ) t2<br>        where t1.qq = t2.qq<br>    and t1.date = t2.date;</p>
+<p>– where timestimpdiff(day,date,’201701’)=0</p>
+<h1 id="hive数据倾斜如何处理？"><a href="#hive数据倾斜如何处理？" class="headerlink" title="hive数据倾斜如何处理？"></a>hive数据倾斜如何处理？</h1><p>1.增加reduce的JVM内存<br>    适用于单值有大量记录的情况，但只记录超过reduce内存，无论怎么分区都不会有改变。<br>2.增加reduce的个数<br>    唯一值比较多，单个为一值不超过reduce内存，可以增加reduce数量，可以缓解某些reduce分了较多记录的情况<br>3.customer partition<br>    比如hadoop definitive guide里面的温度问题，一个固定的组合（测试站点的位置和温度）的分布是固定的，对于特定的查询如果前面两种方式都没有作用，自己实现partition也许可以解决问题。<br>4.其他优化讨论<br>    重新定义Key<br>    调参：<br>        hive.map.aggr=true// 开启map端聚合功能<br>        hive.groupby.skewindata=true// 开启两个MR job 第一个map的输出结果集会随机分配到reduce端，每个reduce做部分聚合<br>        map side join // 直接在map端就完成表的join操作，进入map端的数据根据分片得到，数据比较均衡（小表小于25M）<br>        通过以下方法来在map执行前合并小文件，减少map数：<br>        set hive.input.format=org.apache.hadoop.hive.ql.io.CombineHiveInputFormat<br>5.reduce sort merge 排序算法<br>    map reduce 一旦发生数据倾斜partition就失效了，对于join例子，某一个key分配了过多的数据。使用map-reduce-reduce方法，同一个key不需要分配到同一个reduce中，第一个reduce得到结果，第二个reduce进行汇总去重。<br>6.hive skewed join<br>    大表中的join key能够分散，对于同样join key的小表中的<br>    又能匹配到所有大表中的记录。<br>7.pipeline<br>    在join的时候可以直接使用group操作符减少大量的磁盘IO，而不是等待join完成，然后写入磁盘，group又读取磁盘做group操作，<br>8.distinct<br>    count(distinct x),<br>    ①可以把reduce个数调大<br>    ②可以把hive.exec.reducers.byte.per.reducer调小<br>    ③使用where子句先过滤掉一些数据<br>9.index,bitmap index<br>    index即为物化视图，对于group by 和distinct 的情况等变成了map端在做计算自然不存在数据倾斜。</p>
+<p>精简：<br>1.增加JVM内存 （单值多超JVM内存）<br>2.增加Reducer个数 （单值多不超JVM内存）<br>3.customer partition<br>    比如hadoop definitive guide里面的温度问题，一个固定的组合（测试站点的位置和温度）<br>4.参数调优<br>    hive.map.aggr=true// 开启map端聚合功能<br>    hive.groupby.skewindata=true// 开启两个MR job 第一个map的输出结果集会随机分配到reduce端，每个reduce做部分聚合<br>    map side join // 直接在map端就完成表的join操作，进入map端的数据根据分片得到，数据比较均衡（小表小于25M）<br>5.sql调优<br>    1.使用物化视图，index,bitmap index<br>    2.先使用where子句减少数据量</p>
+<h1 id="线程和进程的区别"><a href="#线程和进程的区别" class="headerlink" title="线程和进程的区别"></a>线程和进程的区别</h1><p>根本区别：进程是操作系统资源分配的基本单位，而线程是任务调度和执行的基本单位。</p>
+<p>开销方面：每个进程都有独立的代码和数据空间，程序之间切换开销大；线程可以看作轻量级的进程，同一类线程共享代码和数据空间，每个线程都有自己独立的运行栈和程序计数器（PC），线程之间切换开销小。</p>
+<p>所处环境：在操作系统中能同时运行多个进程；而再同一个进程中可以有多个线程（通过CPU调度，每个时间片中只能一个线程执行）</p>
+<p>内存分配方面：系统运行的时候会为每个进程分配不同的内存空间；而线程，除了CPU外，系统不会为线程分配内存（线程所使用的资源来自其所属进程资源），线程组之间只能共享资源。</p>
+<p>包含关系：没有现成的进程可以看做是单线程，如果一个进程内有多个线程，则执行过程不是一条线的，而是多条线共同完成；线程是进程的一部分，所以线程也被称为轻权进程或者轻量级进程；</p>
+<h1 id="int表示多少范围"><a href="#int表示多少范围" class="headerlink" title="int表示多少范围"></a>int表示多少范围</h1><p>int有4个字节，每个字节八位二进制，即32位二进制，又因最高位位符号位0正，1负，所以-2^31 ~ 2^32-1次<br>（byte 1 short char 2 int float 4 double long 8）</p>
+<h1 id="认证授权outh2"><a href="#认证授权outh2" class="headerlink" title="认证授权outh2"></a>认证授权outh2</h1><p>密码模式（resource owner password credentials）(为遗留系统设计)(支持refresh token)</p>
+<p>授权码模式（authorization code）(正宗方式)(支持refresh token)</p>
+<p>简化模式（implicit）(为web浏览器应用设计)(不支持refresh token)</p>
+<p>客户端模式（client credentials）(为后台api服务消费者设计)(不支持refresh token)</p>
+<p>偏向锁，轻量锁，重量锁特点？死锁怎么产生？如何处理？<br>自旋：<br>    自旋是指某线程需要获取锁，但该锁已经被其他线程占用时，该线程不会被挂起，而是在不断的消耗CPU的时间，不停的试图获取锁。</p>
+<p>偏向锁<br>    引入偏向锁是为了在无多线程竞争的情况下尽量减少不必要的轻量级锁执行路径，因为轻量级锁的获取及释放依赖多次CAS原子指令，而偏向锁只需要在置换ThreadID的时候依赖一次CAS原子指令。<br>    当只有一个线程去竞争锁的时候，我们不需要阻塞，也不需要自旋，因为只有一个线程在竞争，我们只要去判断该偏向锁中的ThreadID是否为当前线程即可。如果是就执行同步代码，不是就尝试使用CAS修改ThreadID，修改成功执行同步代码，不成功就将偏向锁升级成轻量锁。</p>
+<p>轻量锁<br>    获取轻量锁的过程与偏向锁不同，竞争锁的线程首先需要拷贝对象头中的Mark Word到帧栈的锁记录中。拷贝成功后使用CAS操作尝试将对象的Mark Word更新为指向当前线程的指针。如果这个更新动作成功了，那么这个线程就拥有了该对象的锁。如果更新失败，那么意味着有多个线程在竞争。<br>    当竞争线程尝试占用轻量级锁失败多次之后（使用自旋）轻量级锁就会膨胀为重量级锁，重量级线程指针指向竞争线程，竞争线程也会阻塞，等待轻量级线程释放锁后唤醒他。</p>
+<p>重量锁<br>    重量级锁的加锁、解锁过程和轻量级锁差不多，区别是：竞争失败后，线程阻塞，释放锁后，唤醒阻塞的线程，不使用自旋锁，不会那么消耗CPU，所以重量级锁适合用在同步块执行时间长的情况下。</p>
+<p>死锁由于锁之间嵌套造成的,四个必要条件<br>    1.互斥使用，一个资源被一个线程使用时，别的线程不能使用<br>    2.不可抢占，资源请求者不能从资源占有者手中抢夺资源<br>    3.请求和保持，当资源请求者再请求其他的资源的同时，保持对原有资源的占有。<br>    4.循环等待，即存在一个等待队列，P1占有P2的资源，P2占有P1的资源<br>解决办法:<br>    破坏‘请求和保持’：<br>    1.所有进程在运行之前，必须一次性地申请在整个运行过程中所需的全部资源。<br>    2.要求每个进程提出新的资源申请前，释放它所占有的资源。<br>    破坏：‘不可抢占’<br>    如果一个进程请求当前被另一个进程占有的一个资源，则操作系统可以抢占另一个进程，要求它释放资源。只有在任意两个进程的优先级都不相同的条件下，该方法才能预防死锁。<br>    破坏“循环等待”条件：<br>    将系统中的所有资源统一编号，进程可在任何时刻提出资源申请，但所有申请必须按照资源的编号顺序（升序）提出。这样做就能保证系统不出现死锁。</p>
+<h1 id="怎么查看集群性能？"><a href="#怎么查看集群性能？" class="headerlink" title="怎么查看集群性能？"></a>怎么查看集群性能？</h1><p>w<br>22:02:07 up 10 min,  1 user,  load average: 0.00, 0.07, 0.09<br>命令结果中load average 三个参数表示1 5 15 分钟系统的平均负载<br>cat /proc/cpuinfo prossor 0 表示cpu核数1与负载数对比判断是否过载；<br>top<br>按1，则可以展示出服务器有多少CPU，及每个CPU的使用情况<br>iostat -x 1 10<br>1表示时间 10表示次数 rsec/s表示读入，wsec/s表示每秒写入 util表示IO使用率</p>
+<h1 id="行存储和列存储的区别？"><a href="#行存储和列存储的区别？" class="headerlink" title="行存储和列存储的区别？"></a>行存储和列存储的区别？</h1><p>1）行存储的写入是一次性完成，消耗的时间比列存储少，并且能够保证数据的完整性，缺点是数据读取过程中会产生冗余数据，如果只有少量数据，此影响可以忽略;数量大可能会影响到数据的处理效率。<br>2）列存储在写入效率、保证数据完整性上都不如行存储，它的优势是在读取过程，不会产生冗余数据，这对数据完整性要求不高的大数据处理领域，比如互联网，犹为重要。</p>
+<p>HBase工作原理？有哪些节点？<br>HBase Table 组成：Table = RowKey + Family + Column + Timestamp + value</p>
+<p>HBase中的一个Table按照行键分割为多个Hregion<br>每个Region中按列族划分为多个Hstore<br>每个Hstore中有一个memStore和多个HFile</p>
+<h1 id="hive文件的存储格式有哪些？"><a href="#hive文件的存储格式有哪些？" class="headerlink" title="hive文件的存储格式有哪些？"></a>hive文件的存储格式有哪些？</h1><p>①textfile:默认格式，导入数据时会直接把数据文件拷贝到hdfs上，不进行处理。<br>②sequencefile:一种Hadoop API提供的二进制文件，使用方便、可分割，可压缩（压缩格式NONE，RECODE,BLOCK(常用)）等特点。<br>配置方法：<br>    SET hive.exec.compress.output=true<br>    SET io.seqfile.compresstion.type=BLOCK<br>    create table test2(str String) stored as sequenencefile;<br>③RCFile结合行存储查询速度快，和列存储节约空间的特点设计<br>Description:先按行划分为多个RowGroup（默认4M），然后垂直划分列式存储（横向列式存储）；<br>按列使用Gzip压缩，查询的时候按列维度进行解压（lazy解压机制，符合条件列的列才会被解压）<br><img src="./RCFile%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84.png" alt=""><br>    1）同一行的数据位于同一节点，因此元组重构的开销很低。<br>    2）块内列存储，可以进行列维度的数据压缩，跳过不必要的行读取。<br>        实际过程：在map阶段从远端拷贝任然是整个数据块到本地目录，通过扫描每一个row group的头部定义来实现。<br>④ORCFile：hive给出的新格式，属于RCFile的升级版<br>        ⑴每个Task只输出单个文件，可以减少NameNode的负载；<br>        ⑵数据格式：支持datetime.decimal,以及一些复杂类型(struct,list,map，union类型)；<br>        Date<br>        ⑶文件中存储了一些轻量级的索引数据<br>        ⑷用多个互相独立的RecordReaders并行的读取相同的文件；<br>        ⑸支持行级别的更新和删除，实现事务表机制。<br>        ⑹针对不同的数据类型，采用不用的压缩算法进行优化。数值类型（游程编码），字符类型（字典编码）<br>⑤Parquet File:</p>
+<h1 id="etl相关工具"><a href="#etl相关工具" class="headerlink" title="etl相关工具"></a>etl相关工具</h1><p>ETL 工具<br>    ①datestage<br>    ②informatica<br>    ③kettle<br>    ④ODI<br>    ⑤cognos<br>    ⑥beeload</p>
+<p>调度工具<br>    ①Control-M<br>    ②taskctl<br>    ③ets<br>    ④moia</p>
+<h1 id="hive-拉链表"><a href="#hive-拉链表" class="headerlink" title="hive 拉链表"></a>hive 拉链表</h1><p>定义：记录一个事物从开始，一直到当前的状态的所有变化信息。<br>区分流水表：在流水表中会存放一个用户的每条记录，但是在拉链表中只有一条记录<br> 拉链表增量操作sql:<br> INSERT OVERWRITE TABLE dws.user_his<br>SELECT * FROM<br>(<br>    SELECT A.user_num,<br>           A.mobile,<br>           A.reg_date,<br>           A.t_start_time,<br>           CASE<br>                WHEN A.t_end_time = ‘9999-12-31’ AND B.user_num IS NOT NULL THEN ‘2017-01-01’<br>                ELSE A.t_end_time<br>           END AS t_end_time<br>    FROM dws.user_his AS A<br>    LEFT JOIN ods.user_update AS B<br>    ON A.user_num = B.user_num<br>UNION<br>    SELECT C.user_num,<br>           C.mobile,<br>           C.reg_date,<br>           ‘2017-01-02’ AS t_start_time,<br>           ‘9999-12-31’ AS t_end_time<br>    FROM ods.user_update AS C<br>) AS T;</p>
+<h1 id="hive-数据清洗常用函数？"><a href="#hive-数据清洗常用函数？" class="headerlink" title="hive 数据清洗常用函数？"></a>hive 数据清洗常用函数？</h1><p>①case when condition_clause then field end as ‘field’ // if(sc.score&gt;=60,1,null)<br>②regexp_replace(field,’/t’,’’)<br>③split(filed,’/t’)<br>④concat(‘1’,’2’)<br>⑤trim<br>⑥nvl(field,0) // ifnull(filed,0) </p>
+<p>select name,count(bb.order_by_brand) from (select name,row_number() over (partition by name order by id desc) as order_by_brand from b)bb group by name; </p>
+<h1 id="数据库分层"><a href="#数据库分层" class="headerlink" title="数据库分层"></a>数据库分层</h1><p>ODS Operational Data Store(原始数据)<br>DWD Data Warehouse Detail(数据明细层) 去除空值，脏数据，拥有详细的明细数据<br>DWS Data Warehouse Service(服务数据层) 轻度聚合：结合业务粒度<br>ADS Application Data Store(实时个性化维度汇总层) 做分析处理同步到RDS数据库<br>DIM(维度层)</p>
+<h1 id="shell-脚本日期处理"><a href="#shell-脚本日期处理" class="headerlink" title="shell 脚本日期处理"></a>shell 脚本日期处理</h1><p>表示当前日期的前一天<br>date -d “-1 day” +%F<br>2020-04-05</p>
+<h1 id="sql调优"><a href="#sql调优" class="headerlink" title="sql调优"></a>sql调优</h1><p>避免全表扫描<br>1.给常用的条件列建索引<br>2.不要使用Null值判断，!= 、&lt;&gt;<br>3.where子句中 使用or来连接条件，条件字段有索引<br>（优化改用Union all）<br>4.慎用in、not in<br>5.使用exists 代替in<br>6.避免在字段中使用操作符<br>7.使用复合索引时，尽量让字段顺序与索引顺序一致<br>8.对于数据量大的表，先分页再join<br>9.索引提高了读性能，同时降低了写的性能，每次都要重建索引<br>10.使用char代替varchar</p>
+<p>精简：<br>1.增加JVM内存 （单值多超JVM内存）<br>2.增加Reducer个数/减小每个reduce处理的数据量 （单值多不超JVM内存）<br>3.customer partition<br>    比如hadoop definitive guide里面的温度问题，一个固定的组合（测试站点的位置和温度）<br>4.参数调优<br>    hive.map.aggr=true// 开启map端聚合功能<br>    hive.groupby.skewindata=true// 开启两个MR job 第一个map的输出结果集会随机分配到reduce端，每个reduce做部分聚合，第二MR再根据group by key分布到reduce中完成最终的聚合；<br>    map side join // 直接在map端就完成表的join操作，进入map端的数据根据分片得到，数据比较均衡（小表小于25M）<br>5.sql调优<br>    1.使用物化视图，index,bitmap index<br>    2.先使用where子句减少数据量</p>
+<h1 id="外部表和内部标的区别"><a href="#外部表和内部标的区别" class="headerlink" title="外部表和内部标的区别"></a>外部表和内部标的区别</h1><p>1）创建时：创建内部表时，会将数据移动到数据仓库指定的路径；创建外部表时，不会对数据的位置进行改变。<br>2）删除表时：内部表元数据和数据被一起删除；而外部表只删除元数据，不删除数据</p>
+<h1 id="hql执行流程图"><a href="#hql执行流程图" class="headerlink" title="hql执行流程图"></a>hql执行流程图</h1><p><img src="./hive%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B%E5%9B%BE.png" alt=""><br>1.向客户端提交一条HQL语句<br>2.获取执行计划，通过Complier进行编译，知道要操作的表<br>3.获取元数据，去找到要操作表的信息<br>4.拿到信息<br>5.编译器提交HQL语句分析方案<br>6.执行HQL语句方案<br>执行器在执行方案时，会判断如果当前方案不涉及到MR组件，比如为表添加分区信息、比如字符串操作等，比如简单的查询操作等，此时就会直接和元数据库交互，然后去HDFS上去找具体数据。<br>如果方案需要转换成MR job，则会将job 提交给Hadoop的JobTracker。<br>7.MR执行完任务告知执行引擎，执行引擎与HDFS交互获取结果<br>8.将结果返回给客户端，并展示在UI界面</p>
+<h1 id="hive中group-by-和-count-distinct-哪个好"><a href="#hive中group-by-和-count-distinct-哪个好" class="headerlink" title="hive中group by 和 count(distinct)哪个好"></a>hive中group by 和 count(distinct)哪个好</h1><p>group by更好<br>原因：group by在map端会使用combine进行聚合，而count(distinct)不会，造成reduce的压力比较大。</p>
+<h1 id="创建外部表-以表中的年龄字段创建分区表"><a href="#创建外部表-以表中的年龄字段创建分区表" class="headerlink" title="创建外部表 以表中的年龄字段创建分区表"></a>创建外部表 以表中的年龄字段创建分区表</h1><p>create external table stu(id int,name string,gender string,age int) row format delimited fields terminated by ‘ ‘;<br>load data inpath ‘hdfs://hadoop01:9000/stu.txt’ into table stu;<br>[load data local inpath ‘/home/stu.txt’ into table stu;]</p>
+<p>–表中已有分区字段<br>create external table stu(id int,name string,gender string,age int) row format delimited fields terminated by ‘ ‘;<br>load data local inpath ‘/home/stu.txt’ into table stu;<br>create table p_stu1(id int,name string,gender string) partitioned by(age int) row format delimited fields terminated by ‘ ‘;<br>insert into table p_stu1 partition(age) select id,name,gender,age from stu distribute by age;</p>
+<p>– 表中无分区字段<br>create table stud1(id int,name string,gender string) partitioned by(age int) row format delimited fields terminated by ‘ ‘;<br>load data local inpath ‘/home/15/stu1.txt’ into table stud1 partition(age=15);</p>
+<p>– 分桶表<br>create table tmp(id int,name string,gender string) clustered by(id) into 6 buckets row format delimited fields terminated by ‘ ‘;<br>load data local inpath ‘/home/15/stu1.txt’ into table tmp;</p>
+<p>sort by 排序 distribute 分组 order by 全局排序</p>
+<p>– 包含map类型的写法<br>create table infos(id int,info map&lt;string,int&gt;) row format delimited fields terminated by ‘ ‘ map keys terminated by ‘,’;<br>load data local inpath ‘/home/mapstu.txt’ into table infos;<br>– struct<br>create table struct(id int,s struct<a href="name:string,age:int,gender:string">name:string,age:int,gender:string</a>) row format delimited fields terminated by ‘ ‘ collection items terminated by ‘,’;</p>
+<p>– serde<br>提取前：192.168.120.23 – [30/Apr/2018:20:25:34 +0800] “GET /music.mp3 HTTP/1.1” 304 -<br>提取后：192.168.120.23  30/Apr/2018:20:25:34    +0800   GET     /bg.css HTTP/1.1 304<br>create table log(ip string,time string,zone string,requesttype string,url string,protocol string,status int) row format serde ‘org.apache.hadoop.hive.serde2.RegexSerDe’ with serdeproperties(“input.regex”=”(.<em>) -- \[(.</em>) (.<em>)\] &quot;(.</em>) (.<em>) (.</em>)&quot; (.*) -“) stored as textfile;<br>load data local inpath ‘/home/serde.txt’ into table log;</p>
+<p>create table log_orc(ip string,time string,zone string,requesttype string,url string,protocol string) partitioned by (status int) row format delimited fields terminated by ‘ ‘ stored as orc;<br>insert into log_orc partition(status) select * from log distribute by status;</p>
+<p>– left semi join a表中的数据哪些在b中出现过<br>select * from product_t left semi  join order_t on product_t.pid=order_t.pid;<br>a表里哪些数据在b表中出现过</p>
+<p>– hql 实现wordcount<br>select tmp.word,count(1) as cnt from<br>(select explode(split(line,’ ‘)) as word from wordcount1)tmp<br>group by tmp.word<br>order by cnt desc;</p>
+<h1 id="留存率-每日活跃用户hql语句写法"><a href="#留存率-每日活跃用户hql语句写法" class="headerlink" title="留存率 每日活跃用户hql语句写法"></a>留存率 每日活跃用户hql语句写法</h1><p>– 留存率计算<br>     select  dim_date<br>        ,node_id<br>        ,total_cnt<br>        ,concat_ws(‘% | ‘, cast(round(dif_1cnt<em>100/total_cnt, 2) as string), cast(dif_1cnt as string))<br>        ,concat_ws(‘% | ‘, cast(round(dif_2cnt</em>100/total_cnt, 2) as string), cast(dif_2cnt as string))<br>        ,concat_ws(‘% | ‘, cast(round(dif_3cnt<em>100/total_cnt, 2) as string), cast(dif_3cnt as string))<br>        ,concat_ws(‘% | ‘, cast(round(dif_4cnt</em>100/total_cnt, 2) as string), cast(dif_4cnt as string))<br>    from<br>    (<br>        select p1.state dim_date<br>            ,p1.node_id<br>            ,count(distinct p1.user_id) total_cnt<br>            ,count(distinct if(datediff(p3.state,p1.state) = 1, p1.user_id, null)) dif_1cnt<br>            ,count(distinct if(datediff(p3.state,p1.state) = 2, p1.user_id, null)) dif_2cnt<br>            ,count(distinct if(datediff(p3.state,p1.state) = 3, p1.user_id, null)) dif_3cnt<br>            ,count(distinct if(datediff(p3.state,p1.state) = 4, p1.user_id, null)) dif_4cnt<br>        from<br>            (<br>                select<br>                    from_unixtime(unix_timestamp(cast(partition_date as string), ‘yyyyMMdd’), ‘yyyy-MM-dd’) state,<br>                    user_id，<br>                    node_id<br>                from user_active_day<br>                where partition_date between date1 and date2<br>                and user_is_new = 1<br>                group by 1,2,3  –如果不行用字段替换，group by去重优于distinct<br>            )p1 –日新增用户名单(register_date,user_id)<br>            left outer join<br>            (<br>                select<br>                    from_unixtime(unix_timestamp(cast(partition_date as string), ‘yyyyMMdd’), ‘yyyy-MM-dd’) state,<br>                    user_id,<br>                    node_id<br>                from active_users<br>                where partition_date between date1 and date2<br>                group by 1,2,3<br>            )p3 –期间活跃用户(active_date,user_id)<br>            on (p3.user_id = p1.user_id and p3.node_id=p1.node_id)<br>        group by 1,2<br>    ) p4;</p>
+<h1 id="1-sql中where-子句中-and-or-的执行顺序-2-left-join情况下on-后面where和and区别"><a href="#1-sql中where-子句中-and-or-的执行顺序-2-left-join情况下on-后面where和and区别" class="headerlink" title="1)sql中where 子句中 and or ()的执行顺序 2)left join情况下on 后面where和and区别"></a>1)sql中where 子句中 and or ()的执行顺序 2)left join情况下on 后面where和and区别</h1><p>and or ()执行顺序<br>如下sql说出执行结果并解释原因：<br>select * from stu where sid=1 and sgender=’男’ or sname=’aaa’;<br>select * from stu where sid=1 and (sgender=’男’ or sname=’aaa’);<br>第一条查询出id为1并且性别为男或者者名字为aaa的学生信息;<br>第二条查询出id为1并且为男或者id为1并且名字为aaa的学生。</p>
+<p>在left,right,full join中使用on条件进行关联时，and,where子条件会使查询的结果不同，使用and才会查询出left等表中所有数据，使用where时跟inner join一样只返回关联上的结果集。</p>
+<h1 id="增量-全量hql-以及行转置sql"><a href="#增量-全量hql-以及行转置sql" class="headerlink" title="增量 全量hql 以及行转置sql"></a>增量 全量hql 以及行转置sql</h1><h1 id="手写sqoop倒数据脚本"><a href="#手写sqoop倒数据脚本" class="headerlink" title="手写sqoop倒数据脚本"></a>手写sqoop倒数据脚本</h1><p>bin/sqoop import –connect jdbc:mysql://hadoop01:3306/test –username root –password root –table tabx –target-dir ‘/sqoop/tabx’ –fields-terminated-by ‘|’ -m -1;<br>// 按id进行分区–split-by id<br>insert overwirte directory ‘/sqoop/tabx/s.txt’ select F1,F2,F3 from taby stored as textfile<br>bin/sqoop export –connect jdbc:mysql://hadoop01://3306/test –username root –password root –table taby –export-dir ‘/sqoop/tabx/s.txt’ –fields-terminated-by ‘ ‘ –columns F1,F2,F3 –update-key F4 –update-mode allowinsert<br>bin/sqoop export –connect jdbc:mysql://hadoop01:3306/test –username root –password root –table taby –export-dir ‘/sqoop/tabx/part-m-00000’ –fields-terminated-by ‘|’ -m -1</p>
+<h1 id="spark-常用操作-以及调优"><a href="#spark-常用操作-以及调优" class="headerlink" title="spark 常用操作 以及调优"></a>spark 常用操作 以及调优</h1><p>val r1 = sc.textFile(“file:///home/1.txt”)<br>val r2 = sc.flatMap{<em>.split(‘ ‘)}.map{(</em>,1)}.reduceByKey{<em>+</em>}</p>
+<p>1.将spark的序列化由Java原生序列化更换为kryo<br>2.配置临时文件目录，将每个目录路径挂载到不同的磁盘上<br>3.启动推测执行机制<br>4.生产环境，查看运行结果不要使用collect或者foreach，建议使用savaAsTextFile,存储后查看<br>5.特定场景下，使用MapPartitions代替Map</p>
+<h1 id="sql进行行列转换"><a href="#sql进行行列转换" class="headerlink" title="sql进行行列转换"></a>sql进行行列转换</h1><p>– 行转列<br>select name,case when subject=’chinese’ then score else 0 end as ‘chinese’ from s1 group by name;<br>– 列转行<br>select name,’chinese’,chinese as score from s2 group by name;</p>
+<h1 id="kylin-练习"><a href="#kylin-练习" class="headerlink" title="kylin 练习"></a>kylin 练习</h1><p>执行数据模型，维度和度量<br>create table dept(dept int,dname string,location string) row format delimited fields terminated by ‘ ‘;<br>create table emp (emp int,ename string,job string,mgr double,hiredate date,salary double,common double,deptno int) row format delimited fields terminated by ‘ ‘;</p>
+<p>10 Accounting new-york<br>20 research dallas<br>30 sales chicago<br>40 oprations boston</p>
+<p>7369 SMITH CLERK 7902 1980-12-17 800 NULL 20<br>7499 ALLEN SALESMAN 7698 1981-02-20 1600 300 30<br>7521 WARD SALESMAN 7698 1981-02-22 1250 500 30<br>7566 JONES MANAGER 7839 1981-04-02 2975 NULL 20<br>7654 MARTIN SALESMAN 7698 1981-09-28 1250 1400 30</p>
+<p>select job,sum(salary) from emp join dept on deptno=dept group by ename;</p>
+<p>查看cube状态<br>bin/kylin.sh org.apache.kylin.engine.mr.common.CubeStatsReader Mp</p>
+<p>– 减枝优化<br>强制维度<br>层级维度 比如 年月<br>联合维度 比如 张三 18</p>
+<h1 id="复购用户sql-留存率"><a href="#复购用户sql-留存率" class="headerlink" title="复购用户sql 留存率"></a>复购用户sql 留存率</h1><p>select<br>    x3.fd,<br>    count(distinct x3.id) as ‘当日首购用户数’,<br>    count(distinct case when x3.cnt&gt;0 and x3.cnt&lt;30 then x3.id else null end) as ‘当月复购用户数’<br> from<br>(select<br>    x1.id,<br>    x1.fd,<br>    datediff(date_format(x2.time,’%Y-%m-%d’),x1.fd) as cnt<br>    from<br>(select id,min(date_format(time,’%Y-%m-%d’)) fd from user_a group by id)x1 inner join user_a x2 on x1.id = x2.id)x3 group by x3.fd; </p>
+<p>select<br>    x4.fd,<br>    x4.total ‘新增数’,<br>    cnt1_diff<em>100/total ‘次留率’,<br>    cnt2_diff</em>100/total ‘二留率’<br>from<br>(select<br>    x3.fd,<br>    count(distinct x3.id) total,<br>    count(distinct if(cnt=1,x3.id,null)) cnt1_diff,<br>    count(distinct if(cnt=2,x3.id,null)) cnt2_diff<br>    from<br>(select x1.fd,x1.id,datediff(x2.dt,x1.fd) cnt from<br>(select id,min(dt) fd from a_z group by id) x1<br>inner join<br>b_q x2 on x1.id = x2.id) x3 group by x3.fd) x4;</p>
+<p>mysql 存储过程制造数据<br>delimiter $<br>drop procedure if exists t_add;<br>create procedure t_add(num int)<br>begin<br>declare i int;<br>set i = 1;<br>while i &lt; num do<br>insert into ua(id,dt) values(floor(50000+rand()*100),<br>date(<br>from_unixtime(<br>    unix_timestamp(‘2019-01-01’)<br>     + floor(<br>   rand() * ( unix_timestamp(‘2020-08-08’) - unix_timestamp(‘2019-01-01’) + 1 )<br> )<br>)));</p>
+<p>set i=i+1;<br>end while;<br>end $</p>
+<p>call t_add(1000000);</p>
+<p>insert into result_ua<br>select u4.fd,u4.cnt5_diff/u4.total,u4.cnt10_100diff/u4.total,u4.cnt_100diff/u4.total from (select u3.fd,count(u3.id) as total,count(distinct case when u3.cnt&gt;0 and u3.cnt&lt;5 then id else null end) as cnt5_diff,count(distinct case when u3.cnt&gt;10 and u3.cnt&lt;100 then id else null end) as cnt10_100diff,count(distinct case when u3.cnt&gt;100 then id else null end) as cnt_100diff from(select u1.fd,u1.id,datediff(u2.dt,u1.fd) as cnt from(select id,min(dt) fd from ua group by id) u1 inner join ua u2 on u1.id=u2.id)u3 group by u3.fd) u4;</p>
+<h1 id="spark-MLlib"><a href="#spark-MLlib" class="headerlink" title="spark MLlib"></a>spark MLlib</h1><p>‘’’<br>val conf = new SparkConf().setMaster(“spark://ip:7077”).setAppName(“als”);<br>val sc = new SparkContext(conf);<br>val data = sc.textFile(“f://data/a.txt”);<br>val movie = sc.textFile(“f://data/b.item”);<br>val movieMap = movie.map{line =&gt;<br>    val info = line.split(“\|”)<br>    val movieId = info(0).toInt<br>    val movieName = info(1)<br>    (movieId,movieName)<br>}.collectAsMap</p>
+<p>val ratings =  data.map{<br>    line.split(“\t”)<br>     val userId = info(0).toInt<br>     val movieId = info(1).toInt<br>     val score = info(2).toInt<br>     Rating(userId,movieId,score)<br>}</p>
+<p>val model = ALS.train(ratings,50,15,10)<br>val result = model.recommendProducts(789,10).map{<br>    rate =&gt;<br>        val userId = rate.user<br>         val movieId = rate.product<br>         val socre = rate.rating<br>         val movieName = movieMap.apply(movieId)<br>         (userId,movieName,socre)<br>}<br>//result.foreach(println)<br>model.save(sc,”hdfs://namenode:9000/aa”)<br>‘’’</p>
+<p>– spark streaming<br>‘’’<br>val conf = new SparkConf().setMaster(“spark://ip:7077”).setAppName(“sparkStreaming”)<br>val ssc = new StreamingContext(new SparkConf(conf),Milliseconds(3000))<br>val data = ssc.textFileStream(“hdfs://namenode:9000/a.txt”)<br>val result = data.flatMap{<em>.split(“ “)}.map{(</em>,1)}.reduceByKey{<em>+</em>}<br>result.println<br>ssc.start<br>‘’’<br>ALS算法核心思想迭代多次求解一系列最小二乘回归问题，使得最终因子矩阵中的因子值是最优解（误差的平方和最小）</p>
+<p>根据偏好矩阵，假定一个低阶的因子k，k小于维度m和n（m*n维）达到降维的目的。两个子因子矩阵相乘=原来的偏号矩阵。<br>推荐系统启动方式:</p>
+<p>①用户冷启动 让用户选择兴趣爱好<br>②物品冷启动，根据算法 预估评分<br>③系统冷启动 购买数据 爬取数据</p>
+<h1 id="mysql和Oracle-语法上的区别"><a href="#mysql和Oracle-语法上的区别" class="headerlink" title="mysql和Oracle 语法上的区别"></a>mysql和Oracle 语法上的区别</h1><p>SQL常识：聚集函数算窗口函数<br>常见的窗口函数：RowNumber() 123 RanK() 113 Dense_rank() 112<br>1.Mysql 中from 后面是子查询表，那么必须有别名<br>2.连接字符串Oracle || ,Mysql concat 方法<br>3.Mysql没有Oracle的动态游标，只有显示游标<br>4.Mysql的group by中可以是没有被select中的字段，Oracle中就会报错<br>5.执行顺序：From -&gt; Where -&gt; Group By子句 -&gt; Having子句 -&gt; Order By-&gt; Select -&gt; limit</p>
+<h1 id="sqoop-如何保证数据一致性-遇到过哪些问题"><a href="#sqoop-如何保证数据一致性-遇到过哪些问题" class="headerlink" title="sqoop 如何保证数据一致性,遇到过哪些问题"></a>sqoop 如何保证数据一致性,遇到过哪些问题</h1><p>1.创建一个结构一样的 表名_temp的mysql表<br>2.使用如下两个参数控制，只有当数据全部成功导入临时表，才会再导入正真的表中<br>    –staging-table mysql表名_tmp <br>    –clear-staging-table \</p>
+<h1 id="kettle使用"><a href="#kettle使用" class="headerlink" title="kettle使用"></a>kettle使用</h1><p>注意点：<br>    1.单表，直接sql做连接<br>    2.多源输入，用Database join 操作<br>    3.update table(单行执行)没有execute sql scrip速度块(多行执行)<br>    4.性能调优：<br>        ①使用数据库连接池<br>        ②尽量提高批处理commit size<br>        ③尽量使用缓存，缓存尽量大一些(主要是文本文件和数据流)<br>        ④JVM调优 调大参数，使-xms -xmx内存一样大，避免多次产生full GC<br>        ⑤可以使用sql来做的操作尽量用sql来做，group merge stream lookup split field这些比较慢<br>        ⑥插入大量数据的时候尽量删掉索引，避免update,可以先delete再insert<br>        ⑦删除整表数据使用truncate table 不要使用delete all row<br>        ⑧需要计算时，先用sql，处理不了就用储存过程，最后考虑calculate步骤<br><a href="https://blog.csdn.net/xingyue0422/article/details/86509995" target="_blank" rel="noopener">原文地址</a></p>
+<h1 id="如何使用脚本抽取数据库表中是否有null值或者重复行？"><a href="#如何使用脚本抽取数据库表中是否有null值或者重复行？" class="headerlink" title="如何使用脚本抽取数据库表中是否有null值或者重复行？"></a>如何使用脚本抽取数据库表中是否有null值或者重复行？</h1><p><a href="https://www.php.cn/mysql-tutorials-128961.html" target="_blank" rel="noopener">JavaScript处理</a><br><a href="https://blog.csdn.net/zzq900503/article/details/78745359" target="_blank" rel="noopener">java处理</a></p>
+<h1 id="数据库表分区"><a href="#数据库表分区" class="headerlink" title="数据库表分区"></a>数据库表分区</h1><p>1.一个表最多只能有1024个分区<br>2.如果分区字段中包含主键和所有索引，或者都不包含<br>3.分区表中无法使用外键约束<br>4.数据和索引会一起被分区<br>5.可以根据range、list、hash、key进行分区<br>创建分区表语法<br>create table table_name (columns int,…)<br>    partition by range(store_id)(<br>        partition p0 values less than (6),<br>        partition p1 values less than (11),…<br>        partition pn values less than MAXVALUE<br>    );</p>
+<p>其他详情<br>partition by range columns(a,b) (partition p0 values less than (0,10),…);<br>partition by range(year(separated)) (partition p0 values less than (1996),…);<br>partition by list(store_id) (partition pNorth values in (3,5,6,9,17));<br>partition by hash(store_id) partitions 4;<br>partition by hash(year(hired) partitions 4;<br>partition by linear hash(year(hired) partitions 4;<br>partition by key(store_id);</p>
+<h1 id="数据集市开发从需求沟通、标签定义、mapping规范、编码开发、测试验收、版本移交到生产验证整个流程"><a href="#数据集市开发从需求沟通、标签定义、mapping规范、编码开发、测试验收、版本移交到生产验证整个流程" class="headerlink" title="数据集市开发从需求沟通、标签定义、mapping规范、编码开发、测试验收、版本移交到生产验证整个流程"></a>数据集市开发从需求沟通、标签定义、mapping规范、编码开发、测试验收、版本移交到生产验证整个流程</h1><p><a href="https://www.cnblogs.com/dailidong/p/7571150.html" target="_blank" rel="noopener">answer</a><br><img src="arrange.png" alt="大数据整体结构图"><br>数据仓库是对多个异构的数据源有效集成，集成后按照主题进行了重组，并包含历史数据，而且存放在数据仓库中的数据一般不再修改<br>数据集市也叫数据市场，是一个从操作的数据和其他的为某个特殊专业人员团体服务的数据源中收集数据的仓库</p>
+<h1 id="group-concat函数"><a href="#group-concat函数" class="headerlink" title="group_concat函数"></a>group_concat函数</h1><p>SQL:select id,GROUP_CONCAT(name,’’) new_name from tab1 group by id;<br>HQL:select id,concat_ws(‘,’,collect_set(name)) as new_name from tab1 group by id;</p>
+<p>1    a,b<br>2    a,b</p>
+<h1 id="spark-执行流程"><a href="#spark-执行流程" class="headerlink" title="spark 执行流程"></a>spark 执行流程</h1><p><img src="spark.png" alt="spark"></p>
+<ul>
+<li>1.构建Spark Application 的运行环境SparkContext，SparkContext向资源管理器(Standalone,Mesos或Yarn)注册并申请资源</li>
+<li>2.资源管理器分配Executor资源并启动StandaloneExecutorBackend,Executor运行情况随着心跳发送到资源管理器上</li>
+<li>3.SparkContext构建成DAG图，将DAG图分解成Stage，并把Taskset发送给Task Scheduler。Executor向SparkContext申请Task</li>
+<li>4.Task Scheduler将Task发放给Executor运行同时SparkContext将应用程序代码发放给Executor。</li>
+<li>5.Task在Executor上运行，运行完毕释放所有资源</li>
+</ul>
+<h1 id="持久化-和-CheckPoint区别"><a href="#持久化-和-CheckPoint区别" class="headerlink" title="持久化 和 CheckPoint区别"></a>持久化 和 CheckPoint区别</h1><ul>
+<li>persist()可以将RDD的partition持久化到磁盘，但该partition由BlockManager管理,<br>一旦driver program结束，executor也会结束，BlockManager结束，被缓存到磁盘上的RDD也被清空</li>
+<li>使用checkpoint将rdd持久化到hdfs或本地文件夹，任务结束不会被删除</li>
+</ul>
+<h1 id="宽依赖和窄依赖"><a href="#宽依赖和窄依赖" class="headerlink" title="宽依赖和窄依赖"></a>宽依赖和窄依赖</h1><ul>
+<li>窄依赖：父RDD的每个分区只被一个子RDD使用　 一对一，多对一</li>
+<li>宽依赖：父RDD的每个分区都可能被多子RDD使用 多对多，一对多</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/04/18/summary%20for%20bigdata/" data-id="ckautpojf000b94rhap72hjnd" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/05/15/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E8%89%BA%E6%9C%AF%E6%80%BB%E7%BB%93/">并发编程艺术总结</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/14/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">git常用命令</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/09/thread/">thread</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/09/netcompile/">netcompile</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/09/API/">API</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>netcompile | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="网络编程 本质还是基于网络的数据传输，基于流来实现  网络模型  物理层，数据链路层，网络层，传输层(协议,UDP,TCP)，  会话层，表示层，应用层   IP地址— 确定主机在网络中的位置 四位(0-255) IPv4 共有2^32&#x3D;42万多个  端口— 用于计算机和外界通信的媒介  端口号 (0-65535), 0-1024基本上都被系统占用了   域名(DNS)—能映射成具体的IP地址">
+<meta property="og:type" content="article">
+<meta property="og:title" content="netcompile">
+<meta property="og:url" content="http://yoursite.com/2020/05/09/netcompile/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="网络编程 本质还是基于网络的数据传输，基于流来实现  网络模型  物理层，数据链路层，网络层，传输层(协议,UDP,TCP)，  会话层，表示层，应用层   IP地址— 确定主机在网络中的位置 四位(0-255) IPv4 共有2^32&#x3D;42万多个  端口— 用于计算机和外界通信的媒介  端口号 (0-65535), 0-1024基本上都被系统占用了   域名(DNS)—能映射成具体的IP地址">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-05-09T05:35:01.360Z">
+<meta property="article:modified_time" content="2019-10-08T15:32:12.000Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-netcompile" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/05/09/netcompile/" class="article-date">
+  <time datetime="2020-05-09T05:35:01.360Z" itemprop="datePublished">2020-05-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      netcompile
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="网络编程"><a href="#网络编程" class="headerlink" title="网络编程"></a>网络编程</h1><ul>
+<li><p>本质还是基于网络的数据传输，基于流来实现</p>
+</li>
+<li><p>网络模型</p>
+<ul>
+<li>物理层，数据链路层，网络层，传输层(协议,UDP,TCP)，<br>  会话层，表示层，应用层</li>
+</ul>
+</li>
+<li><p>IP地址— 确定主机在网络中的位置 四位(0-255) IPv4 共有2^32=42万多个</p>
+</li>
+<li><p>端口— 用于计算机和外界通信的媒介</p>
+<ul>
+<li>端口号 (0-65535), 0-1024基本上都被系统占用了</li>
+</ul>
+</li>
+<li><p>域名(DNS)—能映射成具体的IP地址</p>
+</li>
+<li><p>SocketAddress</p>
+<ul>
+<li>代表IP地址和端口的类</li>
+<li>子类InetSocketAddress</li>
+</ul>
+</li>
+</ul>
+<h2 id="UDP"><a href="#UDP" class="headerlink" title="UDP"></a>UDP</h2><ul>
+<li><p>基于流</p>
+<ul>
+<li>传输不建立链接，不可靠(数据不完整)，传输速度快</li>
+<li>使用场景   视频、直播等</li>
+<li>在底层进行数据传输时是通过数据包进行传递的，包的大小为64kb，</li>
+<li>DatagramSocket 服务器客户端   DatagramPacket 创建包</li>
+</ul>
+</li>
+<li><p>接受端</p>
+<ul>
+<li>1.创建发送对象 DatagramSocket ds = new DatagramSocket();</li>
+<li>2.创建数据包对象指明要传输的内容以及IP地址和端口 DatagramPackage dp = new DatagramPackage(“你好”.getByte(), “你好”.length(),new InetSocketAddress(“127.0.0.1”,8080));</li>
+<li>3.发送数据包 ds.send(dp);</li>
+<li>4.关流 ds.close();</li>
+</ul>
+</li>
+<li><p>接受端</p>
+<ul>
+<li>1.创建接收端对象 DatagramSocket ds = new DatagramSocket(8080);</li>
+<li>2.创建数据包进行数据接收 DatagramPackage dp = new DatagramPackage(new byte[1024],1024);</li>
+<li>3.接收数据 ds.receive(dp);</li>
+<li>4.关流 ds.close();</li>
+<li>5.解析数据包 System.out.println(new String(dp.getData(),0,dp.getLength()));</li>
+</ul>
+</li>
+<li><p>通过UDP实现简易聊天室 ChatTextDemo.java</p>
+</li>
+</ul>
+<h2 id="TCP"><a href="#TCP" class="headerlink" title="TCP"></a>TCP</h2><ul>
+<li><p>基于流</p>
+</li>
+<li><p>建立连接(三次握手)，可靠(数据完整)，速度较低</p>
+</li>
+<li><p>使用场景– 传输文件</p>
+</li>
+<li><p>底层进行数据传输时，不限定数据的大小</p>
+</li>
+<li><p>Socket ServerSocket</p>
+<ul>
+<li><p>客户端</p>
+<ul>
+<li>1.创建客户端对象–&gt;无参数 Socket s = new Socket();// 错,不是在客户端创建时传入端口号</li>
+<li>2.发起连接–&gt;InetSocketAddress参数 s.connect(new InetSocketAddress(“127.0.0.1”,8080));// 错 应该传入InetSocketAddress实例</li>
+<li>3.获取自带输出流 OutputStream os = s.getOutputStream(); FileInputStream fis = new FileInputStream(“文件路径”);</li>
+<li>4.根据输出流把数据写到服务器 while () — fis.read(bs); os.write(bs,0,len);</li>
+<li>5.通知服务器数据已经发送完毕 s.shutdownOutputStream();</li>
+<li>6.关流 s.close(); os.close(); </li>
+</ul>
+</li>
+<li><p>服务器端</p>
+<ul>
+<li>1.创建服务器端对象 ServerSocket ss = new ServerSocket(8080);</li>
+<li>2.接受连接 Socket s = ss.accept();</li>
+<li>3.获取自带输入流 InputStream is = s.getInputStream(); FileOutputStream fos = new FileOutputStream(“下载文件路径”)</li>
+<li>4.根据输入流获取数据 while () is.read(bs);fos.write(bs,0,len);</li>
+<li>5.通知服务器数据已经接收完毕 s.shutdownInputStream();</li>
+<li>6.关流 s.close(); ss.close(); fos.close();</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>通过TCP实现文件上传和下载</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1></li>
+<li><p>无论是TCP还是UDP，创建客户端时为无参构造；</p>
+</li>
+<li><p>UDP客户端创建数据包是指定内容，长度以及InetSocketAddress，服务器中数据包参数是新建一个字节数组，可接收的长度<br>   而TCP则是在连接时指定InetSocketAddress</p>
+</li>
+<li><p>创建服务器端时，都需要指定端口</p>
+</li>
+<li><p>传输数据方式，UDP不建立连接以包的形式传递，用客户端发送，参数为数据包，而TCP则是建立连接，<br>   使用自建文件输入流，客户端自带输出流写到服务器上，再由服务器自带输入流读取，<br>   再由自建文件输出流写入到文件，需要用到字节数组容器</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/05/09/netcompile/" data-id="ckautpoj8000894rhf5ii49qe" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/05/09/thread/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          thread
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/05/09/API/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">API</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/05/15/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E8%89%BA%E6%9C%AF%E6%80%BB%E7%BB%93/">并发编程艺术总结</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/14/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">git常用命令</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/09/thread/">thread</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/09/netcompile/">netcompile</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/09/API/">API</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

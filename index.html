@@ -88,7 +88,7 @@
       
         <p>本编是《spring揭密》读书笔记，本文会配合spring framework 源码进行学习</p>
 <p>如有侵权内容，请联系<a href="mailto:whalefallcl@gmail.com">whalefallcl@gmail.com</a></p>
-<h3 id="Spring框架为POJO提供了各种服务共同组成了Spring生命之树"><a href="#Spring框架为POJO提供了各种服务共同组成了Spring生命之树" class="headerlink" title="Spring框架为POJO提供了各种服务共同组成了Spring生命之树"></a>Spring框架为POJO提供了各种服务共同组成了Spring生命之树</h3><p><img src="2020-06-13_142312.png" alt="Spring生命之树"></p>
+<h3 id="Spring框架为POJO提供了各种服务共同组成了Spring生命之树"><a href="#Spring框架为POJO提供了各种服务共同组成了Spring生命之树" class="headerlink" title="Spring框架为POJO提供了各种服务共同组成了Spring生命之树"></a>Spring框架为POJO提供了各种服务共同组成了Spring生命之树</h3><p><img src="2020-06-13_142312.png" alt=""></p>
 
       
     </div>
@@ -327,7 +327,6 @@
 <p>因此同步器提供了一个基于CAS的设置尾节点的方法：compareAndSetTail(Node expect, Node update)，它需要传递当前线程“认为”的尾节点和当前节点，只有设置成功后，当前节点才正式与之前的尾节点建立关联。<br><img src="2020-05-17_212031.png" alt=""></p>
 <p>同步队列遵循FIFO，首节点是获取同步状态成功的节点，首节点的线程在释放同步状态时，将会唤醒后继节点，而后继节点将会在获取同步状态成功时将自己设置为首节点，如下图所示<br><img src="2020-05-17_223918.png" alt=""><br>设置首节点是通过获取同步状态成功的线程来完成的，由于只有一个线程能够成功获取到同步状态，因此设置头节点的方法并不需要使用CAS来保证，它只需要将首节点设置成为原首节点的后继节点并断开原首节点的next引用即可。</p>
 <p><img src="2020-05-17_225011.png" alt=""></p>
-<p><img src="2020-06-13_142312.png" alt=""></p>
 
       
     </div>

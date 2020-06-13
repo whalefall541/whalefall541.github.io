@@ -64,43 +64,6 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-1" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/06/13/1/" class="article-date">
-  <time datetime="2020-06-13T07:00:02.749Z" itemprop="datePublished">2020-06-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/06/13/1/">1</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="%5C1.png" alt=""></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/06/13/1/" data-id="ckbdak73u0000xcrh679lb8k0" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
     <article id="post-spring揭密" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/05/31/spring%E6%8F%AD%E5%AF%86/" class="article-date">
@@ -1887,6 +1850,105 @@ Kafka中到底是怎么推进时间的呢？Kafka中的定时器借助了JDK中�
 
 
   
+    <article id="post-maintenance" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/22/maintenance/" class="article-date">
+  <time datetime="2020-04-22T10:58:20.287Z" itemprop="datePublished">2020-04-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/22/maintenance/">maintenance</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="kafka概念以及如何保证kafka消息不丢"><a href="#kafka概念以及如何保证kafka消息不丢" class="headerlink" title="kafka概念以及如何保证kafka消息不丢"></a>kafka概念以及如何保证kafka消息不丢</h1><ul>
+<li><p>Kafka是分布式发布-订阅消息系统，它最初是由LinkedIn公司开发的，之后成为Apache项目的一部分，Kafka是一个分布式，可划分的，冗余备份的持久性的日志服务，它主要用于处理流式数据。</p>
+</li>
+<li><p>生产者可靠性：</p>
+<ul>
+<li>通过配置参数 request.required.acks=-1，所有ISR列表中的所有副本同步数据完成后才leader向生产者发送成功消息；</li>
+<li>开启副本数 min.insync.replicas&gt;=2</li>
+<li>开启幂等性 enable.idempotence=true</li>
+<li>开启不允许非isr副本选举为 leader,unclean.leader.election.enable=false</li>
+</ul>
+</li>
+<li><p>消费者可靠性：</p>
+<ul>
+<li>enable.auto.commit=false 关闭自动提交offset</li>
+</ul>
+</li>
+</ul>
+<h1 id="HDFS读写流程"><a href="#HDFS读写流程" class="headerlink" title="HDFS读写流程"></a>HDFS读写流程</h1><ul>
+<li><p>HDFS 读取过程：</p>
+<ul>
+<li>客户端调用FileSystem实例的open方法，获取这个文件对应的输入流InputStream</li>
+<li>通过RPC远程调用NameNode，获得NameNode中此文件第一块数据的位置</li>
+<li>从最近的DataNode中读取一块数据，再去获取第二块数据位置读取，直至整个文件读取完毕</li>
+<li>客户端调用close方法，关闭输入流</li>
+</ul>
+</li>
+<li><p>HDFS 写过程：</p>
+<ul>
+<li>客户端向NameNode发起写数据请求</li>
+<li>NameNode会检查文件是否存在，是否具有权限，成功创建一个记录</li>
+<li>客户端将文件进行切片，然后上传数据块，按照一个一个的形式发送，每个数据块都要写到三个DataNode上</li>
+<li>成功后返回ack给客户端，继续上传下一个数据块，直至所有的数据块写入成功</li>
+<li>写入完成以后，客户端向NameNode发送一个反馈消息，关闭数据流</li>
+</ul>
+</li>
+</ul>
+<h1 id="impala和flume里面的一些组件和流程，如何去操作执行"><a href="#impala和flume里面的一些组件和流程，如何去操作执行" class="headerlink" title="impala和flume里面的一些组件和流程，如何去操作执行"></a>impala和flume里面的一些组件和流程，如何去操作执行</h1><h1 id="对Yarn的了解"><a href="#对Yarn的了解" class="headerlink" title="对Yarn的了解"></a>对Yarn的了解</h1><ul>
+<li><p>资源管理，任务调度框架；</p>
+</li>
+<li><p>ResourceManager NodeManager ApplicationMaster(每一个应用都会在NodeManager上启动一个)</p>
+<ul>
+<li>RM： 负责资源的监控、分配和管理</li>
+<li>AM： 负责每一个具体应用程序的调度和协调</li>
+<li>NM： 负责每一个节点的维护</li>
+</ul>
+</li>
+<li><p>调度器</p>
+<ul>
+<li>FIFO(队列)调度：把应用按提交的顺序拍成一个队列，按照先进先出进行资源分配</li>
+<li>容量调度： 允许多个组织共享整个集群，再为每个组织分配专门的队列，在位每个组织分配相应得计算资源</li>
+<li>公平调度：在公平调度中，我们不需要提前占用集群得资源，fair调度器会在运行过程中根据job执行动态的调整系统资源分配</li>
+</ul>
+</li>
+<li><p>yarn执行流程<br><img src="./123.png" alt=""></p>
+<ul>
+<li>NodeManager 向ResourceManager的ApplicationManager注册资源</li>
+<li>客户端提交job到ResourceManager节点上的ApplicationManager</li>
+<li>当NodeManager心跳来到ResourceManager的时候，ApplicationsManager将job交给NodeManager的ApplicationMaster,ApplicationMaster将Job进行划分为Map,Reduce</li>
+<li>ApplicationsMaster会向ResourceScheduler申请资源，拿到资源后ApplicationMaster会对资源再划分为Map 和 Reducer的，然后将任务分配到不同的NodeManger节点上执行，监控job的执行情况</li>
+<li>ApplicationsManager进程监视每个ApplicationMaster</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/04/22/maintenance/" data-id="ckautpoj4000694rhgv3s9t3a" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
 
 
   <nav id="page-nav">
@@ -1910,7 +1972,7 @@ Kafka中到底是怎么推进时间的呢？Kafka中的定时器借助了JDK中�
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">June 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li></ul>
     </div>
   </div>
 
@@ -1921,10 +1983,6 @@ Kafka中到底是怎么推进时间的呢？Kafka中的定时器借助了JDK中�
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
-        
-          <li>
-            <a href="/2020/06/13/1/">1</a>
-          </li>
         
           <li>
             <a href="/2020/05/31/spring%E6%8F%AD%E5%AF%86/">spring揭密</a>
@@ -1940,6 +1998,10 @@ Kafka中到底是怎么推进时间的呢？Kafka中的定时器借助了JDK中�
         
           <li>
             <a href="/2020/05/09/thread/">thread</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/09/netcompile/">netcompile</a>
           </li>
         
       </ul>

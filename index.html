@@ -261,6 +261,12 @@ PatternEditor。针对Java SE 1.4之后才引入的java.util.regex.Pattern的Pro
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">InitializingBean</span> </span>&#123;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">afterPropertiesSet</span><span class="params">()</span> <span class="keyword">throws</span> Exception</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>其作用在于，在对象实例化过程调用过“BeanPostProcessor的前置处理”之后，会接着检测当前对象是否实现了InitializingBean接口，如果是，则会调用其afterPropertiesSet()方法进一步调整对象实例的状态。比如，在有些情况下，某个业务对象实例化完成后，还不能处于可以使用状态。这个时候就可以让该业务对象实现该接口，并在方法afterPropertiesSet()中完成对该业务对象的后续处理。</p>
 <p>如果系统开发过程中规定：所有业务对象的自定义初始化操作都必须以init()命名，为了省去挨个<bean>的设置init-method这样的烦琐，我们还可以通过最顶层的<beans>的default-init-method统一指定这一init()方法名。</beans></bean></p>
+<h3 id="统一资源加载策略"><a href="#统一资源加载策略" class="headerlink" title="统一资源加载策略"></a>统一资源加载策略</h3><p>Spring提出了一套基于org.springframework.core.io.Resource和org.springframework.core.io.ResourceLoader接口的资源抽象和加载策略。</p>
+<p>Resource接口可以根据资源的不同类型，或者资源所处的不同场合，给出相应的具体实现。可以帮助我们查询资源状态、访问资源内容，甚至根据当前资源创建新的相对资源。我们可以继承org.springframework.core.io.AbstractResource抽象类。</p>
+<p>但如何去查找和定位这些资源，则应该是ResourceLoader的职责所在了。 org.springframework.core.io.ResourceLoader接口是资源查找定位策略的统一抽象，具体的资源查找定位策略则由相应的ResourceLoader实现类给出。</p>
+<p>DefaultResourceLoader<br>ResourceLoader有一个默认的实现类，即org.springframework.core.io.DefaultResourceLoader，该类默认的资源查找处理逻辑如下。<br>(1) 首先检查资源路径是否以classpath:前缀打头，如果是，则尝试构造ClassPathResource类型资源并返回。<br>(2) 否则， (a) 尝试通过URL，根据资源路径来定位资源，如果没有抛出MalformedURLException，有则会构造UrlResource类型的资源并返回； (b)如果还是无法根据资源路径定位指定的资源，则委派getResourceByPath(String) 方 法 来 定 位 ， DefaultResourceLoader 的getResourceByPath(String)方法默认实现逻辑是，构造ClassPathResource类型的资源并返回。</p>
+<p>Resource和ResourceLoader类层次图<br><img src="/2020/05/31/spring%E6%8F%AD%E5%AF%86/0771c8aa603014c9ea84ef11f6651df.jpg" alt></p>
+<p>AbstractApplicationContext作为ResourceLoader和ResourcePatternResolver<br><img src="/2020/05/31/spring%E6%8F%AD%E5%AF%86/30085ed7a2b75e82bf6a42dc41656bb.jpg" alt></p>
 
       
     </div>
